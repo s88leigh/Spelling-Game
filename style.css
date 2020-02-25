@@ -2,10 +2,43 @@ body {
     margin: 0;
     background: radial-gradient(azure, lightskyblue);
 }
+* {
+    box-sizing: border-box;
+}
 html {
     min-height: 100vh;
 }
 
 .game-title {
     text-align: center;
+    font-size: 3em;
+}
+.category {
+    text-align: center;
+}
+
+.game-info {
+    font-size: 1.5em;
+}
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+
+   
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-left: 15%;
+    margin-right:  15%;
+}
+
+.card {
+    background-color: rgb(232, 233, 235);
+    height: 175px;
+    width: 175px;
+    border: 1px solid black;
 }

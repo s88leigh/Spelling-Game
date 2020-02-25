@@ -31,10 +31,14 @@ html {
 }
 .game-container {
     display: grid;
-    grid-template-columns: repeat(4,auto);
-    margin: 50px;
+    grid-template-columns: repeat(5,auto);
+    margin: 20px;
     justify-content: center;
     grid-gap: 20px;
+}
+.img-title {
+    text-align: center;
+    font-size: 30px;
 }
 
 .card {

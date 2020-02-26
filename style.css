@@ -24,7 +24,7 @@ html {
 }
 .category {
     text-align: center;
-    margin-bottom:55px;
+    margin-bottom:40px;
     margin-top: 0px;
 }
 
@@ -46,8 +46,11 @@ html {
     margin: 20px;
     justify-content: center;
     grid-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
-.img-title {
+.cat-title {
     text-align: center;
     font-size: 30px;
 }
@@ -57,6 +60,7 @@ html {
     height: 175px;
     width: 175px;
     border: 4px solid #049020;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
 
@@ -69,7 +73,6 @@ img {
 .fruit-container {
     display: grid;
     grid-template-columns: repeat(5,auto);
-    /* margin: 20px; */
     justify-content: center;
     grid-gap: 20px;
 }
@@ -85,8 +88,8 @@ img {
     display: grid;
     grid-template-columns: repeat(26,auto);
     margin: 0;
+    grid-gap: 3px;
     justify-content: center;
-    /* grid-gap: 20px; */
 }
 .alpha-card {
     background-color: rgb(232, 233, 235);
@@ -95,6 +98,7 @@ img {
     border: 1px solid #45abe6;
     text-align: center;
     font-size: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
 .blank-space {

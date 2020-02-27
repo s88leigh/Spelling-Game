@@ -97,6 +97,7 @@ img {
     margin: 0;
     grid-gap: 3px;
     justify-content: center;
+    
 }
 .alpha-card {
     background: rgb(158, 215, 250);
@@ -104,6 +105,8 @@ img {
     width: 45px;
     text-align: center;
     font-size: 40px;
+    color:black;
+    text-shadow: 0 0 25px  #f2f4f7, 0 0 5px #313539;
     border: 2px solid rgb(4, 4, 98);
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
@@ -119,9 +122,8 @@ img {
     text-align: center;
     letter-spacing: 3px;
     font-size: 50px;
-    color: rgb(3, 107, 171);
-    text-shadow: 2px 2px 4px #010b14;
+    color: black;
+    text-shadow: 1px 1px 2px white, 0 0 25px  #f2f4f7, 0 0 5px #313539;
     border: 2px solid rgb(4, 4, 98);
-    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }

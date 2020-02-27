@@ -57,7 +57,6 @@ h3 { color:rgb(34, 6, 96) ;
     grid-gap: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 .cat-title {
     text-align: center;
@@ -96,10 +95,10 @@ img {
     justify-content: center;
 }
 .alpha-card {
-    background-color: fffff;
+    background: rgb(158, 215, 250);
     height: 65px;
     width: 45px;
-    border: 1px solid #45abe6;
+    /* border: 1px solid #45abe6; */
     text-align: center;
     font-size: 40px;
     border: 2px solid rgb(4, 4, 98);

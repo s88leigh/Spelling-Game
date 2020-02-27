@@ -58,6 +58,7 @@ h3 { color:rgb(34, 6, 96) ;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .cat-title {
     text-align: center;
     font-size: 30px;
@@ -79,12 +80,12 @@ img {
     align-self: auto;
 }
 /* <!--fruits page --> */
-.fruit-container {
+/* .fruit-container {
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(3,auto);
     justify-content: center;
     grid-gap: 100px;
-}
+} */
 
 /* alphabets */
 .alpha-container {

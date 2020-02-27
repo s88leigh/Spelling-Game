@@ -79,13 +79,7 @@ img {
     object-fit:cover;
     align-self: auto;
 }
-/* <!--fruits page --> */
-/* .fruit-container {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    justify-content: center;
-    grid-gap: 100px;
-} */
+
 
 /* alphabets */
 .alpha-container {
@@ -105,7 +99,20 @@ img {
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
-.blank-space {
-    width: 100%;
-    height: 150px;
+.spelling-container {
+    height: 65px;
+    margin-top:70px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+}
+
+.col-5 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: rgb(13, 179, 216);
+    text-shadow: 2px 2px 4px #01172d;
+    border: 2px solid rgb(4, 4, 98);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }

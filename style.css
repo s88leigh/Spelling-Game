@@ -58,6 +58,15 @@ h3 { color:rgb(34, 6, 96) ;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.fruit-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: 20px;
+    justify-content: center;
+    grid-gap: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .cat-title {
     text-align: center;
@@ -103,10 +112,10 @@ img {
     height: 65px;
     margin-top:70px;
     margin-bottom: 40px;
-    border: 1px solid black;
+  
 }
 
-.col-5 {
+.col-md-auto{
     text-align: center;
     letter-spacing: 3px;
     font-size: 40px;

@@ -118,9 +118,9 @@ img {
 .col-md-auto{
     text-align: center;
     letter-spacing: 3px;
-    font-size: 40px;
-    color: rgba(3, 162, 171, 0.898);
-    text-shadow: 2px 2px 4px #01172d;
+    font-size: 50px;
+    color: rgb(3, 107, 171);
+    text-shadow: 2px 2px 4px #010b14;
     border: 2px solid rgb(4, 4, 98);
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 

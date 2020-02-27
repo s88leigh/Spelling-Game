@@ -15,7 +15,17 @@ html {
     left: 0px;
     top: 0px;
 }
-
+h1 {
+    color: rgb(13, 179, 216);
+    text-shadow: 2px 2px 4px #01172d;
+  }
+  
+h3 { color:rgb(34, 6, 96) ;
+    text-shadow: 1px 1px 2px white, 0 0 25px  #f2f4f7, 0 0 5px #313539;
+}
+.cat-title { color:rgb(34, 6, 96) ;
+    text-shadow: 1px 1px 2px white, 0 0 25px  #f2f4f7, 0 0 5px #313539;
+}
 .game-title {
     text-align: center;
     font-size: 3em;
@@ -27,7 +37,6 @@ html {
     margin-bottom:40px;
     margin-top: 0px;
 }
-
 .game-info {
     font-size: 1.5em;
 }
@@ -45,7 +54,7 @@ html {
     grid-template-columns: repeat(5,auto);
     margin: 20px;
     justify-content: center;
-    grid-gap: 20px;
+    grid-gap: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
@@ -57,32 +66,27 @@ html {
 
 .card {
     background-color: rgb(232, 233, 235);
-    height: 175px;
-    width: 175px;
-    border: 4px solid #049020;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 176px;
+    width: 176px;
+    border: 2px solid rgb(4, 4, 98);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
 
 img {
-    height: 166px;
-    width: 166px;
+    height: 172px;
+    width: 172px; 
     object-fit:cover;
+    align-self: auto;
 }
 /* <!--fruits page --> */
 .fruit-container {
     display: grid;
     grid-template-columns: repeat(5,auto);
     justify-content: center;
-    grid-gap: 20px;
+    grid-gap: 100px;
 }
-.fruit-card {
-    background-color: rgb(232, 233, 235);
-    height: 100px;
-    width: 100px;
-    border: 4px solid #049020;
-    
-}
+
 /* alphabets */
 .alpha-container {
     display: grid;
@@ -92,13 +96,14 @@ img {
     justify-content: center;
 }
 .alpha-card {
-    background-color: rgb(232, 233, 235);
-    height: 50px;
+    background-color: fffff;
+    height: 65px;
     width: 45px;
     border: 1px solid #45abe6;
     text-align: center;
     font-size: 40px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 2px solid rgb(4, 4, 98);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
 .blank-space {

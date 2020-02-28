@@ -16,6 +16,7 @@ html {
     top: 0px;
 }
 h1 {
+    padding: 10px;
     color: rgba(3, 162, 171, 0.898);
     text-shadow: 2px 2px 4px #01172d;
   }
@@ -100,6 +101,7 @@ img {
     
 }
 .alpha-card {
+    margin-top: 30px;
     background: rgb(158, 215, 250);
     height: 65px;
     width: 45px;

@@ -51,15 +51,11 @@ h3 { color:rgb(34, 6, 96) ;
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
-
-   
-    margin-left: 20px;
-    margin-right: 20px;
 }
 .cat-container {
     display: grid;
     grid-template-columns: repeat(5,auto);
-    margin: 20px;
+    margin: 60px;
     justify-content: center;
     grid-gap: 40px;
     padding-top: 10px;
@@ -68,7 +64,7 @@ h3 { color:rgb(34, 6, 96) ;
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3,auto);
-    margin: 20px;
+    margin: 60px;
     justify-content: center;
     grid-gap: 40px;
     padding-top: 10px;

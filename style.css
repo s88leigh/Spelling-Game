@@ -17,6 +17,9 @@ html {
     height: 30px;
     margin-left: 0px;
 }
+.row-title {
+    height:40px;
+}
 .nav-container {
     margin-top: 10px;
 }
@@ -33,6 +36,7 @@ h3 { color:rgb(34, 6, 96) ;
 .cat-title { color:rgb(34, 6, 96) ;
     text-shadow: 1px 1px 2px white, 0 0 25px  #f2f4f7, 0 0 5px #313539;
 }
+
 .game-title {
     text-align: center;
     font-size: 3em;
@@ -137,7 +141,7 @@ img {
 }
 .icon-container {
     margin-bottom: 0px;
-    margin-top: 110px;
+    margin-top: 190px;
 }
 
 .col-5 {

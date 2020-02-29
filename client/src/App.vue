@@ -1,25 +1,30 @@
 <template>
   <div id="app">
-    <NavBar v-bind:name="title" />
+    <NavBar />
+    <h1></h1>
   </div>
 </template>
 
 <script>
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar.vue";
+
 export default {
+  name: "App",
   components: {
     NavBar
   },
   data() {
     return {
-      title: "Hello Vue with Components!"
+      title: "Spelling Game",
+      subTitle: "Choose a Category"
     };
-  }
+  },
+
+  methods: {}
 };
 </script>
 
 <style>
 #app {
-  background-color: lightblue;
 }
 </style>

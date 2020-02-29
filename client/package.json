@@ -10,7 +10,8 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "webpack": "^4.41.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",

@@ -14,6 +14,14 @@
  * Provide fun and encouraging way for child to learn how to spell
  * Have access to learning curve with statistic info from Admin page
 
+ ### Directions on how to play this game
+ 1. On landing page, choose among the categories to spell.
+ 2. On the specific category page, choose among 3 images to spell
+ 3. After an image has been chosen, 2 3 things will happen:
+    a. the image will standout among the 3 cards
+    b. the other 2 images will fade
+    c. a box for spelling will appear below the image with the number underscores that is equal in length to the name of the image the user chose.
+
 ToDos
 1. When Category Image is clicked, the image box will...
     * increase in size over the rest

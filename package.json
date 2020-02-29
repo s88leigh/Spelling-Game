@@ -1,22 +1,14 @@
 {
-  "name": "spelling-game",
+  "name": "SpellingGame",
   "version": "1.0.0",
-  "description": "Teaching children K-Grade 3 learn how to spell words.",
-  "main": "game.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/s88leigh/Spelling-Game.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/s88leigh/Spelling-Game/issues"
-  },
-  "homepage": "https://github.com/s88leigh/Spelling-Game#readme",
-  "dependencies": {
-    "bootstrap": "^4.4.1"
-  }
+  "dependencies": {}
 }

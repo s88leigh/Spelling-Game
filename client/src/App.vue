@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <router-view>
+      <categories />
+      <fruits />
+      <vegetables />
+      <animals />
+      <furniture />
+      <colors />
+    </router-view>
     <ul>
       <li>
         <router-link to="/">home</router-link>
@@ -7,20 +15,26 @@
       <li>
         <router-link to="/fruits">fruits</router-link>
       </li>
+      <li>
+        <router-link to="/vegetables">vegetables</router-link>
+      </li>
+      <li>
+        <router-link to="/animals">animals</router-link>
+      </li>
+      <li>
+        <router-link to="/furniture">furniture</router-link>
+      </li>
+      <li>
+        <router-link to="/colors">colors</router-link>
+      </li>
     </ul>
-    <router-view>
-      <categories />
-      <fruits />
-      <furnitures />
-      <colors />
-    </router-view>
   </div>
 </template>
 
 <script>
 import categories from "./components/categories.vue";
 // import Fruits from "./components/Fruits.vue";
-// import Furnitures from "./components/Furnitures.vue";
+// import furniture from "./components/furniture.vue";
 // import Letters from "./components/Letters.vue";
 
 export default {

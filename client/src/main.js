@@ -3,6 +3,10 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import categories from './components/categories'
 import fruits from './components/fruits'
+import vegetables from './components/vegetables'
+import animals from './components/animals'
+import furniture from './components/furniture'
+import colors from './components/colors'
 
 // import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -19,7 +23,11 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
         { path: '/', component: categories },
-        { path: '/fruits', component: fruits }
+        { path: '/fruits', component: fruits },
+        { path: '/vegetables', component: vegetables },
+        { path: '/animals', component: animals },
+        { path: '/furniture', component: furniture },
+        { path: '/colors', component: colors },
     ],
     mode: 'history'
 

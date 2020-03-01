@@ -1,5 +1,5 @@
 <template>
-  <div class="animals">
+  <div class="vegetables">
     <h1 class="game-title">Spelling Game</h1>
     <h3 class="category">Choose a Category</h3>
 
@@ -27,7 +27,7 @@
       </b-row>
     </b-container>
 
-    <Letters />
+    <!-- <Letters /> -->
   </div>
 </template>
 
@@ -36,7 +36,7 @@
 // import img from "./components/img.vue";
 
 export default {
-  name: "animals",
+  name: "vegetables",
 
   data() {
     return {};

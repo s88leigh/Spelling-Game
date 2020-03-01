@@ -1,5 +1,8 @@
 <template>
-  <div class="furnitures">
+  <div class="furniture">
+    <h1 class="game-title">Spelling Game</h1>
+    <h3 class="category">Choose a Category</h3>
+
     <b-container>
       <b-row>
         <b-button
@@ -29,14 +32,11 @@
 </template>
 
 <script>
-import letters from "./components/letters.vue";
+// import letters from "./components/letters.vue";
 // import img from "./components/img.vue";
 
 export default {
-  name: "furnitures",
-  components: {
-    furnitures
-  },
+  name: "furniture",
 
   data() {
     return {};

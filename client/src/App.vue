@@ -24,28 +24,32 @@
       </b-row>
     </b-container>
     <fruits />
-    <!-- <LettersGrid /> -->
+    <furniture />
+    <LettersGrid />
   </div>
 </template>
 
 <script>
 import Home from "./components/Home.vue";
 import Fruits from "./components/Fruits.vue";
-// import LettersGrid from "./components/LettersGrid.vue";
+import Furniture from "./components/Furniture.vue";
+import LettersGrid from "./components/LettersGrid.vue";
 
 export default {
   name: "App",
   components: {
     Home,
-    Fruits
-    // LettersGrid
+    Fruits,
+    Furniture,
+    LettersGrid
   },
   data() {
     return {
       title: "Spelling Game",
-      words: [],
-      class: "fruits"
-      // class: "letters"
+      words: []
+      // class: "fruits"
+      // class: "furniture",
+      // class: "lettersGrid"
     };
   },
 

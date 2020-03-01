@@ -23,25 +23,28 @@
         <b-col></b-col>
       </b-row>
     </b-container>
-
+    <fruits />
     <!-- <LettersGrid /> -->
   </div>
 </template>
 
 <script>
 import Home from "./components/Home.vue";
+import Fruits from "./components/Fruits.vue";
 // import LettersGrid from "./components/LettersGrid.vue";
 
 export default {
   name: "App",
   components: {
-    Home
+    Home,
+    Fruits
     // LettersGrid
   },
   data() {
     return {
       title: "Spelling Game",
-      words: []
+      words: [],
+      class: "fruits"
       // class: "letters"
     };
   },

@@ -2,33 +2,51 @@
   <div id="app">
     <h1 class="game-title">Spelling Game</h1>
     <h3 class="category">Choose a Category</h3>
-    <PostComponent />
+    <Home />
+    <b-container class="bv-example-row">
+      <b-row class="text-center">
+        <b-col></b-col>
+        <b-col cols="5">
+          <a href="Admin.html">
+            <img src="img\admin.png" class="admin-icon" alt="admin-icon" />
+          </a>
+        </b-col>
+        <b-col></b-col>
+      </b-row>
+    </b-container>
+
+    <!-- <LettersGrid /> -->
   </div>
 </template>
 
 <script>
-import PostComponent from "./components/PostComponent.vue";
+import Home from "./components/Home.vue";
+// import LettersGrid from "./components/LettersGrid.vue";
 
 export default {
   name: "App",
   components: {
-    PostComponent
+    Home
+    // LettersGrid
   },
   data() {
     return {
       title: "Spelling Game",
       words: []
+      // class: "letters"
     };
   },
 
-  methods: {}
+  methods: {
+    handleClick() {}
+  }
 };
 </script>
 
 <style >
 #app {
   width: 100%;
-  height: 100%;
+  height: 800px;
   background: radial-gradient(azure, lightskyblue);
 }
 .game-title {

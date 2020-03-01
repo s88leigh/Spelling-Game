@@ -1,9 +1,32 @@
 <template>
-  <h1>Spelling Game</h1>
+  <div>
+    <b-container>
+      <b-row align-v="center">
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 <script>
+// import img from "./components/img.vue";
+
 export default {
-  name: "PostComponent",
+  name: "Home",
+
   data() {
     return {};
   }

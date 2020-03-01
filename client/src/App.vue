@@ -1,14 +1,5 @@
 <template>
   <div id="app">
-    <!-- <b-container>
-      <b-row>
-        <b-button
-          img-href=".\components\img\arrow.png"
-          img-alt="back arrow icon"
-          img-start
-        >Back to Categories</b-button>
-      </b-row>
-    </b-container>-->
     <h1 class="game-title">Spelling Game</h1>
     <h3 class="category">Choose a Category</h3>
     <Categories />
@@ -34,14 +25,15 @@
 
 <script>
 import Categories from "./components/Categories.vue";
-// import Fruits from "./components/Fruits.vue";
+import Fruits from "./components/Fruits.vue";
 // import Furnitures from "./components/Furnitures.vue";
 // import Letters from "./components/Letters.vue";
 
 export default {
   name: "App",
   components: {
-    Categories
+    Categories,
+    Fruits
   },
   data() {
     return {

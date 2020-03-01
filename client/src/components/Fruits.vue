@@ -24,18 +24,27 @@
         </b-col>
       </b-row>
     </b-container>
+
     <Letters />
   </div>
 </template>
 
 <script>
+import Letters from "./components/Letters.vue";
+// import img from "./components/img.vue";
+
 export default {
   name: "Fruits",
+  components: {
+    Fruits,
+    Letters
+  },
 
-  data() {}
+  data() {
+    return {};
+  }
 };
 </script>
-// import img from "./components/img.vue";
 
 
 <style scoped>

@@ -35,6 +35,9 @@
 <script>
 export default {
   name: "Letters",
+  components: {
+    Letters
+  },
 
   data() {
     return {};

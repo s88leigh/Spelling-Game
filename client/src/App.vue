@@ -1,9 +1,18 @@
 <template>
   <div id="app">
+    <b-container>
+      <b-row>
+        <b-button
+          img-href=".\components\img\arrow.png"
+          img-alt="back arrow icon"
+          img-start
+        >Back to Categories</b-button>
+      </b-row>
+    </b-container>
     <h1 class="game-title">Spelling Game</h1>
-    <h3 class="choose">Choose a Category</h3>
+    <h3 class="category">Choose a Category</h3>
     <Home />
-    <b-container class="bv-example-row">
+    <b-container class="icon-container">
       <b-row class="text-center">
         <b-col></b-col>
         <b-col cols="5">
@@ -65,6 +74,14 @@ h3 {
   margin-bottom: 40px;
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
+}
+.icon-container {
+  margin-bottom: 0px;
+  margin-top: 300px;
+}
+.admin-icon {
+  width: 40px;
+  height: 40px;
 }
 </style>>
 

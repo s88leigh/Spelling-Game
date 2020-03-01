@@ -1,39 +1,26 @@
 <template>
   <div id="app">
-    <h1 class="game-title">Spelling Game</h1>
-    <h3 class="category">Choose a Category</h3>
-    <Categories />
+    <categories />
 
     <router-vue>
-      <Fruits />
-      <Furnitures />
+      <fruits />
+      <furnitures />
+      <colors />
     </router-vue>
-
-    <b-container class="icon-container">
-      <b-row class="text-center">
-        <b-col></b-col>
-        <b-col cols="5">
-          <a href="Admin.html">
-            <img src="img\admin.png" class="admin-icon" alt="admin-icon" />
-          </a>
-        </b-col>
-        <b-col></b-col>
-      </b-row>
-    </b-container>
   </div>
 </template>
 
 <script>
-import Categories from "./components/Categories.vue";
-import Fruits from "./components/Fruits.vue";
+import categories from "./components/categories.vue";
+// import Fruits from "./components/Fruits.vue";
 // import Furnitures from "./components/Furnitures.vue";
 // import Letters from "./components/Letters.vue";
 
 export default {
   name: "App",
   components: {
-    Categories,
-    Fruits
+    categories
+    // Fruits
   },
   data() {
     return {
@@ -44,7 +31,6 @@ export default {
       // class: "lettersGrid"
     };
   },
-
   methods: {
     handleClick() {}
   }

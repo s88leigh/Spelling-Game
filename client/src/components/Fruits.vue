@@ -29,14 +29,11 @@
 </template>
 
 <script>
-import letters from "./components/letters.vue";
+// import letters from "./components/letters.vue";
 // import img from "./components/img.vue";
 
 export default {
-  name: "Fruits",
-  components: {
-    fruits
-  },
+  name: "fruits",
 
   data() {
     return {};

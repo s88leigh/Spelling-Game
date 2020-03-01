@@ -1,5 +1,8 @@
 <template>
   <div>
+    <h1 class="game-title">Spelling Game</h1>
+    <h3 class="category">Choose a Category</h3>
+
     <b-container class="grid-5">
       <b-row align-v="center">
         <b-col>
@@ -17,6 +20,18 @@
         <b-col>
           <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
         </b-col>
+      </b-row>
+    </b-container>
+
+    <b-container class="icon-container">
+      <b-row class="text-center">
+        <b-col></b-col>
+        <b-col cols="5">
+          <a href="Admin.html">
+            <img src="img\admin.png" class="admin-icon" alt="admin-icon" />
+          </a>
+        </b-col>
+        <b-col></b-col>
       </b-row>
     </b-container>
   </div>

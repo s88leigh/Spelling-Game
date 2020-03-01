@@ -23,25 +23,25 @@
         <b-col></b-col>
       </b-row>
     </b-container>
-    <fruits />
-    <furniture />
-    <LettersGrid />
+    <Fruits />
+    <Furnitures />
+    <Letters />
   </div>
 </template>
 
 <script>
 import Home from "./components/Home.vue";
 import Fruits from "./components/Fruits.vue";
-import Furniture from "./components/Furniture.vue";
-import LettersGrid from "./components/LettersGrid.vue";
+import Furnitures from "./components/Furnitures.vue";
+import Letters from "./components/Letters.vue";
 
 export default {
   name: "App",
   components: {
     Home,
     Fruits,
-    Furniture,
-    LettersGrid
+    Furnitures,
+    Letters
   },
   data() {
     return {

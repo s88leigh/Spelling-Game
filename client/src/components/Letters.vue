@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: "LettersGrid",
+  name: "Letters",
 
   data() {
     return {};

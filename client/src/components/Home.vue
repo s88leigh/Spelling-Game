@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container>
+    <b-container class="grid-5">
       <b-row align-v="center">
         <b-col>
           <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
@@ -34,9 +34,15 @@ export default {
 </script>
 
 <style scoped>
-body {
-  margin: 0;
-  background: radial-gradient(azure, lightskyblue);
+.grid-5 {
+  display: grid;
+  display: flex;
+  grid-template-columns: repeat(5, auto);
+  margin: 60px;
+  justify-content: center;
+  grid-gap: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 * {
   box-sizing: border-box;
@@ -93,15 +99,7 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-.cat-container {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  margin: 60px;
-  justify-content: center;
-  grid-gap: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+
 /* 3 Image Boxes */
 .grid-3 {
   display: grid;

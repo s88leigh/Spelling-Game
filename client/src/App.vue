@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1 class="game-title">Spelling Game</h1>
-    <h3 class="category">Choose a Category</h3>
+    <h3 class="choose">Choose a Category</h3>
     <Home />
     <b-container class="bv-example-row">
       <b-row class="text-center">
@@ -61,6 +61,8 @@ h1 {
 }
 
 h3 {
+  text-align: center;
+  margin-bottom: 40px;
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }

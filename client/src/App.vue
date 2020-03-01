@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-container>
+    <!-- <b-container>
       <b-row>
         <b-button
           img-href=".\components\img\arrow.png"
@@ -8,10 +8,16 @@
           img-start
         >Back to Categories</b-button>
       </b-row>
-    </b-container>
+    </b-container>-->
     <h1 class="game-title">Spelling Game</h1>
     <h3 class="category">Choose a Category</h3>
-    <Home />
+    <Categories />
+
+    <router-vue>
+      <Fruits />
+      <Furnitures />
+    </router-vue>
+
     <b-container class="icon-container">
       <b-row class="text-center">
         <b-col></b-col>
@@ -23,25 +29,19 @@
         <b-col></b-col>
       </b-row>
     </b-container>
-    <Fruits />
-    <Furnitures />
-    <Letters />
   </div>
 </template>
 
 <script>
-import Home from "./components/Home.vue";
-import Fruits from "./components/Fruits.vue";
-import Furnitures from "./components/Furnitures.vue";
-import Letters from "./components/Letters.vue";
+import Categories from "./components/Categories.vue";
+// import Fruits from "./components/Fruits.vue";
+// import Furnitures from "./components/Furnitures.vue";
+// import Letters from "./components/Letters.vue";
 
 export default {
   name: "App",
   components: {
-    Home,
-    Fruits,
-    Furnitures,
-    Letters
+    Categories
   },
   data() {
     return {

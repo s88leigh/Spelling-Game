@@ -1,7 +1,6 @@
 <template>
   <div class="animals">
-    <h1 class="game-title">Spelling Game</h1>
-    <h3 class="category">Choose a Category</h3>
+    <router-link to="/">home</router-link>
 
     <b-container>
       <b-row>
@@ -12,6 +11,9 @@
         >Back to Categories</b-button>
       </b-row>
     </b-container>
+
+    <h1 class="game-title">Spelling Game</h1>
+    <h3 class="category">Choose a Category</h3>
 
     <b-container class="grid-3">
       <b-row align-v="center">
@@ -27,7 +29,37 @@
       </b-row>
     </b-container>
 
-    <Letters />
+    <b-container class="alpha-container">
+      <b-row class="alpha-card" align-v="center" cols="1" cols-sm="2" cols-md="4" cols-lg="6">
+        <b-col cols="2">Column</b-col>
+        <b-col cols="2">a</b-col>
+        <b-col cols="2">b</b-col>
+        <b-col>c</b-col>
+        <b-col>d</b-col>
+        <b-col>e</b-col>
+        <b-col>f</b-col>
+        <b-col>g</b-col>
+        <b-col>h</b-col>
+        <b-col>i</b-col>
+        <b-col>j</b-col>
+        <b-col>k</b-col>
+        <b-col>l</b-col>
+        <b-col>m</b-col>
+        <b-col>n</b-col>
+        <b-col>o</b-col>
+        <b-col>p</b-col>
+        <b-col>q</b-col>
+        <b-col>r</b-col>
+        <b-col>s</b-col>
+        <b-col>t</b-col>
+        <b-col>u</b-col>
+        <b-col>v</b-col>
+        <b-col>w</b-col>
+        <b-col>x</b-col>
+        <b-col>y</b-col>
+        <b-col>z</b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 

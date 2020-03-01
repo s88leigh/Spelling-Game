@@ -1,7 +1,6 @@
 <template>
   <div class="vegetables">
-    <h1 class="game-title">Spelling Game</h1>
-    <h3 class="category">Choose a Category</h3>
+    <router-link to="/">home</router-link>
 
     <b-container>
       <b-row>
@@ -12,6 +11,9 @@
         >Back to Categories</b-button>
       </b-row>
     </b-container>
+
+    <h1 class="game-title">Spelling Game</h1>
+    <h3 class="category">Choose a Category</h3>
 
     <b-container class="grid-3">
       <b-row align-v="center">

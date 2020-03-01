@@ -1,6 +1,5 @@
 <template>
   <div class="fruits">
-    fruit
     <b-container>
       <b-row>
         <b-button
@@ -30,14 +29,13 @@
 </template>
 
 <script>
-import Letters from "./components/Letters.vue";
+import letters from "./components/letters.vue";
 // import img from "./components/img.vue";
 
 export default {
   name: "Fruits",
   components: {
-    Fruits,
-    Letters
+    fruits
   },
 
   data() {

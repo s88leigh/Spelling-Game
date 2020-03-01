@@ -1,5 +1,5 @@
 <template>
-  <div class="furnitures">
+  <div class="animals">
     <b-container>
       <b-row>
         <b-button
@@ -33,9 +33,9 @@ import letters from "./components/letters.vue";
 // import img from "./components/img.vue";
 
 export default {
-  name: "furnitures",
+  name: "animals",
   components: {
-    furnitures
+    animals
   },
 
   data() {

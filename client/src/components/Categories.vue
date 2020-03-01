@@ -25,7 +25,7 @@
 // import img from "./components/img.vue";
 
 export default {
-  name: "Categories",
+  name: "categories",
 
   data() {
     return {};

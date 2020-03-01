@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <categories />
-
-    <router-vue>
+    <ul>
+      <li>
+        <router-link to="/">home</router-link>
+      </li>
+      <li>
+        <router-link to="/fruits">fruits</router-link>
+      </li>
+    </ul>
+    <router-view>
+      <categories />
       <fruits />
       <furnitures />
       <colors />
-    </router-vue>
+    </router-view>
   </div>
 </template>
 

@@ -15,7 +15,21 @@
     <h1 class="game-title">Spelling Game</h1>
     <h3 class="category">Choose a Category</h3>
 
-    <b-container class="grid-3">
+    <b-container class="grid-3-img">
+      <b-row align-v="center">
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+        <b-col>
+          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+        </b-col>
+      </b-row>
+    </b-container>
+
+    <b-container class="grid-3-word">
       <b-row align-v="center">
         <b-col>
           <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
@@ -30,35 +44,36 @@
     </b-container>
 
     <b-container class="alpha-container">
-      <b-row class="alpha-card" align-v="center" cols="1" cols-sm="2" cols-md="4" cols-lg="6">
-        <b-col cols="2">Column</b-col>
-        <b-col cols="2">a</b-col>
-        <b-col cols="2">b</b-col>
-        <b-col>c</b-col>
-        <b-col>d</b-col>
-        <b-col>e</b-col>
-        <b-col>f</b-col>
-        <b-col>g</b-col>
-        <b-col>h</b-col>
-        <b-col>i</b-col>
-        <b-col>j</b-col>
-        <b-col>k</b-col>
-        <b-col>l</b-col>
-        <b-col>m</b-col>
-        <b-col>n</b-col>
-        <b-col>o</b-col>
-        <b-col>p</b-col>
-        <b-col>q</b-col>
-        <b-col>r</b-col>
-        <b-col>s</b-col>
-        <b-col>t</b-col>
-        <b-col>u</b-col>
-        <b-col>v</b-col>
-        <b-col>w</b-col>
-        <b-col>x</b-col>
-        <b-col>y</b-col>
-        <b-col>z</b-col>
-      </b-row>
+      <b-button>
+        <b-card class="alpha-card" text-align="center">a</b-card>
+      </b-button>
+      <b-card class="alpha-card">b</b-card>
+      <b-card class="alpha-card">c</b-card>
+      <b-card class="alpha-card">d</b-card>
+      <b-card class="alpha-card">e</b-card>
+      <b-card class="alpha-card">f</b-card>
+      <b-card class="alpha-card">g</b-card>
+      <b-card class="alpha-card">h</b-card>
+      <b-card class="alpha-card">i</b-card>
+      <b-card class="alpha-card">j</b-card>
+      <b-card class="alpha-card">k</b-card>
+      <b-card class="alpha-card">l</b-card>
+      <b-card class="alpha-card">m</b-card>
+      <b-card class="alpha-card">n</b-card>
+      <b-card class="alpha-card">o</b-card>
+      <b-card class="alpha-card">p</b-card>
+      <b-card class="alpha-card">q</b-card>
+      <b-card class="alpha-card">r</b-card>
+      <b-card class="alpha-card">s</b-card>
+      <b-card class="alpha-card">t</b-card>
+      <b-card class="alpha-card">u</b-card>
+      <b-card class="alpha-card">v</b-card>
+      <b-card class="alpha-card">w</b-card>
+      <b-card class="alpha-card">x</b-card>
+      <b-card class="alpha-card">y</b-card>
+      <b-button>
+        <b-card class="alpha-card">z</b-card>
+      </b-button>
     </b-container>
   </div>
 </template>
@@ -135,23 +150,28 @@ h3 {
 }
 
 /* 3 Image Boxes */
-.grid-3 {
+.grid-3-img {
   display: grid;
+  display: flex;
   grid-template-columns: repeat(3, auto);
   margin: 60px 60px 0px, 60px;
   justify-content: center;
-  grid-gap: 40px;
+  grid-gap: 10px;
   padding-top: 10px;
+  /* margin-left: 40px; */
 }
 
 /* Empty boxes for spelled words */
-.grid-word {
+.grid-3-word {
   display: grid;
+  display: flex;
+  margin-top: 40px;
+  height: 40px;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   grid-gap: 40px;
 }
-.card-word {
+.card-underscores {
   font-size: 40px;
 
   text-align: center;
@@ -184,7 +204,7 @@ img {
 .alpha-container {
   display: grid;
   grid-template-columns: repeat(26, auto);
-  margin: 0;
+  margin-left: 60px;
   grid-gap: 3px;
   justify-content: center;
 }
@@ -193,7 +213,7 @@ img {
   background: rgb(158, 215, 250);
   height: 65px;
   width: 45px;
-  text-align: center;
+  text-justify: center;
   font-size: 40px;
   color: black;
   text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;

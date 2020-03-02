@@ -29,6 +29,38 @@
       </b-row>
     </b-container>
 
+    <b-container class="grid-3-words">
+      <b-row align-v="center" class="row-category">
+        <b-col>
+          <b-card
+            class="card-words"
+            img-src="client\src\components\img\fruits.png"
+            img-alt="bowl of fruits"
+          ></b-card>
+        </b-col>
+        <b-col>
+          <b-card
+            class="card-words"
+            img-src="client\src\components\img\fruits.png"
+            img-alt="bowl of fruits"
+          ></b-card>
+        </b-col>
+        <b-col>
+          <b-card
+            class="card-words"
+            img-src="client\src\components\img\fruits.png"
+            img-alt="bowl of fruits"
+          ></b-card>
+        </b-col>
+      </b-row>
+    </b-container>
+    <b-container class="underscores-container">
+      <b-row class="justify-content-md-center">
+        <b-col col lg="2">1 of 3</b-col>
+        <b-col cols="12" md="auto">Content</b-col>
+        <b-col col lg="2">3 of 3</b-col>
+      </b-row>
+    </b-container>
     <Letters />
   </div>
 </template>
@@ -66,6 +98,23 @@ export default {
   display: flex;
   margin-right: 0px;
   height: 176px;
+  width: 176px;
+  border: 2px solid rgb(4, 4, 98);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.grid-3-words {
+  margin-top: 0px;
+  height: 80px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.card-words {
+  display: flex;
+  margin-right: 0px;
+  height: 60px;
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -180,16 +229,16 @@ img {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.spelling-container {
+.underscores-container {
   height: 65px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 
 .col-md-auto {
   text-align: center;
-  letter-spacing: 14px;
-  font-size: 50px;
+  letter-spacing: 4px;
+  font-size: 40px;
   color: black;
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
   border: 2px solid rgb(4, 4, 98);

@@ -55,7 +55,6 @@ export default {
   box-sizing: border-box;
 }
 .title-container {
-  /* margin-top: 20px; */
   padding: 20px;
   border: 2px solid rgb(4, 4, 98);
 }

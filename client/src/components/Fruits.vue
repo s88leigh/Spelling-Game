@@ -16,7 +16,7 @@
     <h3 class="category">Choose a Category</h3>
 
     <b-container class="grid-3">
-      <b-row align-v="center">
+      <b-row align-v="center" class="row-category">
         <b-col>
           <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
         </b-col>
@@ -48,6 +48,32 @@ export default {
 
 
 <style scoped>
+.title-container {
+  padding: 0px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.grid-3 {
+  margin-top: 80px;
+  height: 200px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.card {
+  display: flex;
+  margin-right: 0px;
+  height: 176px;
+  width: 176px;
+  border: 2px solid rgb(4, 4, 98);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.row-category {
+  padding-left: 50px;
+  height: 180px;
+}
+
 html {
   min-height: 100vh;
 }
@@ -105,14 +131,6 @@ h3 {
 }
 
 /* 3 Image Boxes */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin: 60px 60px 0px, 60px;
-  justify-content: center;
-  grid-gap: 40px;
-  padding-top: 10px;
-}
 
 /* Empty boxes for spelled words */
 .grid-word {
@@ -134,13 +152,6 @@ h3 {
 .cat-title {
   text-align: center;
   font-size: 30px;
-}
-
-.card {
-  height: 176px;
-  width: 176px;
-  border: 2px solid rgb(4, 4, 98);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img {

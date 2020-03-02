@@ -8,6 +8,8 @@ import animals from './components/animals'
 import furniture from './components/furniture'
 import colors from './components/colors'
 
+Vue.config.productionTip = false
+
 // import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -38,6 +40,3 @@ new Vue({
     render: h => h(App)
 }).$mount("#app")
 
-var app = new Vue({
-    el: '#app'
-})

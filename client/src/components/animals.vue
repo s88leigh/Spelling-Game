@@ -43,6 +43,13 @@
       </b-row>
     </b-container>
 
+    <b-container class="underscores-container">
+      <b-row class="justify-content-md-center">
+        <b-col col lg="2">1 of 3</b-col>
+        <b-col cols="12" md="auto">Variable width content</b-col>
+        <b-col col lg="2">3 of 3</b-col>
+      </b-row>
+    </b-container>
     <b-container class="alpha-container">
       <b-button>
         <b-card class="alpha-card" text-align="center">a</b-card>
@@ -92,7 +99,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
 html {
   min-height: 100vh;
 }
@@ -152,9 +159,9 @@ h3 {
 /* 3 Image Boxes */
 .grid-3-img {
   display: grid;
-  display: flex;
+  /* display: flex; */
   grid-template-columns: repeat(3, auto);
-  margin: 60px 60px 0px, 60px;
+  /* margin: 60px 60px 0px, 60px; */
   justify-content: center;
   grid-gap: 10px;
   padding-top: 10px;
@@ -165,13 +172,14 @@ h3 {
 .grid-3-word {
   display: grid;
   display: flex;
-  margin-top: 40px;
-  height: 40px;
   grid-template-columns: repeat(3, auto);
+  margin: 60px 60px 0px, 60px;
   justify-content: center;
-  grid-gap: 40px;
+  grid-gap: 10px;
+  padding-top: 10px;
+  /* margin-left: 40px; */
 }
-.card-underscores {
+.card-word {
   font-size: 40px;
 
   text-align: center;
@@ -204,6 +212,7 @@ img {
 .alpha-container {
   display: grid;
   grid-template-columns: repeat(26, auto);
+  margin-top: 200px;
   margin-left: 60px;
   grid-gap: 3px;
   justify-content: center;

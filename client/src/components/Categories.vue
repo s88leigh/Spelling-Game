@@ -6,7 +6,7 @@
     <b-container class="grid-5">
       <b-row align-v="center">
         <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          <b-card></b-card>
         </b-col>
         <b-col>
           <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
@@ -49,19 +49,25 @@ export default {
 </script>
 
 <style scoped>
-.grid-5 {
-  display: grid;
-  display: flex;
-  grid-template-columns: repeat(5, auto);
-  margin: 60px;
-  justify-content: center;
-  grid-gap: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 * {
   box-sizing: border-box;
 }
+.grid-5 {
+  margin-top: 60px;
+  height: 200px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.card {
+  display: flex;
+  height: 176px;
+  width: 176px;
+  border: 2px solid rgb(4, 4, 98);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 html {
   min-height: 100vh;
 }
@@ -99,7 +105,7 @@ h3 {
   text-align: center;
   font-size: 3em;
   margin-bottom: 15px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 .category {
   text-align: center;
@@ -147,13 +153,6 @@ h3 {
   font-size: 30px;
 }
 
-.card {
-  height: 176px;
-  width: 176px;
-  border: 2px solid rgb(4, 4, 98);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 img {
   height: 172px;
   width: 172px;
@@ -195,13 +194,17 @@ img {
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
   border: 2px solid rgb(4, 4, 98);
 }
-/* 
+
 .admin-icon {
-  width: 40px;
-  height: 40px;
-} */
-/* .icon-container {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.icon-container {
+  height: 50px;
+  padding: 10px;
   margin-bottom: 0px;
   margin-top: 190px;
-} */
+  border: 2px solid rgb(4, 4, 98);
+}
 </style>

@@ -144,7 +144,7 @@ export default {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 175px;
+  padding-left: 260px;
   border: 2px solid rgb(4, 4, 98);
 }
 .card {
@@ -159,7 +159,7 @@ export default {
   margin-top: 0px;
   height: 65px;
   width: 100%;
-  padding-left: 175px;
+  padding-left: 260px;
   padding-bottom: 0px;
   border: 2px solid rgb(4, 4, 98);
 }

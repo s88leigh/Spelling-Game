@@ -8,7 +8,10 @@
     <b-container class="grid-5">
       <b-row align-v="center">
         <b-col>
-          <b-card></b-card>
+          <label class="cat-label">
+            apple
+            <b-card></b-card>
+          </label>
         </b-col>
         <b-col>
           <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
@@ -58,11 +61,31 @@ export default {
   padding: 20px;
   border: 2px solid rgb(4, 4, 98);
 }
-.grid-5 {
+.cat-label {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(34, 6, 96);
+  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
+}
+.category-title {
   margin-top: 80px;
   height: 200px;
   width: 100%;
   padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.card-category-title {
+  display: flex;
+  height: 60px;
+  width: 176px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.grid-5 {
+  margin-top: 80px;
+  height: 240px;
+  width: 100%;
+  padding-top: 05px;
   padding-bottom: 10px;
   border: 2px solid rgb(4, 4, 98);
 }
@@ -113,10 +136,6 @@ h3 {
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }
-.cat-title {
-  color: rgb(34, 6, 96);
-  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
-}
 
 .game-title {
   text-align: center;
@@ -136,16 +155,6 @@ h3 {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
-}
-
-/* 3 Image Boxes */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin: 60px 60px 0px, 60px;
-  justify-content: center;
-  grid-gap: 40px;
-  padding-top: 10px;
 }
 
 /* Empty boxes for spelled words */

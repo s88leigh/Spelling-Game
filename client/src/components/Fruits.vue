@@ -31,27 +31,9 @@
 
     <b-container class="grid-3-words">
       <b-row align-v="center" class="row-category">
-        <b-col>
-          <b-card
-            class="card-words"
-            img-src="client\src\components\img\fruits.png"
-            img-alt="bowl of fruits"
-          ></b-card>
-        </b-col>
-        <b-col>
-          <b-card
-            class="card-words"
-            img-src="client\src\components\img\fruits.png"
-            img-alt="bowl of fruits"
-          ></b-card>
-        </b-col>
-        <b-col>
-          <b-card
-            class="card-words"
-            img-src="client\src\components\img\fruits.png"
-            img-alt="bowl of fruits"
-          ></b-card>
-        </b-col>
+        <b-col class="card-words"></b-col>
+        <b-col class="card-words"></b-col>
+        <b-col class="card-words"></b-col>
       </b-row>
     </b-container>
     <b-container class="underscores-container">
@@ -194,11 +176,9 @@ export default {
 }
 .card-words {
   display: flex;
-  margin-right: 0px;
   height: 60px;
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .row-category {
   padding-left: 50px;

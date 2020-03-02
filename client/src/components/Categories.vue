@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="game-title">Spelling Game</h1>
+    <b-container class="title-container">
+      <h1 class="game-title">Spelling Game</h1>
+    </b-container>
     <h3 class="category">Choose a Category</h3>
 
     <b-container class="grid-5">
@@ -52,8 +54,13 @@ export default {
 * {
   box-sizing: border-box;
 }
+.title-container {
+  /* margin-top: 20px; */
+  padding: 20px;
+  border: 2px solid rgb(4, 4, 98);
+}
 .grid-5 {
-  margin-top: 60px;
+  margin-top: 80px;
   height: 200px;
   width: 100%;
   padding-top: 10px;
@@ -67,7 +74,18 @@ export default {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.admin-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.icon-container {
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 0px;
+  margin-top: 220px;
+  border: 2px solid rgb(4, 4, 98);
+}
 html {
   min-height: 100vh;
 }
@@ -192,19 +210,6 @@ img {
   font-size: 50px;
   color: black;
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
-  border: 2px solid rgb(4, 4, 98);
-}
-
-.admin-icon {
-  width: 50px;
-  height: 50px;
-  border: 2px solid rgb(4, 4, 98);
-}
-.icon-container {
-  height: 50px;
-  padding: 10px;
-  margin-bottom: 0px;
-  margin-top: 190px;
   border: 2px solid rgb(4, 4, 98);
 }
 </style>

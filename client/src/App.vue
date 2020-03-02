@@ -78,13 +78,13 @@ h3 {
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }
-.icon-container {
+/* .icon-container {
   margin-bottom: 0px;
   margin-top: 300px;
 }
 .admin-icon {
   width: 40px;
   height: 40px;
-}
+} */
 </style>>
 

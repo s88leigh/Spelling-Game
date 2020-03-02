@@ -41,15 +41,9 @@
     </b-container>
 
     <b-container class="icon-container">
-      <b-row class="text-center">
-        <b-col></b-col>
-        <b-col cols="5">
-          <a href="Admin.html">
-            <img src="img\admin.png" class="admin-icon" alt="admin-icon" />
-          </a>
-        </b-col>
-        <b-col></b-col>
-      </b-row>
+      <a href="Admin.html">
+        <img src="img\admin.png" class="admin-icon" alt="admin-icon" />
+      </a>
     </b-container>
   </div>
 </template>
@@ -109,20 +103,21 @@ export default {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .admin-icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 2px solid rgb(4, 4, 98);
 }
 .icon-container {
-  height: 50px;
+  text-align: center;
+  height: 60px;
   padding: 10px;
   margin-bottom: 0px;
-  margin-top: 220px;
+  margin-top: 180px;
   border: 2px solid rgb(4, 4, 98);
 }
-html {
+/* html {
   min-height: 100vh;
-}
+} */
 .nav-image {
   width: 30px;
   height: 30px;

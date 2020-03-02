@@ -52,6 +52,7 @@ export default {
   padding: 0px;
   border: 2px solid rgb(4, 4, 98);
 }
+/* 3 image container */
 .grid-3 {
   margin-top: 80px;
   height: 200px;
@@ -129,8 +130,6 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-
-/* 3 Image Boxes */
 
 /* Empty boxes for spelled words */
 .grid-word {

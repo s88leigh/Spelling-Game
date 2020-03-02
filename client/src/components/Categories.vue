@@ -9,21 +9,33 @@
       <b-row align-v="center">
         <b-col>
           <label class="cat-label">
-            apple
-            <b-card></b-card>
+            Fruits
+            <b-card img-src="src\assets\img\fruits.png" img-alt="bowl of fruits"></b-card>
           </label>
         </b-col>
         <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          <label class="cat-label">
+            Vegetables
+            <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          </label>
         </b-col>
         <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          <label class="cat-label">
+            Animals
+            <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          </label>
         </b-col>
         <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          <label class="cat-label">
+            Furniture
+            <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          </label>
         </b-col>
         <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          <label class="cat-label">
+            Colors
+            <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+          </label>
         </b-col>
       </b-row>
     </b-container>

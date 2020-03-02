@@ -16,17 +16,17 @@
     <h3 class="category">Choose a Category</h3>
 
     <b-container class="grid-3">
-      <b-row align-v="center" class="row-category">
-        <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
-        </b-col>
-        <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
-        </b-col>
-        <b-col>
-          <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
-        </b-col>
-      </b-row>
+      <!-- <b-row align-v="center" class="row-category"> -->
+      <!-- <b-col> -->
+      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+      <!-- </b-col> -->
+      <!-- <b-col> -->
+      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+      <!-- </b-col> -->
+      <!-- <b-col> -->
+      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+      <!-- </b-col> -->
+      <!-- </b-row> -->
     </b-container>
 
     <b-container class="grid-3-words">
@@ -154,12 +154,12 @@ export default {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 175px;
   border: 2px solid rgb(4, 4, 98);
 }
 .card {
-  display: flex;
-  margin-right: 0px;
+  float: left;
+  margin-right: 40px;
   height: 176px;
   width: 176px;
   border: 2px solid rgb(4, 4, 98);

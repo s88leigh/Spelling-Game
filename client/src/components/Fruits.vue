@@ -205,7 +205,6 @@ img {
 /* Words under images */
 .spelled-words {
   float: left;
-  /* padding-top: 0px; */
   margin-right: 40px;
   height: 60px;
   width: 176px;
@@ -236,7 +235,6 @@ img {
   display: flex;
   width: 100%;
   margin-top: 0px;
-  /* margin-left: 60px; */
   grid-template-columns: repeat(26, auto);
   padding: 10px;
   grid-gap: 3px;
@@ -259,10 +257,6 @@ img {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/* * {
-  box-sizing: border-box;
-} */
 
 /* .cat-info-container {
   grid-column: 1 / -1;

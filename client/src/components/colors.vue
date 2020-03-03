@@ -193,12 +193,13 @@ img {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Container for words to display under images */
+/* Container for words to display under images */
 .grid-3-words {
   margin-top: 0px;
-  height: 65px;
+  padding-top: 0px;
+  height: 60px;
   width: 100%;
   padding-left: 260px;
-  padding-bottom: 0px;
   border: 2px solid rgb(4, 4, 98);
 }
 /* Words under images */
@@ -208,7 +209,7 @@ img {
   height: 60px;
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
-  padding-bottom: 2px;
+  padding-bottom: 0px;
   font-size: 40px;
   text-align: center;
   color: rgb(34, 6, 96);
@@ -218,9 +219,11 @@ img {
   height: 65px;
   margin-top: 25px;
   margin-bottom: 25px;
+  padding-top: 0px;
 }
 .col-md-auto {
   text-align: center;
+  margin-bottom: 25px;
   letter-spacing: 4px;
   font-size: 40px;
   color: black;
@@ -232,7 +235,6 @@ img {
   display: flex;
   width: 100%;
   margin-top: 0px;
-  margin-left: 60px;
   grid-template-columns: repeat(26, auto);
   padding: 10px;
   grid-gap: 3px;

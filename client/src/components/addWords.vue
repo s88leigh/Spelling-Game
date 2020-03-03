@@ -1,8 +1,14 @@
 <template>
   <div class="container">
-    <input type="text" class="add-word" placeholder="Add New Word" v-model="newWord" />
+    <input
+      type="text"
+      class="word-input"
+      placeholder="Add New Word"
+      v-model="newWord"
+      @keyup.enter="addWord"
+    />
     <h4>New Spelling Words</h4>
-    <div v-for="newWord in newWordList" :key="newWord.id" class="newWord">{{newWord.category}}</div>
+    <div v-for="word in wordList" :key="word.id" class="word-list">{{word.category}}</div>
   </div>
 </template>
 
@@ -12,7 +18,8 @@ export default {
   data() {
     return {
       newWord: "",
-      newWordList: [
+      idForWord: 3,
+      wordList: [
         {
           id: 1,
           category: "Fruits",
@@ -25,6 +32,17 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    addWord() {
+      this.wordList.push({
+        id: this.idForWord,
+        category: this.newWord,
+        completed: false
+      });
+      this.newWord = "";
+      this.idForWord++;
+    }
   }
 };
 </script>

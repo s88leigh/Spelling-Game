@@ -42,7 +42,7 @@
 
     <b-container class="icon-container">
       <a href="Admin.html">
-        <img src="img\admin.png" class="admin-icon" alt="admin-icon" />
+        <img src="..\assets\img\admin.png" class="admin-icon" alt="admin-icon" />
       </a>
     </b-container>
   </div>

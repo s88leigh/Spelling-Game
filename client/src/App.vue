@@ -57,7 +57,7 @@ export default {
 <style >
 #app {
   width: 100%;
-  height: 750px;
+  height: 720px;
   background: radial-gradient(azure, lightskyblue);
 }
 </style>>

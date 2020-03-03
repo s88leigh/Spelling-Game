@@ -30,7 +30,7 @@
       </b-row>
     </b-container>
     <!--Row of Letters-->
-    <b-container class="alpha-container">
+    <div class="alpha-container">
       <b-button class="button-card">
         <b-card class="alpha-card" text-align="center">a</b-card>
       </b-button>
@@ -109,7 +109,7 @@
       <b-button class="button-card">
         <b-card class="alpha-card">z</b-card>
       </b-button>
-    </b-container>
+    </div>
     <Letters />
   </div>
 </template>
@@ -186,6 +186,7 @@ img {
 }
 .card {
   float: left;
+  padding-bottom: 0px;
   margin-right: 40px;
   height: 176px;
   width: 176px;
@@ -195,6 +196,7 @@ img {
 /* Container for words to display under images */
 .grid-3-words {
   margin-top: 0px;
+  padding-top: 0px;
   height: 60px;
   width: 100%;
   padding-left: 260px;
@@ -203,11 +205,12 @@ img {
 /* Words under images */
 .spelled-words {
   float: left;
+  /* padding-top: 0px; */
   margin-right: 40px;
   height: 60px;
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
-  padding-bottom: 2px;
+  padding-bottom: 0px;
   font-size: 40px;
   text-align: center;
   color: rgb(34, 6, 96);
@@ -217,9 +220,11 @@ img {
   height: 65px;
   margin-top: 25px;
   margin-bottom: 25px;
+  padding-top: 0px;
 }
 .col-md-auto {
   text-align: center;
+  margin-bottom: 25px;
   letter-spacing: 4px;
   font-size: 40px;
   color: black;
@@ -231,7 +236,7 @@ img {
   display: flex;
   width: 100%;
   margin-top: 0px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   grid-template-columns: repeat(26, auto);
   padding: 10px;
   grid-gap: 3px;

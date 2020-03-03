@@ -5,7 +5,7 @@
     </b-container>
     <h3 class="category">Choose a Category</h3>
 
-    <b-container class="grid-5">
+    <div class="grid-5">
       <b-row align-v="center">
         <b-col>
           <label class="cat-label">
@@ -38,7 +38,7 @@
           </label>
         </b-col>
       </b-row>
-    </b-container>
+    </div>
 
     <b-container class="icon-container">
       <a href="Admin.html">

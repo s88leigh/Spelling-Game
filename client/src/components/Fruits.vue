@@ -1,7 +1,7 @@
 <template>
   <div class="fruits">
     <router-link to="/">home</router-link>
-
+    <!--Back Arrow icon-->
     <b-container>
       <b-row>
         <b-button
@@ -14,18 +14,19 @@
 
     <h1 class="game-title">Spelling Game</h1>
     <h3 class="category">Choose a Category</h3>
-
+    <!--Image cards-->
     <b-container class="grid-3">
       <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
       <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
       <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
     </b-container>
-
+    <!--Word containers-->
     <b-container class="grid-3-words">
       <b-col class="card-words"></b-col>
       <b-col class="card-words"></b-col>
       <b-col class="card-words"></b-col>
     </b-container>
+    <!--Underscore container-->
     <b-container class="underscores-container">
       <b-row class="justify-content-md-center">
         <b-col col lg="2">1 of 3</b-col>
@@ -33,7 +34,7 @@
         <b-col col lg="2">3 of 3</b-col>
       </b-row>
     </b-container>
-
+    <!--Row of Letters-->
     <b-container class="alpha-container">
       <b-button class="button-card">
         <b-card class="alpha-card" text-align="center">a</b-card>

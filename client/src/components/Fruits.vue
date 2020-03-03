@@ -260,25 +260,24 @@ img {
   align-self: auto;
 }
 
-/* alphabets */
 .alpha-container {
   display: flex;
   width: 100%;
   margin-top: 0px;
-  padding-left: 0px;
-  /* grid-template-columns: repeat(26, auto); */
-  /* padding: 10px; */
+  margin-left: 60px;
 
-  /* grid-gap: 3px; */
-  /* justify-content: center; */
+  grid-template-columns: repeat(26, auto);
+  padding: 10px;
+
+  grid-gap: 3px;
+  justify-content: center;
   border: 2px solid rgb(4, 4, 98);
 }
 .alpha-card {
   margin: 1px;
   text-justify: center;
-
   float: left;
-  margin-top: 10px;
+  margin-top: 0px;
   background: rgb(158, 215, 250);
   height: 65px;
   width: 45px;
@@ -289,13 +288,10 @@ img {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.button-card {
-  /* float: left; */
-}
 .underscores-container {
   height: 65px;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .col-md-auto {

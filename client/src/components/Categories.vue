@@ -49,10 +49,8 @@
 </template>
 <script>
 // import img from "./components/img.vue";
-
 export default {
   name: "categories",
-
   data() {
     return {};
   }
@@ -133,17 +131,14 @@ export default {
 .nav-container {
   margin-top: 10px;
 }
-
 h1 {
   color: rgba(3, 162, 171, 0.898);
   text-shadow: 2px 2px 4px #01172d;
 }
-
 h3 {
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }
-
 .game-title {
   text-align: center;
   font-size: 3em;
@@ -163,7 +158,6 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-
 /* Empty boxes for spelled words */
 .grid-word {
   display: grid;
@@ -173,7 +167,6 @@ h3 {
 }
 .card-word {
   font-size: 40px;
-
   text-align: center;
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
@@ -185,14 +178,12 @@ h3 {
   text-align: center;
   font-size: 30px;
 }
-
 img {
   height: 172px;
   width: 172px;
   object-fit: cover;
   align-self: auto;
 }
-
 /* alphabets */
 .alpha-container {
   display: grid;
@@ -218,7 +209,6 @@ img {
   margin-top: 50px;
   margin-bottom: 40px;
 }
-
 .col-md-auto {
   text-align: center;
   letter-spacing: 14px;

@@ -14,8 +14,7 @@ export default {};
 </script>
 
 <style>
-.underscores-container {%;
-    width: 100
+.underscores-container {
   height: 65px;
   margin-top: 100px;
   margin-bottom: 10px;

@@ -30,7 +30,7 @@
       </b-row>
     </b-container>
     <!--Row of Letters-->
-    <b-container class="alpha-container">
+    <div class="alpha-container">
       <b-button class="button-card">
         <b-card class="alpha-card" text-align="center">a</b-card>
       </b-button>
@@ -109,7 +109,7 @@
       <b-button class="button-card">
         <b-card class="alpha-card">z</b-card>
       </b-button>
-    </b-container>
+    </div>
     <Letters />
   </div>
 </template>
@@ -192,7 +192,7 @@ img {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* Container for words to display under images */
+
 /* Container for words to display under images */
 .grid-3-words {
   margin-top: 0px;

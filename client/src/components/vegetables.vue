@@ -30,7 +30,7 @@
       </b-row>
     </b-container>
     <!--Row of Letters-->
-    <b-container class="alpha-container">
+    <div class="alpha-container">
       <b-button class="button-card">
         <b-card class="alpha-card" text-align="center">a</b-card>
       </b-button>
@@ -109,7 +109,7 @@
       <b-button class="button-card">
         <b-card class="alpha-card">z</b-card>
       </b-button>
-    </b-container>
+    </div>
     <Letters />
   </div>
 </template>

@@ -274,7 +274,10 @@ img {
   border: 2px solid rgb(4, 4, 98);
 }
 .alpha-card {
-  /* display: flex; */
+  margin: 1px;
+  text-justify: center;
+
+  float: left;
   margin-top: 10px;
   background: rgb(158, 215, 250);
   height: 65px;
@@ -287,7 +290,7 @@ img {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .button-card {
-  padding: 1px;
+  /* float: left; */
 }
 .underscores-container {
   height: 65px;

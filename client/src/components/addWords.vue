@@ -8,7 +8,7 @@
       @keyup.enter="addWord"
     />
     <h4>New Spelling Words</h4>
-    <div v-for="word in wordList" :key="word.id" class="word-list">{{word.category}}</div>
+    <div v-for="word in wordList" :key="word.id" class="word-list">{{word.name}}</div>
   </div>
 </template>
 
@@ -22,13 +22,11 @@ export default {
       wordList: [
         {
           id: 1,
-          category: "Fruits",
-          completed: false
+          name: "apple"
         },
         {
           id: 2,
-          category: "Animals",
-          completed: false
+          name: "banana"
         }
       ]
     };
@@ -37,8 +35,7 @@ export default {
     addWord() {
       this.wordList.push({
         id: this.idForWord,
-        category: this.newWord,
-        completed: false
+        name: this.newWord
       });
       this.newWord = "";
       this.idForWord++;

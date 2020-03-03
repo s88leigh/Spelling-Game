@@ -7,6 +7,7 @@
       <animals />
       <furniture />
       <colors />
+      <addWords />
     </router-view>
 
     <router-link to="/">home</router-link>
@@ -20,6 +21,7 @@
     <router-link to="/furniture">furniture</router-link>
 
     <router-link to="/colors">colors</router-link>
+    <router-link to="/addWords">addWords</router-link>
   </div>
 </template>
 
@@ -28,11 +30,13 @@ import categories from "./components/categories.vue";
 // import Fruits from "./components/Fruits.vue";
 // import furniture from "./components/furniture.vue";
 // import Letters from "./components/Letters.vue";
+// import addWords from "./components/addWords.vue";
 
 export default {
   name: "App",
   components: {
     categories
+    // addWords
     // Fruits
   },
   data() {

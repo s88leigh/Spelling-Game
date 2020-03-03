@@ -7,6 +7,7 @@ import vegetables from './components/vegetables'
 import animals from './components/animals'
 import furniture from './components/furniture'
 import colors from './components/colors'
+import addWords from './components/addWords'
 
 Vue.config.productionTip = false
 
@@ -30,6 +31,7 @@ const router = new VueRouter({
         { path: '/animals', component: animals },
         { path: '/furniture', component: furniture },
         { path: '/colors', component: colors },
+        { path: '/addWords', component: addWords },
     ],
     mode: 'history'
 

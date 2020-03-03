@@ -15,9 +15,9 @@
     <h3 class="subtitle">Choose a Category</h3>
     <!--Image cards-->
     <b-container class="grid-3">
-      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
-      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
-      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+      <b-card img-src="assets\img\lettuce.png" img-alt="lettuce"></b-card>
+      <b-card img-src="assets\img\carrot.png" img-alt="carrot"></b-card>
+      <b-card img-src="assets\img\pumpkin.png" img-alt="pumpkin"></b-card>
     </b-container>
     <!--Word containers-->
     <b-container class="grid-3-words">

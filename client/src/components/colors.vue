@@ -4,7 +4,7 @@
     <b-container class="nav-container">
       <b-row>
         <b-button
-          img-href=".\components\img\arrow.png"
+          img-href=".\src\assets\img\arrow.png"
           img-alt="back arrow icon"
           img-start
         >Back to Categories</b-button>
@@ -15,9 +15,9 @@
     <h3 class="subtitle">Choose a Category</h3>
     <!--Image cards-->
     <b-container class="grid-3">
-      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
-      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
-      <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
+      <b-card img-src="assets\img\blue.png" img-alt="color blue"></b-card>
+      <b-card img-src="assets\img\colorOrange.png" img-alt="color orange"></b-card>
+      <b-card img-src="assets\img\green.png" img-alt="color green"></b-card>
     </b-container>
     <!--Word containers-->
     <b-container class="grid-3-words">

@@ -1,6 +1,12 @@
 <template>
   <div class="container">
-    <h1>Add New Spelling Words</h1>
+    <input type="text" class="add-word" placeholder="Add New Word" v-model="newWord" />
+    <h4>New Spelling Words</h4>
+    <b-container
+      v-for="newWord in newWordList"
+      :key="newWord.id"
+      class="newWord"
+    >{{newWord.category}}</b-container>
   </div>
 </template>
 
@@ -8,7 +14,21 @@
 export default {
   name: "addWords",
   data() {
-    return {};
+    return {
+      newWord: "",
+      newWordList: [
+        {
+          id: 1,
+          category: "Fruits",
+          completed: false
+        },
+        {
+          id: 2,
+          category: "Animals",
+          completed: false
+        }
+      ]
+    };
   }
 };
 </script>
@@ -19,7 +39,8 @@ export default {
 }
 .container {
   max-width: 500px;
-  max-height: 200px;
+  max-height: 500px;
+  border: 2px solid rgb(4, 4, 98);
 }
 </style>
 

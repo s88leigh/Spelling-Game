@@ -1,15 +1,11 @@
 <template>
   <div class="fruits">
     <!--Back Arrow icon-->
-    <b-container class="nav-container">
-      <b-row>
-        <b-button
-          img-href=".\components\img\arrow.png"
-          img-alt="back arrow icon"
-          img-start
-        >Back to Categories</b-button>
-      </b-row>
-    </b-container>
+    <b-row class="nav-container">
+      <b-button class="back-arrow">
+        <b-img href=".\src\assets\img\arrow.png" img-alt="back arrow icon" />Back to Categories
+      </b-button>
+    </b-row>
 
     <h1 class="game-title">Spelling Game</h1>
     <h3 class="subtitle">Choose a Category</h3>
@@ -133,14 +129,15 @@ export default {
 
 
 <style scoped>
-.back-arrow-image {
-  width: 30px;
-  height: 30px;
+.back-arrow {
+  margin-left: 30px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid rgb(4, 4, 98);
 }
 
 .nav-container {
-  margin-top: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   border: 2px solid rgb(4, 4, 98);
 }
 

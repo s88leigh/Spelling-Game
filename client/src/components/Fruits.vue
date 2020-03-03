@@ -1,8 +1,7 @@
 <template>
   <div class="fruits">
-    <router-link to="/">home</router-link>
     <!--Back Arrow icon-->
-    <b-container>
+    <b-container class="nav-container">
       <b-row>
         <b-button
           img-href=".\components\img\arrow.png"
@@ -13,7 +12,7 @@
     </b-container>
 
     <h1 class="game-title">Spelling Game</h1>
-    <h3 class="category">Choose a Category</h3>
+    <h3 class="subtitle">Choose a Category</h3>
     <!--Image cards-->
     <b-container class="grid-3">
       <b-card img-src="client\src\components\img\fruits.png" img-alt="bowl of fruits"></b-card>
@@ -29,9 +28,9 @@
     <!--Underscore container-->
     <b-container class="underscores-container">
       <b-row class="justify-content-md-center">
-        <b-col col lg="2">1 of 3</b-col>
+        <b-col col lg="2"></b-col>
         <b-col cols="12" md="auto">Content</b-col>
-        <b-col col lg="2">3 of 3</b-col>
+        <b-col col lg="2"></b-col>
       </b-row>
     </b-container>
     <!--Row of Letters-->
@@ -134,13 +133,50 @@ export default {
 
 
 <style scoped>
-.title-container {
-  padding: 0px;
+.back-arrow-image {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-container {
+  margin-top: 10px;
+  padding-top: 10px;
   border: 2px solid rgb(4, 4, 98);
 }
-/* 3 image container */
+
+h1 {
+  color: rgba(3, 162, 171, 0.898);
+  text-shadow: 2px 2px 4px #01172d;
+}
+
+h3 {
+  color: rgb(34, 6, 96);
+  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
+}
+
+.game-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  border: 2px solid rgb(4, 4, 98);
+}
+/* Card images */
+img {
+  height: 172px;
+  width: 172px;
+  object-fit: cover;
+  align-self: auto;
+}
+/* 3 image card containers */
 .grid-3 {
-  margin-top: 80px;
+  margin-top: 60px;
   height: 200px;
   width: 100%;
   padding-top: 10px;
@@ -156,6 +192,7 @@ export default {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* Container for words to display under images */
 .grid-3-words {
   margin-top: 0px;
   height: 65px;
@@ -164,6 +201,7 @@ export default {
   padding-bottom: 0px;
   border: 2px solid rgb(4, 4, 98);
 }
+/* Words under images */
 .card-words {
   float: left;
   margin-right: 40px;
@@ -171,77 +209,19 @@ export default {
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
 }
-.row-category {
-  padding-left: 50px;
-  height: 180px;
-}
 
-html {
-  min-height: 100vh;
-}
 /* * {
   box-sizing: border-box;
 } */
-.nav-image {
-  width: 30px;
-  height: 30px;
-}
-.row {
-  width: 100%;
-  height: 30px;
-  margin-left: 0px;
-}
-.row-title {
-  height: 40px;
-}
-.nav-container {
-  margin-top: 10px;
-}
 
-h1 {
-  color: rgba(3, 162, 171, 0.898);
-  text-shadow: 2px 2px 4px #01172d;
-}
-
-h3 {
-  color: rgb(34, 6, 96);
-  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
-}
-.cat-title {
-  color: rgb(34, 6, 96);
-  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
-}
-
-.game-title {
-  text-align: center;
-  font-size: 3em;
-  margin-bottom: 15px;
-  margin-top: 0px;
-}
-.category {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 0px;
-}
-.game-info {
-  font-size: 1.5em;
-}
-.cat-info-container {
+/* .cat-info-container {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
-}
+} */
 
-/* Empty boxes for spelled words */
-.grid-word {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  grid-gap: 40px;
-}
 .card-word {
   font-size: 40px;
-
   text-align: center;
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
@@ -249,34 +229,35 @@ h3 {
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
 }
-.cat-title {
+.underscores-container {
+  height: 65px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.col-md-auto {
   text-align: center;
-  font-size: 30px;
+  letter-spacing: 4px;
+  font-size: 40px;
+  color: black;
+  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
+  border: 2px solid rgb(4, 4, 98);
 }
-
-img {
-  height: 172px;
-  width: 172px;
-  object-fit: cover;
-  align-self: auto;
-}
-
+/* letter container */
 .alpha-container {
   display: flex;
   width: 100%;
   margin-top: 0px;
   margin-left: 60px;
-
   grid-template-columns: repeat(26, auto);
   padding: 10px;
-
   grid-gap: 3px;
   justify-content: center;
   border: 2px solid rgb(4, 4, 98);
 }
+/* letter cards */
 .alpha-card {
   margin: 1px;
-  text-justify: center;
+  /* text-align: center; */
   float: left;
   margin-top: 0px;
   background: rgb(158, 215, 250);
@@ -288,19 +269,5 @@ img {
   text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.underscores-container {
-  height: 65px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.col-md-auto {
-  text-align: center;
-  letter-spacing: 4px;
-  font-size: 40px;
-  color: black;
-  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
-  border: 2px solid rgb(4, 4, 98);
 }
 </style>

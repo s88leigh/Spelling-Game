@@ -10,6 +10,9 @@
     </router-view>
     <ul>
       <li>
+        <router-link to="/">home</router-link>
+      </li>
+      <li>
         <router-link to="/fruits">fruits</router-link>
       </li>
       <li>

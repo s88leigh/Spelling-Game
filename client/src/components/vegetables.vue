@@ -175,13 +175,30 @@ img {
   align-self: auto;
 }
 /* 3 image card containers */
+.grid-3 {
+  margin-top: 60px;
+  height: 200px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 265px;
+  border: 2px solid rgb(4, 4, 98);
+}
+.card {
+  float: left;
+  margin-right: 40px;
+  height: 176px;
+  width: 176px;
+  border: 2px solid rgb(4, 4, 98);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* Container for words to display under images */
 .grid-3-words {
   margin-top: 0px;
   padding-top: 0px;
   height: 60px;
   width: 100%;
-  padding-left: 260px;
+  padding-left: 265px;
   border: 2px solid rgb(4, 4, 98);
 }
 /* Words under images */

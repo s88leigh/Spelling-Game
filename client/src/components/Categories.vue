@@ -91,7 +91,7 @@ export default {
   width: 100%;
   padding-top: 05px;
   padding-bottom: 10px;
-  padding-left: 35px;
+  padding-left: 40px;
   border: 2px solid rgb(4, 4, 98);
 }
 .card {

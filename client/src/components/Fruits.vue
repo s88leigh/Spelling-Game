@@ -181,7 +181,7 @@ img {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 260px;
+  padding-left: 265px;
   border: 2px solid rgb(4, 4, 98);
 }
 .card {
@@ -199,7 +199,7 @@ img {
   padding-top: 0px;
   height: 60px;
   width: 100%;
-  padding-left: 260px;
+  padding-left: 265px;
   border: 2px solid rgb(4, 4, 98);
 }
 /* Words under images */

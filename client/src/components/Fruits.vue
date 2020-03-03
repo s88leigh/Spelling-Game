@@ -129,6 +129,9 @@ export default {
 
 
 <style scoped>
+* {
+  box-sizing: border-box;
+}
 .back-arrow {
   margin-left: 30px;
   width: 200px;

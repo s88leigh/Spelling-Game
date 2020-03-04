@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <categories />
     <router-view>
       <categories />
       <fruits />

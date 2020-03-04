@@ -18,25 +18,33 @@
         <b-col>
           <label class="cat-label">
             Vegetables
-            <b-card img-src="assets\img\veg.png" img-alt="vegetables"></b-card>
+            <b-card>
+              <img src="..\assets\img\veg.png" img-alt="vegetables" />
+            </b-card>
           </label>
         </b-col>
         <b-col>
           <label class="cat-label">
             Animals
-            <b-card img-src="assets\img\animals.png" img-alt="animals"></b-card>
+            <b-card>
+              <img src="..\assets\img\animals.png" img-alt="animals" />
+            </b-card>
           </label>
         </b-col>
         <b-col>
           <label class="cat-label">
             Furniture
-            <b-card img-src="assets\img\furniture.png" img-alt="furniture"></b-card>
+            <b-card>
+              <img src="..\assets\img\furniture.png" img-alt="furniture" />
+            </b-card>
           </label>
         </b-col>
         <b-col>
           <label class="cat-label">
             Colors
-            <b-card img-src="assets\img\colors.png" img-alt="colors"></b-card>
+            <b-card>
+              <img src="..\assets\img\colors.png" img-alt="colors" />
+            </b-card>
           </label>
         </b-col>
       </b-row>

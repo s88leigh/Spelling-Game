@@ -1,62 +1,52 @@
 <template>
   <div>
-    <b-container class="title-container">
-      <h1 class="game-title">Spelling Game</h1>
-    </b-container>
     <h3 class="category">Choose a Category</h3>
 
-    <div class="grid-5">
-      <b-row align-v="center">
-        <b-col>
-          <label class="cat-label">
-            Fruits
-            <b-card>
-              <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" />
-            </b-card>
-          </label>
-        </b-col>
-        <b-col>
-          <label class="cat-label">
-            Vegetables
-            <b-card>
-              <img src="..\assets\img\veg.png" img-alt="vegetables" />
-            </b-card>
-          </label>
-        </b-col>
-        <b-col>
-          <label class="cat-label">
-            Animals
-            <b-card>
-              <img src="..\assets\img\animals.png" img-alt="animals" />
-            </b-card>
-          </label>
-        </b-col>
-        <b-col>
-          <label class="cat-label">
-            Furniture
-            <b-card>
-              <img src="..\assets\img\furniture.png" img-alt="furniture" />
-            </b-card>
-          </label>
-        </b-col>
-        <b-col>
-          <label class="cat-label">
-            Colors
-            <b-card>
-              <img src="..\assets\img\colors.png" img-alt="colors" />
-            </b-card>
-          </label>
-        </b-col>
-      </b-row>
-    </div>
-
-    <b-container class="icon-container">
-      <a href="Admin.html">
-        <img src="..\assets\img\admin.png" class="admin-icon" alt="admin-icon" />
-      </a>
+    <b-container>
+      <div @click="handleClick">
+        <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
+      </div>
     </b-container>
+
+    <div class="grid-5">
+      <label class="cat-label">
+        Fruits
+        <b-button class="card">
+          <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
+        </b-button>
+      </label>
+
+      <label class="cat-label">
+        Vegetables
+        <b-button class="card">
+          <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
+        </b-button>
+      </label>
+
+      <label class="cat-label">
+        Animals
+        <b-button class="card">
+          <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
+        </b-button>
+      </label>
+
+      <label class="cat-label">
+        Furniture
+        <b-button class="card">
+          <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
+        </b-button>
+      </label>
+
+      <label class="cat-label">
+        Colors
+        <b-button class="card">
+          <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
+        </b-button>
+      </label>
+    </div>
   </div>
 </template>
+
 <script>
 // import img from "./components/img.vue";
 export default {
@@ -101,29 +91,26 @@ export default {
   width: 100%;
   padding-top: 05px;
   padding-bottom: 10px;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   border: 2px solid rgb(4, 4, 98);
 }
 .card {
-  display: flex;
+  /* padding: 20px; */
+  justify-content: center;
   height: 176px;
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.admin-icon {
-  width: 50px;
-  height: 50px;
+.image {
+  width: 175px;
+  height: 175px;
   border: 2px solid rgb(4, 4, 98);
 }
-.icon-container {
-  text-align: center;
-  height: 60px;
-  padding: 10px;
-  margin-bottom: 0px;
-  margin-top: 180px;
-  border: 2px solid rgb(4, 4, 98);
+.card-body {
+  padding: 0px;
 }
+
 /* html {
   min-height: 100vh;
 } */
@@ -142,10 +129,7 @@ export default {
 .nav-container {
   margin-top: 10px;
 }
-h1 {
-  color: rgba(3, 162, 171, 0.898);
-  text-shadow: 2px 2px 4px #01172d;
-}
+
 h3 {
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
@@ -189,12 +173,7 @@ h3 {
   text-align: center;
   font-size: 30px;
 }
-img {
-  height: 172px;
-  width: 172px;
-  object-fit: cover;
-  align-self: auto;
-}
+
 /* alphabets */
 .alpha-container {
   display: grid;

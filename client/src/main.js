@@ -8,6 +8,7 @@ import animals from './components/animals'
 import furniture from './components/furniture'
 import colors from './components/colors'
 import addWords from './components/addWords'
+import game from './components/game'
 
 Vue.config.productionTip = false
 
@@ -26,6 +27,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
         { path: '/', component: categories },
+        { path: '/game', component: game },
         { path: '/fruits', component: fruits },
         { path: '/vegetables', component: vegetables },
         { path: '/animals', component: animals },

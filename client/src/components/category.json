@@ -116,33 +116,141 @@ let Fruits = [
         "img": "broccoli.png",
     },
     {
-        "id": "9",
-        "name": "papaya",
-        "img": "papaya.png",
+        "id": "4",
+        "name": "cabbage",
+        "img": "cabbage.png",
+    },
+    {
+        "id": "5",
+        "name": "carrot",
+        "img": "carrot.png",
+    },
+    {
+        "id": "6",
+        "name": "corn",
+        "img": "corn.png",
+    },
+    {
+        "id": "7",
+        "name": "cucumber",
+        "img": "cucumber.png",
+    },
+    {
+        "id": "8",
+        "name": "lemon",
+        "img": "lemon.png",
     },
     {
         "id": "9",
-        "name": "papaya",
-        "img": "papaya.png",
+        "name": "lime",
+        "img": "lime.png",
+    },
+    {
+        "id": "10",
+        "name": "potatoe",
+        "img": "lime.png",
+    },
+    {
+        "id": "11",
+        "name": "pumpkin",
+        "img": "pumpkin.png",
+    }
+]
+
+let animals = [
+    {
+        "id": "1",
+        "name": "bird",
+        "img": "bird.png",
+    },
+    {
+        "id": "2",
+        "name": "cat",
+        "img": "cat.png",
+    },
+    {
+        "id": "3",
+        "name": "camel",
+        "img": "camel.png",
+    },
+    {
+        "id": "4",
+        "name": "chicken",
+        "img": "chicken.png",
+    },
+    {
+        "id": "5",
+        "name": "cow",
+        "img": "cow.png",
+    },
+    {
+        "id": "6",
+        "name": "deer",
+        "img": "deer.png",
+    },
+    {
+        "id": "7",
+        "name": "dog",
+        "img": "dog.png",
+    },
+    {
+        "id": "8",
+        "name": "dolphin",
+        "img": "dolphin.png",
     },
     {
         "id": "9",
-        "name": "papaya",
-        "img": "papaya.png",
+        "name": "duck",
+        "img": "duck.png",
+    },
+    {
+        "id": "10",
+        "name": "elephant",
+        "img": "elephant.png",
     },
     {
         "id": "9",
-        "name": "papaya",
-        "img": "papaya.png",
+        "name": "lime",
+        "img": "lime.png",
     },
     {
         "id": "9",
-        "name": "papaya",
-        "img": "papaya.png",
+        "name": "lime",
+        "img": "lime.png",
     },
     {
         "id": "9",
-        "name": "papaya",
-        "img": "papaya.png",
+        "name": "lime",
+        "img": "lime.png",
+    },
+    {
+        "id": "9",
+        "name": "lime",
+        "img": "lime.png",
+    },
+    {
+        "id": "9",
+        "name": "lime",
+        "img": "lime.png",
+    },
+    {
+        "id": "9",
+        "name": "lime",
+        "img": "lime.png",
+    },
+    {
+        "id": "9",
+        "name": "lime",
+        "img": "lime.png",
+    },
+    {
+        "id": "9",
+        "name": "lime",
+        "img": "lime.png",
+    },
+    {
+        "id": "9",
+        "name": "lime",
+        "img": "lime.png",
     },
 ]

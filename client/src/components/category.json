@@ -5,22 +5,22 @@ let Category = [
         "img": "fruits.png",
     },
     {
-        "id": "1",
+        "id": "2",
         "name": "Vegetables",
         "img": "veg.png",
     },
     {
-        "id": "1",
+        "id": "3",
         "name": "Furniture",
         "img": "furniture.png",
     },
     {
-        "id": "1",
+        "id": "4",
         "name": "Colors",
         "img": "colors.png",
     },
     {
-        "id": "1",
+        "id": "5",
         "name": "Animals",
         "img": "animals.png",
     }
@@ -29,47 +29,120 @@ let Category = [
 let Fruits = [
     {
         "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "name": "apple",
+        "img": "apple.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "2",
+        "name": "banana",
+        "img": "banana.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "3",
+        "name": "cherry",
+        "img": "cherry.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "4",
+        "name": "blueberry",
+        "img": "blueberry.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "5",
+        "name": "orange",
+        "img": "orange.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "6",
+        "name": "grapes",
+        "img": "grapes.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "7",
+        "name": "kiwi",
+        "img": "kiwi.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "8",
+        "name": "mango",
+        "img": "mango.png",
     },
     {
-        "id": "1",
-        "name": "Fruits",
-        "img": "fruits.png",
+        "id": "9",
+        "name": "papaya",
+        "img": "papaya.png",
+    },
+    {
+        "id": "10",
+        "name": "pear",
+        "img": "pear.png",
+    },
+    {
+        "id": "11",
+        "name": "pineapple",
+        "img": "pineapple.png",
+    },
+    {
+        "id": "12",
+        "name": "raspberry",
+        "img": "raspberry.png",
+    },
+    {
+        "id": "13",
+        "name": "strawberry",
+        "img": "strawberry.png",
+    },
+    {
+        "id": "14",
+        "name": "watermelon",
+        "img": "watermelon.png",
     }
+]
+
+    let vegetables = [
+    {
+        "id": "1",
+        "name": "asparagus",
+        "img": "asparagus.png",
+    },
+    {
+        "id": "2",
+        "name": "beets",
+        "img": "beets.png",
+    },
+    {
+        "id": "3",
+        "name": "broccoli",
+        "img": "broccoli.png",
+    },
+    {
+        "id": "9",
+        "name": "papaya",
+        "img": "papaya.png",
+    },
+    {
+        "id": "9",
+        "name": "papaya",
+        "img": "papaya.png",
+    },
+    {
+        "id": "9",
+        "name": "papaya",
+        "img": "papaya.png",
+    },
+    {
+        "id": "9",
+        "name": "papaya",
+        "img": "papaya.png",
+    },
+    {
+        "id": "9",
+        "name": "papaya",
+        "img": "papaya.png",
+    },
+    {
+        "id": "9",
+        "name": "papaya",
+        "img": "papaya.png",
+    },
 ]

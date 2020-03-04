@@ -97,7 +97,7 @@ let Fruits = [
         "name": "watermelon",
         "img": "watermelon.png",
     }
-]
+],
 
     let vegetables = [
     {
@@ -155,7 +155,7 @@ let Fruits = [
         "name": "pumpkin",
         "img": "pumpkin.png",
     }
-]
+],
 
 let animals = [
     {
@@ -209,48 +209,128 @@ let animals = [
         "img": "elephant.png",
     },
     {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
+        "id": "11",
+        "name": "duckling",
+        "img": "duckling.png",
+    },
+    {
+        "id": "12",
+        "name": "girrafe",
+        "img": "girrage.png",
+    },
+    {
+        "id": "13",
+        "name": "goat",
+        "img": "goat.png",
+    },
+    {
+        "id": "14",
+        "name": "horse",
+        "img": "horse.png",
+    },
+    {
+        "id": "15",
+        "name": "kitten",
+        "img": "kitten.png",
+    },
+    {
+        "id": "16",
+        "name": "lion",
+        "img": "lion.png",
+    },
+    {
+        "id": "17",
+        "name": "monkey",
+        "img": "monkey.png",
+    },
+    {
+        "id": "18",
+        "name": "pig",
+        "img": "pig.png",
+    },
+    {
+        "id": "19",
+        "name": "rabbit",
+        "img": "rabbit.png",
+    },
+    {
+        "id": "20",
+        "name": "rhino",
+        "img": "rhino.png",
+    }
+],
+
+let furniture = [
+    {
+        "id": "1",
+        "name": "bed",
+        "img": "bed.png",
+    },
+    {
+        "id": "2",
+        "name": "chair",
+        "img": "chair.png",
+    },
+    {
+        "id": "3",
+        "name": "lamp",
+        "img": "lamp.png",
+    },
+    {
+        "id": "4",
+        "name": "sofa",
+        "img": "sofa.png",
+    },
+    {
+        "id": "5",
+        "name": "table",
+        "img": "table.png",
+    }
+]
+let colors = [
+    {
+        "id": "1",
+        "name": "red",
+        "img": "red.png",
+    },
+    {
+        "id": "2",
+        "name": "blue",
+        "img": "blue.png",
+    },
+    {
+        "id": "3",
+        "name": "yellow",
+        "img": "yellow.png",
+    },
+    {
+        "id": "4",
+        "name": "purple",
+        "img": "purple.png",
+    },
+    {
+        "id": "5",
+        "name": "green",
+        "img": "green.png",
+    },
+    {
+        "id": "6",
+        "name": "black",
+        "img": "black.png",
+    },
+    {
+        "id": "7",
+        "name": "white",
+        "img": "white.png",
+    },
+    {
+        "id": "8",
+        "name": "pink",
+        "img": "pink.png",
     },
     {
         "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
-    {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
-    {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
-    {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
-    {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
-    {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
-    {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
-    {
-        "id": "9",
-        "name": "lime",
-        "img": "lime.png",
-    },
+        "name": "orange",
+        "img": "colorOrange.png",
+    }
 ]

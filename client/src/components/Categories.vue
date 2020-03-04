@@ -10,7 +10,9 @@
         <b-col>
           <label class="cat-label">
             Fruits
-            <b-card img-src="src\assets\img\fruits.png" img-alt="bowl of fruits"></b-card>
+            <b-card>
+              <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" />
+            </b-card>
           </label>
         </b-col>
         <b-col>

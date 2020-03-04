@@ -1,0 +1,75 @@
+let Category = [
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Vegetables",
+        "img": "veg.png",
+    },
+    {
+        "id": "1",
+        "name": "Furniture",
+        "img": "furniture.png",
+    },
+    {
+        "id": "1",
+        "name": "Colors",
+        "img": "colors.png",
+    },
+    {
+        "id": "1",
+        "name": "Animals",
+        "img": "animals.png",
+    }
+],
+
+let Fruits = [
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    },
+    {
+        "id": "1",
+        "name": "Fruits",
+        "img": "fruits.png",
+    }
+]

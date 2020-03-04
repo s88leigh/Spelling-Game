@@ -1,0 +1,307 @@
+{
+    "Fruits": [
+        {
+            "id": "1",
+            "name": "apple",
+            "img": "apple.png",
+        },
+        {
+            "id": "2",
+            "name": "banana",
+            "img": "banana.png",
+        },
+        {
+            "id": "3",
+            "name": "cherry",
+            "img": "cherry.png",
+        },
+        {
+            "id": "4",
+            "name": "blueberry",
+            "img": "blueberry.png",
+        },
+        {
+            "id": "5",
+            "name": "orange",
+            "img": "orange.png",
+        },
+        {
+            "id": "6",
+            "name": "grapes",
+            "img": "grapes.png",
+        },
+        {
+            "id": "7",
+            "name": "kiwi",
+            "img": "kiwi.png",
+        },
+        {
+            "id": "8",
+            "name": "mango",
+            "img": "mango.png",
+        },
+        {
+            "id": "9",
+            "name": "papaya",
+            "img": "papaya.png",
+        },
+        {
+            "id": "10",
+            "name": "pear",
+            "img": "pear.png",
+        },
+        {
+            "id": "11",
+            "name": "pineapple",
+            "img": "pineapple.png",
+        },
+        {
+            "id": "12",
+            "name": "raspberry",
+            "img": "raspberry.png",
+        },
+        {
+            "id": "13",
+            "name": "strawberry",
+            "img": "strawberry.png",
+        },
+        {
+            "id": "14",
+            "name": "watermelon",
+            "img": "watermelon.png",
+        }
+    ],
+    "Vegetables": [
+        {
+            "id": "1",
+            "name": "asparagus",
+            "img": "asparagus.png",
+        },
+        {
+            "id": "2",
+            "name": "beets",
+            "img": "beets.png",
+        },
+        {
+            "id": "3",
+            "name": "broccoli",
+            "img": "broccoli.png",
+        },
+        {
+            "id": "4",
+            "name": "cabbage",
+            "img": "cabbage.png",
+        },
+        {
+            "id": "5",
+            "name": "carrot",
+            "img": "carrot.png",
+        },
+        {
+            "id": "6",
+            "name": "corn",
+            "img": "corn.png",
+        },
+        {
+            "id": "7",
+            "name": "cucumber",
+            "img": "cucumber.png",
+        },
+        {
+            "id": "8",
+            "name": "lemon",
+            "img": "lemon.png",
+        },
+        {
+            "id": "9",
+            "name": "lime",
+            "img": "lime.png",
+        },
+        {
+            "id": "10",
+            "name": "potatoe",
+            "img": "lime.png",
+        },
+        {
+            "id": "11",
+            "name": "pumpkin",
+            "img": "pumpkin.png",
+        }
+    ],
+    "Animals": [
+        {
+            "id": "1",
+            "name": "bird",
+            "img": "bird.png",
+        },
+        {
+            "id": "2",
+            "name": "cat",
+            "img": "cat.png",
+        },
+        {
+            "id": "3",
+            "name": "camel",
+            "img": "camel.png",
+        },
+        {
+            "id": "4",
+            "name": "chicken",
+            "img": "chicken.png",
+        },
+        {
+            "id": "5",
+            "name": "cow",
+            "img": "cow.png",
+        },
+        {
+            "id": "6",
+            "name": "deer",
+            "img": "deer.png",
+        },
+        {
+            "id": "7",
+            "name": "dog",
+            "img": "dog.png",
+        },
+        {
+            "id": "8",
+            "name": "dolphin",
+            "img": "dolphin.png",
+        },
+        {
+            "id": "9",
+            "name": "duck",
+            "img": "duck.png",
+        },
+        {
+            "id": "10",
+            "name": "elephant",
+            "img": "elephant.png",
+        },
+        {
+            "id": "11",
+            "name": "duckling",
+            "img": "duckling.png",
+        },
+        {
+            "id": "12",
+            "name": "girrafe",
+            "img": "girrage.png",
+        },
+        {
+            "id": "13",
+            "name": "goat",
+            "img": "goat.png",
+        },
+        {
+            "id": "14",
+            "name": "horse",
+            "img": "horse.png",
+        },
+        {
+            "id": "15",
+            "name": "kitten",
+            "img": "kitten.png",
+        },
+        {
+            "id": "16",
+            "name": "lion",
+            "img": "lion.png",
+        },
+        {
+            "id": "17",
+            "name": "monkey",
+            "img": "monkey.png",
+        },
+        {
+            "id": "18",
+            "name": "pig",
+            "img": "pig.png",
+        },
+        {
+            "id": "19",
+            "name": "rabbit",
+            "img": "rabbit.png",
+        },
+        {
+            "id": "20",
+            "name": "rhino",
+            "img": "rhino.png",
+        }
+    ],
+    "Furniture": [
+        {
+            "id": "1",
+            "name": "bed",
+            "img": "bed.png",
+        },
+        {
+            "id": "2",
+            "name": "chair",
+            "img": "chair.png",
+        },
+        {
+            "id": "3",
+            "name": "lamp",
+            "img": "lamp.png",
+        },
+        {
+            "id": "4",
+            "name": "sofa",
+            "img": "sofa.png",
+        },
+        {
+            "id": "5",
+            "name": "table",
+            "img": "table.png",
+        }
+    ],
+    "Colors": [
+        {
+            "id": "1",
+            "name": "red",
+            "img": "red.png",
+        },
+        {
+            "id": "2",
+            "name": "blue",
+            "img": "blue.png",
+        },
+        {
+            "id": "3",
+            "name": "yellow",
+            "img": "yellow.png",
+        },
+        {
+            "id": "4",
+            "name": "purple",
+            "img": "purple.png",
+        },
+        {
+            "id": "5",
+            "name": "green",
+            "img": "green.png",
+        },
+        {
+            "id": "6",
+            "name": "black",
+            "img": "black.png",
+        },
+        {
+            "id": "7",
+            "name": "white",
+            "img": "white.png",
+        },
+        {
+            "id": "8",
+            "name": "pink",
+            "img": "pink.png",
+        },
+        {
+            "id": "9",
+            "name": "orange",
+            "img": "colorOrange.png",
+        }
+    ]
+}

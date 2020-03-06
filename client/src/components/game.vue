@@ -101,6 +101,17 @@ import rabbit from "../assets/img/rabbit.png";
 import ram from "../assets/img/ram.png";
 import rasp from "../assets/img/rasp.png";
 import raspberry from "../assets/img/raspberry.png";
+import red from "../assets/img/red.png";
+import rhino from "../assets/img/rhino.png";
+import sofa from "../assets/img/sofa.png";
+import squirrel from "../assets/img/squirrel.png";
+import stool from "../assets/img/stool.png";
+import strawberry from "../assets/img/strawberry.png";
+import table from "../assets/img/table.png";
+import tiger from "../assets/img/tiger.png";
+import watermelon from "../assets/img/watermelon";
+import yellow from "../assets/img/yellow";
+import zebra from "../assets/img/zebra";
 
 export default {
   name: "game",

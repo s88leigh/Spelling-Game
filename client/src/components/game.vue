@@ -129,6 +129,46 @@ export default {
           {
             word: "banana",
             img: bananaImg
+          },
+          {
+            word: "pear",
+            img: pearImg
+          },
+          {
+            word: "cherry",
+            img: cherryImg
+          },
+          {
+            word: "orange",
+            img: orangeImg
+          },
+          {
+            word: "grape",
+            img: grapeImg
+          },
+          {
+            word: "kiwi",
+            img: kiwiImg
+          },
+          {
+            word: "mango",
+            img: mangoImg
+          },
+          {
+            word: "papaya",
+            img: papayaImg
+          },
+          {
+            word: "pineapple",
+            img: pineappleImg
+          },
+          {
+            word: "raspberry",
+            img: raspberryImg
+          },
+          {
+            word: "strawberry",
+            img: strawberryImg
           }
         ],
         vegetables: [
@@ -151,6 +191,26 @@ export default {
           {
             word: "cabbage",
             img: cabbageImg
+          },
+          {
+            word: "carrot",
+            img: carrotImg
+          },
+          {
+            word: "cucumber",
+            img: cucumberImg
+          },
+          {
+            word: "lettuce",
+            img: lettuceImg
+          },
+          {
+            word: "potatoe",
+            img: potatoeImg
+          },
+          {
+            word: "pumpkin",
+            img: pumpkinImg
           }
         ],
         animals: [

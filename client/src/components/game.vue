@@ -1,50 +1,89 @@
 <template>
-  <div class="fruits">
+  <!-- <div class="fruits">
 
 <div v-if="selected.type">
-    <span v-for="(word, i) in selected.list" :key="i">
-      <h3 @click="select(i)">{{word.word}}</h3>
-      <img :src="word.img"/>
+    <span v-for="(item, i) in selected.list" :key="i">
+      <h3 @click="select(i)">{{item.img}}</h3>
+      <img :src="item.img"/>
+      
     </span>
 </div>
-
+<div v-if="selected.type">
+    <span v-for="(item, i) in selected.list" :key="i">
+      <button @click="select(i)">{{item.img}}</button>
+<img :src="item.img"/>
+    </span>
+</div>
     <span v-for="(item, i) in options" :key="i">
       <h3 @click="select(i)">{{item.type}}</h3>
     </span>
 
     
 
-  </div>
+  </div> -->
+  <div>
+       <div v-for="word in currentWords" :key="word.word" @click="changeWord(word.word)">
+            <img :src="word.img" :alt="word.word" />
+        </div>
+    </div>
+ 
 </template>
 
 <script>
 // import letters from "./components/letters.vue";
 // import img from "./components/img.vue";
+import appleImg from "../assets/img/apple.png";
+import bananaImg from "../assets/img/banana.png";
+import beetsImg from "../assets/img/beets.png";
 
 export default {
-  name: "fruits",
-
+  name: "game",
+  props: [
+    "currentCategory"
+  ],
   data() {
     return {
-      options: [
-        {
-          type: "fruits",
-          list: [{
-              word: "apple",
-              img: '/img/apple.jpeg'
-              }, "bannana", "orange"]
-        },
-        {
-          type: "furniture",
-          list: ["chair", "table", "desk"]
-        }
-      ],
-      selected: {}
+      currentWord: null,
+      numRightLetters: 0,
+      words: {
+          "fruits": [
+              {
+                word: "apple",
+                img: appleImg
+              },
+              {
+                word: "banana",
+                img: bananaImg
+              },
+          ],
+         "vegetables": [
+ {
+                word: "beets",
+                img: beetsImg
+              },
+         ]
+      }
     };
   },
+  computed: {
+      currentWords: function() {
+          return this.words[this.currentCategory];
+      },
+      renderWord: function() {
+          if (this.currentWord === null) {
+              return null;
+          }
+          return this.currentWord.split("").map((letter, index) => {
+              if (this.numRightLetters > index) {
+                  return letter;
+              }
+              return " _ ";
+          }).join("");
+      }
+  },
   methods: {
-    select: function(i) {
-      this.selected = this.options[i];
+    changeWord: function(word) {
+      this.currentWord = word;
     }
   }
 };

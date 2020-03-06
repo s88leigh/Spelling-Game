@@ -3,9 +3,16 @@
     <b-container class="title-container">
       <h1 class="game-title">Spelling Game</h1>
     </b-container>
-    <categories />
+    <categories 
+    v-if = "currentCategory === null"
+    @change-category="setCategory"
+    />
 
-    <router-view></router-view>
+    <game 
+      :currentCategory="currentCategory"
+    />
+    
+    <!-- <router-view></router-view>
 
     <router-link to="/">home</router-link>
 
@@ -18,7 +25,7 @@
     <router-link to="/furniture">furniture</router-link>
 
     <router-link to="/colors">colors</router-link>
-    <router-link to="/addWords">addWords</router-link>
+    <router-link to="/addWords">addWords</router-link> -->
 
     <b-container class="icon-container">
       <b-button>
@@ -30,19 +37,27 @@
 
 <script>
 import categories from "./components/categories.vue";
-// import Fruits from "./components/Fruits.vue";
+import game from "./components/game.vue";
 
 export default {
   name: "App",
   components: {
-    categories
+    categories,
+    game
   },
   data() {
     return {
       title: "Spelling Game",
+      currentCategory: null,
 
       words: []
     };
+  },
+  methods: {
+    setCategory: function(category) {
+      this.currentCategory=category;
+    }
+    
   }
 };
 </script>

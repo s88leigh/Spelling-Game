@@ -3,8 +3,11 @@
     <h3 class="category">Choose a Category</h3>
 
     <b-container>
-      <div @click="handleClick">
+      <div @click="handleClick('fruits')" >
         <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
+      </div>
+      <div @click="handleClick('vegetables')" >
+         <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
       </div>
     </b-container>
 
@@ -53,6 +56,11 @@ export default {
   name: "categories",
   data() {
     return {};
+  },
+  methods: {
+    handleClick: function(category) {
+      this.$emit("change-category", category);
+    }
   }
 };
 </script>

@@ -59,8 +59,8 @@ import cat2Img from "../assets/img/cat2.png";
 import chairImg from "../assets/img/chair.png";
 import cherryImg from "../assets/img/cherry.png";
 import chickenImg from "../assets/img/chicken.png";
+import chicken2Img from "../assets/img/chicken.png";
 import colorOrangeImg from "../assets/img/colorOrange.png";
-import colorsImg from "../assets/img/colors.png";
 import cornImg from "../assets/img/colors.png";
 import cowImg from "../assets/img/cow.png";
 import cucumberImg from "../assets/img/cucumber.png";
@@ -81,7 +81,8 @@ import gray1Img from "../assets/img/gray1.png";
 import grapeImg from "../assets/img/grape.png";
 import greenImg from "../assets/img/green.png";
 import horseImg from "../assets/img/horse.png";
-import horse3Img from "../assets/img/horse.png";
+import horse2Img from "../assets/img/horse2.png";
+import horse3Img from "../assets/img/horse3.png";
 import horse4Img from "../assets/img/horse4.png";
 import kittenImg from "../assets/img/kitten.png";
 import kiwiImg from "../assets/img/kiwi.png";
@@ -94,7 +95,7 @@ import lionImg from "../assets/img/lion.png";
 import mangoImg from "../assets/img/mango.png";
 import monkeyImg from "../assets/img/monkey.png";
 import monkey1Img from "../assets/img/monkey1.png";
-import mirror from "../assets/img/mirror.png";
+import mirrorImg from "../assets/img/mirror.png";
 import onionImg from "../assets/img/onion.png";
 import orangeImg from "../assets/img/orange.png";
 import orange2Img from "../assets/img/orange2.png";
@@ -121,6 +122,7 @@ import tableImg from "../assets/img/table.png";
 import tigerImg from "../assets/img/tiger.png";
 import watermelonImg from "../assets/img/watermelon.png";
 import whiteImg from "../assets/img/white.png";
+import white1Img from "../assets/img/white1.png";
 import yellowImg from "../assets/img/yellow.png";
 import zebraImg from "../assets/img/zebra.png";
 
@@ -142,6 +144,14 @@ export default {
             img: bananaImg
           },
           {
+            word: "blueberry",
+            img: blueberryImg
+          },
+          {
+            word: "blueberry",
+            img: blueberry2Img
+          },
+          {
             word: "pear",
             img: pearImg
           },
@@ -158,6 +168,14 @@ export default {
             img: grapeImg
           },
           {
+            word: "lemon",
+            img: lemonImg
+          },
+          {
+            word: "lime",
+            img: limeImg
+          },
+          {
             word: "kiwi",
             img: kiwiImg
           },
@@ -166,8 +184,16 @@ export default {
             img: mangoImg
           },
           {
+            word: "orange",
+            img: orange2Img
+          },
+          {
             word: "papaya",
             img: papayaImg
+          },
+          {
+            word: "rasp",
+            img: raspImg
           },
           {
             word: "pineapple",
@@ -180,12 +206,16 @@ export default {
           {
             word: "strawberry",
             img: strawberryImg
+          },
+          {
+            word: "watermelon",
+            img: watermelonImg
           }
         ],
         vegetables: [
           {
-            word: "beets",
-            img: beetsImg
+            word: "beet",
+            img: beetImg
           },
           {
             word: "asparagus",
@@ -204,6 +234,10 @@ export default {
             img: cabbageImg
           },
           {
+            word: "corn",
+            img: cornImg
+          },
+          {
             word: "carrot",
             img: carrotImg
           },
@@ -220,6 +254,10 @@ export default {
             img: potatoeImg
           },
           {
+            word: "onion",
+            img: onionImg
+          },
+          {
             word: "pumpkin",
             img: pumpkinImg
           }
@@ -234,6 +272,10 @@ export default {
             img: bird3Img
           },
           {
+            word: "camel",
+            img: camelImg
+          },
+          {
             word: "cat",
             img: catImg
           },
@@ -244,6 +286,10 @@ export default {
           {
             word: "dog",
             img: dogImg
+          },
+          {
+            word: "dog",
+            img: dog1Img
           },
           {
             word: "chicken",
@@ -291,7 +337,7 @@ export default {
           },
           {
             word: "goat",
-            img: goat1Img
+            img: goatImg
           },
           {
             word: "horse",
@@ -299,7 +345,7 @@ export default {
           },
           {
             word: "horse",
-            img: horse1Img
+            img: horse2Img
           },
           {
             word: "horse",
@@ -316,6 +362,10 @@ export default {
           {
             word: "monkey",
             img: monkeyImg
+          },
+          {
+            word: "monkey",
+            img: monkey1Img
           },
           {
             word: "lion",
@@ -372,6 +422,14 @@ export default {
             img: sofaImg
           },
           {
+            word: "lamp",
+            img: lampImg
+          },
+          {
+            word: "sofa",
+            img: sofaImg
+          },
+          {
             word: "bench",
             img: benchImg
           },
@@ -382,19 +440,18 @@ export default {
           {
             word: "bench",
             img: bench4Img
-          ,
-           {
+          },
+          {
             word: "desk",
             img: deskImg
           },
-           {
+          {
             word: "dresser",
             img: dresserImg
           },
-           {
+          {
             word: "mirror",
             img: mirrorImg
-          },
           }
         ],
         colors: [
@@ -423,6 +480,10 @@ export default {
             img: purpleImg
           },
           {
+            word: "lavender",
+            img: lavenderImg
+          },
+          {
             word: "orange",
             img: colorOrangeImg
           },
@@ -438,6 +499,18 @@ export default {
             word: "gray",
             img: grayImg
           },
+          {
+            word: "gray",
+            img: gray1Img
+          },
+          {
+            word: "pink",
+            img: pinkImg
+          },
+          {
+            word: "pink",
+            img: pink1Img
+          }
         ]
       }
     };

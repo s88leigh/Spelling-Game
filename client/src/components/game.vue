@@ -38,25 +38,25 @@
 import appleImg from "../assets/img/apple.png";
 import bananaImg from "../assets/img/banana.png";
 import beetsImg from "../assets/img/beets.png";
-import asparagus from "../assets/img/asparagus.png";
-import bed from "../assets/img/bed.png";
-import bird2 from "../assets/img/bird.png";
-import bird3 from "../assets/img/bird2.png";
-import black from "../assets/img/black.png";
-import blue from "../assets/img/blue.png";
+import asparagusImg from "../assets/img/asparagus.png";
+import bedImg from "../assets/img/bed.png";
+import bird2Img from "../assets/img/bird.png";
+import bird3Img from "../assets/img/bird2.png";
+import blackImg from "../assets/img/black.png";
+import blueImg from "../assets/img/blue.png";
 import blueberry from "../assets/img/blueberry.png";
 import blueberry2 from "../assets/img/blueberry2.png";
-import broc1 from "../assets/img/broc1.png";
-import broc2 from "../assets/img/broc2.png";
-import cabbage from "../assets/img/cabbage.png";
+import broc1Img from "../assets/img/broc1.png";
+import broc2Img from "../assets/img/broc2.png";
+import cabbageImg from "../assets/img/cabbage.png";
 import camel from "../assets/img/camel.png";
 import carrot from "../assets/img/carrot.png";
-import cat from "../assets/img/cat.png";
-import cat2 from "../assets/img/cat2.png";
-import chair from "../assets/img/chair.png";
+import catImg from "../assets/img/cat.png";
+import cat2Img from "../assets/img/cat2.png";
+import chairImg from "../assets/img/chair.png";
 import cherry from "../assets/img/cherry.png";
 import chicken from "../assets/img/chicken.png";
-import colorOrange from "../assets/img/colorOrange.png";
+import colorOrangeImg from "../assets/img/colorOrange.png";
 import colors from "../assets/img/colors.png";
 import corn from "../assets/img/colors.png";
 import cow from "../assets/img/cow.png";
@@ -71,7 +71,7 @@ import elephant from "../assets/img/elephant.png";
 import girrafe from "../assets/img/girrafe.png";
 import goat from "../assets/img/goat.png";
 import grapes from "../assets/img/grapes.png";
-import green from "../assets/img/green.png";
+import greenImg from "../assets/img/green.png";
 import horse from "../assets/img/horse.png";
 import horse3 from "../assets/img/horse.png";
 import horse4 from "../assets/img/horse4.png";
@@ -96,12 +96,12 @@ import pink from "../assets/img/pink.png";
 import pink1 from "../assets/img/pink1.png";
 import potatoe from "../assets/img/potatoe.png";
 import pumpkin from "../assets/img/pumpkin.png";
-import purple from "../assets/img/purple.png";
+import purpleImg from "../assets/img/purple.png";
 import rabbit from "../assets/img/rabbit.png";
 import ram from "../assets/img/ram.png";
 import rasp from "../assets/img/rasp.png";
 import raspberry from "../assets/img/raspberry.png";
-import red from "../assets/img/red.png";
+import redImg from "../assets/img/red.png";
 import rhino from "../assets/img/rhino.png";
 import sofa from "../assets/img/sofa.png";
 import squirrel from "../assets/img/squirrel.png";
@@ -110,7 +110,7 @@ import strawberry from "../assets/img/strawberry.png";
 import table from "../assets/img/table.png";
 import tiger from "../assets/img/tiger.png";
 import watermelon from "../assets/img/watermelon";
-import yellow from "../assets/img/yellow";
+import yellowImg from "../assets/img/yellow";
 import zebra from "../assets/img/zebra";
 
 export default {
@@ -135,6 +135,80 @@ export default {
           {
             word: "beets",
             img: beetsImg
+          },
+          {
+            word: "asparagus",
+            img: asparagusImg
+          },
+          {
+            word: "broccoli",
+            img: broc2Img
+          },
+          {
+            word: "broccoli",
+            img: broc1Img
+          },
+          {
+            word: "cabbage",
+            img: cabbageImg
+          }
+        ],
+        animals: [
+          {
+            word: "bird",
+            img: bird2Img
+          },
+          {
+            word: "bird",
+            img: bird3Img
+          },
+          {
+            word: "cat",
+            img: catImg
+          },
+          {
+            word: "cat",
+            img: cat2Img
+          }
+        ],
+        furniture: [
+          {
+            word: "bed",
+            img: bedImg
+          },
+          {
+            word: "chair",
+            img: chairImg
+          }
+        ],
+        colors: [
+          {
+            word: "red",
+            img: redImg
+          },
+          {
+            word: "yellow",
+            img: yellowImg
+          },
+          {
+            word: "blue",
+            img: blueImg
+          },
+          {
+            word: "black",
+            img: blackImg
+          },
+          {
+            word: "green",
+            img: greenImg
+          },
+          {
+            word: "purple",
+            img: purpleImg
+          },
+          {
+            word: "orange",
+            img: colorOrangeImg
           }
         ]
       }

@@ -37,81 +37,92 @@
 // import img from "./components/img.vue";
 import appleImg from "../assets/img/apple.png";
 import bananaImg from "../assets/img/banana.png";
-import beetsImg from "../assets/img/beets.png";
+import beetImg from "../assets/img/beet.png";
 import asparagusImg from "../assets/img/asparagus.png";
 import bedImg from "../assets/img/bed.png";
+import benchImg from "../assets/img/bench.png";
+import bench1Img from "../assets/img/bench1.png";
+import bench4Img from "../assets/img/bench4.png";
 import bird2Img from "../assets/img/bird.png";
 import bird3Img from "../assets/img/bird2.png";
 import blackImg from "../assets/img/black.png";
 import blueImg from "../assets/img/blue.png";
-import blueberry from "../assets/img/blueberry.png";
-import blueberry2 from "../assets/img/blueberry2.png";
+import blueberryImg from "../assets/img/blueberry.png";
+import blueberry2Img from "../assets/img/blueberry2.png";
 import broc1Img from "../assets/img/broc1.png";
 import broc2Img from "../assets/img/broc2.png";
 import cabbageImg from "../assets/img/cabbage.png";
-import camel from "../assets/img/camel.png";
-import carrot from "../assets/img/carrot.png";
+import camelImg from "../assets/img/camel.png";
+import carrotImg from "../assets/img/carrot.png";
 import catImg from "../assets/img/cat.png";
 import cat2Img from "../assets/img/cat2.png";
 import chairImg from "../assets/img/chair.png";
-import cherry from "../assets/img/cherry.png";
-import chicken from "../assets/img/chicken.png";
+import cherryImg from "../assets/img/cherry.png";
+import chickenImg from "../assets/img/chicken.png";
 import colorOrangeImg from "../assets/img/colorOrange.png";
-import colors from "../assets/img/colors.png";
-import corn from "../assets/img/colors.png";
-import cow from "../assets/img/cow.png";
-import cucumber from "../assets/img/cucumber";
-import deer from "../assets/img/deer.png";
-import dog from "../assets/img/dog.png";
-import dolphin from "../assets/img/dolphin.png";
-import duck from "../assets/img/duck.png";
-import duck1 from "../assets/img/duck1.png";
-import duckling from "../assets/img/duckling.png";
-import elephant from "../assets/img/elephant.png";
-import girrafe from "../assets/img/girrafe.png";
-import goat from "../assets/img/goat.png";
-import grapes from "../assets/img/grapes.png";
+import colorsImg from "../assets/img/colors.png";
+import cornImg from "../assets/img/colors.png";
+import cowImg from "../assets/img/cow.png";
+import cucumberImg from "../assets/img/cucumber.png";
+import deskImg from "../assets/img/desk.png";
+import dresserImg from "../assets/img/dresser.png";
+import deerImg from "../assets/img/deer.png";
+import dogImg from "../assets/img/dog.png";
+import dog1Img from "../assets/img/dog1.png";
+import dolphinImg from "../assets/img/dolphin.png";
+import duckImg from "../assets/img/duck.png";
+import duck1Img from "../assets/img/duck1.png";
+import ducklingImg from "../assets/img/duckling.png";
+import elephantImg from "../assets/img/elephant.png";
+import girrafeImg from "../assets/img/girrafe.png";
+import goatImg from "../assets/img/goat.png";
+import grayImg from "../assets/img/gray.png";
+import gray1Img from "../assets/img/gray1.png";
+import grapeImg from "../assets/img/grape.png";
 import greenImg from "../assets/img/green.png";
-import horse from "../assets/img/horse.png";
-import horse3 from "../assets/img/horse.png";
-import horse4 from "../assets/img/horse4.png";
-import kitten from "../assets/img/kitten.png";
-import kiwi from "../assets/img/kiwi.png";
-import lamp from "../assets/img/lamp.png";
-import lavender from "../assets/img/lavender.png";
-import lemon from "../assets/img/lemon.png";
-import lettuce from "../assets/img/lettuce.png";
-import lime from "../assets/img/lime.png";
-import lion from "../assets/img/lion.png";
-import mango from "../assets/img/mango.png";
-import monkey from "../assets/img/monkey.png";
-import onion from "../assets/img/onion.png";
-import orange from "../assets/img/orange.png";
-import orange2 from "../assets/img/orange2.png";
-import papaya from "../assets/img/papaya.png";
-import pear from "../assets/img/pear.png";
-import pig from "../assets/img/pig.png";
-import pineapple from "../assets/img/pineapple";
-import pink from "../assets/img/pink.png";
-import pink1 from "../assets/img/pink1.png";
-import potatoe from "../assets/img/potatoe.png";
-import pumpkin from "../assets/img/pumpkin.png";
+import horseImg from "../assets/img/horse.png";
+import horse3Img from "../assets/img/horse.png";
+import horse4Img from "../assets/img/horse4.png";
+import kittenImg from "../assets/img/kitten.png";
+import kiwiImg from "../assets/img/kiwi.png";
+import lampImg from "../assets/img/lamp.png";
+import lavenderImg from "../assets/img/lavender.png";
+import lemonImg from "../assets/img/lemon.png";
+import lettuceImg from "../assets/img/lettuce.png";
+import limeImg from "../assets/img/lime.png";
+import lionImg from "../assets/img/lion.png";
+import mangoImg from "../assets/img/mango.png";
+import monkeyImg from "../assets/img/monkey.png";
+import monkey1Img from "../assets/img/monkey1.png";
+import mirror from "../assets/img/mirror.png";
+import onionImg from "../assets/img/onion.png";
+import orangeImg from "../assets/img/orange.png";
+import orange2Img from "../assets/img/orange2.png";
+import papayaImg from "../assets/img/papaya.png";
+import pearImg from "../assets/img/pear.png";
+import pigImg from "../assets/img/pig.png";
+import pineappleImg from "../assets/img/pineapple.png";
+import pinkImg from "../assets/img/pink.png";
+import pink1Img from "../assets/img/pink1.png";
+import potatoeImg from "../assets/img/potatoe.png";
+import pumpkinImg from "../assets/img/pumpkin.png";
 import purpleImg from "../assets/img/purple.png";
-import rabbit from "../assets/img/rabbit.png";
-import ram from "../assets/img/ram.png";
-import rasp from "../assets/img/rasp.png";
-import raspberry from "../assets/img/raspberry.png";
+import rabbitImg from "../assets/img/rabbit.png";
+import ramImg from "../assets/img/ram.png";
+import raspImg from "../assets/img/rasp.png";
+import raspberryImg from "../assets/img/raspberry.png";
 import redImg from "../assets/img/red.png";
-import rhino from "../assets/img/rhino.png";
-import sofa from "../assets/img/sofa.png";
-import squirrel from "../assets/img/squirrel.png";
-import stool from "../assets/img/stool.png";
-import strawberry from "../assets/img/strawberry.png";
-import table from "../assets/img/table.png";
-import tiger from "../assets/img/tiger.png";
-import watermelon from "../assets/img/watermelon";
-import yellowImg from "../assets/img/yellow";
-import zebra from "../assets/img/zebra";
+import rhinoImg from "../assets/img/rhino.png";
+import sofaImg from "../assets/img/sofa.png";
+import squirrelImg from "../assets/img/squirrel.png";
+import stoolImg from "../assets/img/stool.png";
+import strawberryImg from "../assets/img/strawberry.png";
+import tableImg from "../assets/img/table.png";
+import tigerImg from "../assets/img/tiger.png";
+import watermelonImg from "../assets/img/watermelon.png";
+import whiteImg from "../assets/img/white.png";
+import yellowImg from "../assets/img/yellow.png";
+import zebraImg from "../assets/img/zebra.png";
 
 export default {
   name: "game",
@@ -347,6 +358,43 @@ export default {
           {
             word: "chair",
             img: chairImg
+          },
+          {
+            word: "table",
+            img: tableImg
+          },
+          {
+            word: "stool",
+            img: stoolImg
+          },
+          {
+            word: "sofa",
+            img: sofaImg
+          },
+          {
+            word: "bench",
+            img: benchImg
+          },
+          {
+            word: "bench",
+            img: bench1Img
+          },
+          {
+            word: "bench",
+            img: bench4Img
+          ,
+           {
+            word: "desk",
+            img: deskImg
+          },
+           {
+            word: "dresser",
+            img: dresserImg
+          },
+           {
+            word: "mirror",
+            img: mirrorImg
+          },
           }
         ],
         colors: [
@@ -377,7 +425,19 @@ export default {
           {
             word: "orange",
             img: colorOrangeImg
-          }
+          },
+          {
+            word: "white",
+            img: whiteImg
+          },
+          {
+            word: "white",
+            img: white1Img
+          },
+          {
+            word: "gray",
+            img: grayImg
+          },
         ]
       }
     };

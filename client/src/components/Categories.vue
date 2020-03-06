@@ -2,29 +2,38 @@
   <div>
     <h3 class="category">Choose a Category</h3>
 
-    <b-container>
+    <b-container class="grid-5">
       <div @click="handleClick('fruits')" >
         <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
       </div>
       <div @click="handleClick('vegetables')" >
          <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
       </div>
+      <div @click="handleClick('animals')" >
+         <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
+      </div>
+      <div @click="handleClick('furniture')" >
+         <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
+      </div>
+      <div @click="handleClick('colors')" >
+         <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
+      </div>
     </b-container>
 
-    <div class="grid-5">
+    <!-- <div class="grid-5">
       <label class="cat-label">
         Fruits
         <b-button class="card">
           <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
         </b-button>
-      </label>
+      </label> -->
 
-      <label class="cat-label">
+      <!-- <label class="cat-label">
         Vegetables
         <b-button class="card">
           <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
         </b-button>
-      </label>
+      </label> -->
 
       <label class="cat-label">
         Animals
@@ -102,15 +111,18 @@ export default {
   /* padding-left: 40px; */
   border: 2px solid rgb(4, 4, 98);
 }
-.card {
+/* .card {
   /* padding: 20px; */
-  justify-content: center;
+  /* justify-content: center;
   height: 176px;
   width: 176px;
   border: 2px solid rgb(4, 4, 98);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+/* }  */
 .image {
+  float: left;
+  justify-content: center;
+  margin: 20px;
   width: 175px;
   height: 175px;
   border: 2px solid rgb(4, 4, 98);

@@ -72,6 +72,7 @@ export default {
   box-sizing: border-box;
 }
 .title-container {
+  text-align: center;
   padding: 20px;
   border: 2px solid rgb(4, 4, 98);
 }

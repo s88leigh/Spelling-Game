@@ -28,9 +28,9 @@
     <router-link to="/addWords">addWords</router-link> -->
 
     <b-container class="icon-container">
-      <b-button>
+      <div>
         <img src=".\assets\img\admin.png" class="admin-icon" alt="admin-icon" />
-      </b-button>
+      </div>
     </b-container>
   </div>
 </template>
@@ -74,9 +74,14 @@ export default {
 .title-container {
   text-align: center;
   padding: 20px;
+  padding-bottom: 40px;
   border: 2px solid rgb(4, 4, 98);
 }
 h1 {
+  text-align: center;
+  font-size: 60px;
+  /* margin-bottom: 15px; */
+  /* margin-top: 10px; */
   color: rgba(3, 162, 171, 0.898);
   text-shadow: 2px 2px 4px #01172d;
 }
@@ -90,7 +95,7 @@ h1 {
   height: 60px;
   padding: 10px;
   margin-bottom: 0px;
-  margin-top: 180px;
+  margin-top: 50px;
   border: 2px solid rgb(4, 4, 98);
 }
 </style>>

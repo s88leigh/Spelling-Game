@@ -1,60 +1,41 @@
 <template>
   <div>
-    <h3 class="category">Choose a Category</h3>
+    <h3>Choose a Category</h3>
 
-    <b-container class="grid-5">
+    <b-container class="grid-5">  
+      <label class="cat-label">
+        Fruits
       <div @click="handleClick('fruits')" >
         <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
-      </div>
+      </div> 
+      </label>
+      <label class="cat-label">
+        Vegetables
       <div @click="handleClick('vegetables')" >
          <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
       </div>
+      </label>
+      <label class="cat-label">
+        Animals
       <div @click="handleClick('animals')" >
          <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
       </div>
+           </label>
+            <label class="cat-label">
+        Furniture
       <div @click="handleClick('furniture')" >
          <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
       </div>
+          </label>
+          
+      <label class="cat-label">
+        Colors
       <div @click="handleClick('colors')" >
          <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
       </div>
+         </label>
     </b-container>
 
-    <!-- <div class="grid-5">
-      <label class="cat-label">
-        Fruits
-        <b-button class="card">
-          <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
-        </b-button>
-      </label> -->
-
-      <!-- <label class="cat-label">
-        Vegetables
-        <b-button class="card">
-          <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
-        </b-button>
-      </label> -->
-
-      <label class="cat-label">
-        Animals
-        <b-button class="card">
-          <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
-        </b-button>
-      </label>
-
-      <label class="cat-label">
-        Furniture
-        <b-button class="card">
-          <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
-        </b-button>
-      </label>
-
-      <label class="cat-label">
-        Colors
-        <b-button class="card">
-          <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
-        </b-button>
-      </label>
     </div>
   </div>
 </template>
@@ -88,37 +69,17 @@ export default {
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }
-.category-title {
-  margin-top: 80px;
-  height: 200px;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 2px solid rgb(4, 4, 98);
-}
-.card-category-title {
-  display: flex;
-  height: 60px;
-  width: 176px;
-  border: 2px solid rgb(4, 4, 98);
-}
+
 .grid-5 {
   margin-top: 80px;
-  height: 240px;
+  height: 300px;
   width: 100%;
-  padding-top: 05px;
+  padding-top: 0px;
   padding-bottom: 10px;
   /* padding-left: 40px; */
   border: 2px solid rgb(4, 4, 98);
 }
-/* .card {
-  /* padding: 20px; */
-  /* justify-content: center;
-  height: 176px;
-  width: 176px;
-  border: 2px solid rgb(4, 4, 98);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-/* }  */
+
 .image {
   float: left;
   justify-content: center;
@@ -127,44 +88,20 @@ export default {
   height: 175px;
   border: 2px solid rgb(4, 4, 98);
 }
-.card-body {
-  padding: 0px;
-}
-
 /* html {
   min-height: 100vh;
 } */
-.nav-image {
-  width: 30px;
-  height: 30px;
-}
-.row {
-  width: 100%;
-  height: 30px;
-  margin-left: 0px;
-}
-.row-title {
-  height: 40px;
-}
-.nav-container {
-  margin-top: 10px;
-}
 
-h3 {
-  color: rgb(34, 6, 96);
-  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
-}
-.game-title {
-  text-align: center;
-  font-size: 3em;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-.category {
+
+
+h3 {  
   text-align: center;
   margin-bottom: 40px;
   margin-top: 0px;
+  color: rgb(34, 6, 96);
+  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }
+
 .game-info {
   font-size: 1.5em;
 }

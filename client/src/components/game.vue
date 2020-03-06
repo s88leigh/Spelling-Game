@@ -75,6 +75,32 @@ import green from "../assets/img/green.png";
 import horse from "../assets/img/horse.png";
 import horse3 from "../assets/img/horse.png";
 import horse4 from "../assets/img/horse4.png";
+import kitten from "../assets/img/kitten.png";
+import kiwi from "../assets/img/kiwi.png";
+import lamp from "../assets/img/lamp.png";
+import lavender from "../assets/img/lavender.png";
+import lemon from "../assets/img/lemon.png";
+import lettuce from "../assets/img/lettuce.png";
+import lime from "../assets/img/lime.png";
+import lion from "../assets/img/lion.png";
+import mango from "../assets/img/mango.png";
+import monkey from "../assets/img/monkey.png";
+import onion from "../assets/img/onion.png";
+import orange from "../assets/img/orange.png";
+import orange2 from "../assets/img/orange2.png";
+import papaya from "../assets/img/papaya.png";
+import pear from "../assets/img/pear.png";
+import pig from "../assets/img/pig.png";
+import pineapple from "../assets/img/pineapple";
+import pink from "../assets/img/pink.png";
+import pink1 from "../assets/img/pink1.png";
+import potatoe from "../assets/img/potatoe.png";
+import pumpkin from "../assets/img/pumpkin.png";
+import purple from "../assets/img/purple.png";
+import rabbit from "../assets/img/rabbit.png";
+import ram from "../assets/img/ram.png";
+import rasp from "../assets/img/rasp.png";
+import raspberry from "../assets/img/raspberry.png";
 
 export default {
   name: "game",

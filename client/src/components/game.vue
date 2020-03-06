@@ -59,9 +59,9 @@ import cat2Img from "../assets/img/cat2.png";
 import chairImg from "../assets/img/chair.png";
 import cherryImg from "../assets/img/cherry.png";
 import chickenImg from "../assets/img/chicken.png";
-import chicken2Img from "../assets/img/chicken.png";
+import chicken2Img from "../assets/img/chicken2.png";
 import colorOrangeImg from "../assets/img/colorOrange.png";
-import cornImg from "../assets/img/colors.png";
+import cornImg from "../assets/img/corn.png";
 import cowImg from "../assets/img/cow.png";
 import cucumberImg from "../assets/img/cucumber.png";
 import deskImg from "../assets/img/desk.png";
@@ -122,7 +122,6 @@ import tableImg from "../assets/img/table.png";
 import tigerImg from "../assets/img/tiger.png";
 import watermelonImg from "../assets/img/watermelon.png";
 import whiteImg from "../assets/img/white.png";
-import white1Img from "../assets/img/white1.png";
 import yellowImg from "../assets/img/yellow.png";
 import zebraImg from "../assets/img/zebra.png";
 
@@ -328,10 +327,6 @@ export default {
             img: elephantImg
           },
           {
-            word: "dolphin",
-            img: dolphinImg
-          },
-          {
             word: "girrafe",
             img: girrafeImg
           },
@@ -490,10 +485,6 @@ export default {
           {
             word: "white",
             img: whiteImg
-          },
-          {
-            word: "white",
-            img: white1Img
           },
           {
             word: "gray",

@@ -2,41 +2,51 @@
   <div>
     <h3>Choose a Category</h3>
 
-    <b-container class="grid-5">  
+    <b-container class="grid-5">
       <label class="cat-label">
         Fruits
-      <div @click="handleClick('fruits')" >
-        <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
-      </div> 
+        <div @click="handleClick('fruits')">
+          <img
+            src="..\assets\img\fruits.png"
+            img-alt="bowl of fruits"
+            class="image"
+          />
+        </div>
       </label>
       <label class="cat-label">
         Vegetables
-      <div @click="handleClick('vegetables')" >
-         <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
-      </div>
+        <div @click="handleClick('vegetables')">
+          <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
+        </div>
       </label>
       <label class="cat-label">
         Animals
-      <div @click="handleClick('animals')" >
-         <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
-      </div>
-           </label>
-            <label class="cat-label">
+        <div @click="handleClick('animals')">
+          <img
+            src="..\assets\img\animals.png"
+            img-alt="animals"
+            class="image"
+          />
+        </div>
+      </label>
+      <label class="cat-label">
         Furniture
-      <div @click="handleClick('furniture')" >
-         <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
-      </div>
-          </label>
-          
+        <div @click="handleClick('furniture')">
+          <img
+            src="..\assets\img\furniture.png"
+            img-alt="furniture"
+            class="image"
+          />
+        </div>
+      </label>
+
       <label class="cat-label">
         Colors
-      <div @click="handleClick('colors')" >
-         <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
-      </div>
-         </label>
+        <div @click="handleClick('colors')">
+          <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
+        </div>
+      </label>
     </b-container>
-
-    </div>
   </div>
 </template>
 
@@ -59,10 +69,15 @@ export default {
 * {
   box-sizing: border-box;
 }
-.title-container {
-  padding: 20px;
-  border: 2px solid rgb(4, 4, 98);
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: rgb(34, 6, 96);
+  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }
+
 .cat-label {
   font-size: 30px;
   text-align: center;
@@ -71,12 +86,12 @@ export default {
 }
 
 .grid-5 {
-  margin-top: 80px;
+  margin-top: 50px;
   height: 300px;
   width: 100%;
   padding-top: 0px;
   padding-bottom: 10px;
-  /* padding-left: 40px; */
+  padding-left: 30px;
   border: 2px solid rgb(4, 4, 98);
 }
 
@@ -91,16 +106,6 @@ export default {
 /* html {
   min-height: 100vh;
 } */
-
-
-
-h3 {  
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 0px;
-  color: rgb(34, 6, 96);
-  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
-}
 
 .game-info {
   font-size: 1.5em;

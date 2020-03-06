@@ -1,37 +1,19 @@
 <template>
   <div id="app">
-    <b-container class="title-container">
-      <h1 class="game-title">Spelling Game</h1>
-    </b-container>
-    <categories 
-    v-if = "currentCategory === null"
-    @change-category="setCategory"
+    <h1>Spelling Game</h1>
+
+    <categories
+      v-if="currentCategory === null"
+      @change-category="setCategory"
     />
 
-    <game 
-      :currentCategory="currentCategory"
-    />
-    
-    <!-- <router-view></router-view>
+    <game :currentCategory="currentCategory" />
 
-    <router-link to="/">home</router-link>
-
-    <router-link to="/fruits">fruits</router-link>
-
-    <router-link to="/vegetables">vegetables</router-link>
-
-    <router-link to="/animals">animals</router-link>
-
-    <router-link to="/furniture">furniture</router-link>
-
-    <router-link to="/colors">colors</router-link>
-    <router-link to="/addWords">addWords</router-link> -->
-
-    <b-container class="icon-container">
-      <div>
-        <img src=".\assets\img\admin.png" class="admin-icon" alt="admin-icon" />
-      </div>
-    </b-container>
+    <!-- <b-container class="icon-container"> -->
+    <!-- <div> -->
+    <!-- <img src=".\assets\img\admin.png" class="admin-icon" alt="admin-icon" /> -->
+    <!-- </div> -->
+    <!-- </b-container> -->
   </div>
 </template>
 
@@ -55,14 +37,13 @@ export default {
   },
   methods: {
     setCategory: function(category) {
-      this.currentCategory=category;
+      this.currentCategory = category;
     }
-    
   }
 };
 </script>
 
-<style >
+<style>
 #app {
   width: 100%;
   height: 720px;
@@ -71,32 +52,27 @@ export default {
 * {
   box-sizing: border-box;
 }
-.title-container {
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 40px;
-  border: 2px solid rgb(4, 4, 98);
-}
+
 h1 {
   text-align: center;
   font-size: 60px;
-  /* margin-bottom: 15px; */
-  /* margin-top: 10px; */
+  margin-bottom: 20px;
+  margin-top: 10px;
   color: rgba(3, 162, 171, 0.898);
   text-shadow: 2px 2px 4px #01172d;
 }
-.admin-icon {
-  width: 50px;
-  height: 50px;
+/* .admin-icon {
+  justify: center;
+  width: 30px;
+  height: 30px;
   border: 2px solid rgb(4, 4, 98);
-}
-.icon-container {
+} */
+/* .icon-container {
   text-align: center;
-  height: 60px;
-  padding: 10px;
+  height: 40px;
+  padding-bottom: 25px;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 190px;
   border: 2px solid rgb(4, 4, 98);
-}
-</style>>
-
+} */
+</style>

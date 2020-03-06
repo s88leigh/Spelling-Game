@@ -22,11 +22,14 @@
 
   </div> -->
   <div>
-       <div v-for="word in currentWords" :key="word.word" @click="changeWord(word.word)">
-            <img :src="word.img" :alt="word.word" />
-        </div>
+    <div
+      v-for="word in currentWords"
+      :key="word.word"
+      @click="changeWord(word.word)"
+    >
+      <img :src="word.img" :alt="word.word" />
     </div>
- 
+  </div>
 </template>
 
 <script>
@@ -38,48 +41,49 @@ import beetsImg from "../assets/img/beets.png";
 
 export default {
   name: "game",
-  props: [
-    "currentCategory"
-  ],
+  props: ["currentCategory"],
   data() {
     return {
       currentWord: null,
       numRightLetters: 0,
       words: {
-          "fruits": [
-              {
-                word: "apple",
-                img: appleImg
-              },
-              {
-                word: "banana",
-                img: bananaImg
-              },
-          ],
-         "vegetables": [
- {
-                word: "beets",
-                img: beetsImg
-              },
-         ]
+        fruits: [
+          {
+            word: "apple",
+            img: appleImg
+          },
+          {
+            word: "banana",
+            img: bananaImg
+          }
+        ],
+        vegetables: [
+          {
+            word: "beets",
+            img: beetsImg
+          }
+        ]
       }
     };
   },
   computed: {
-      currentWords: function() {
-          return this.words[this.currentCategory];
-      },
-      renderWord: function() {
-          if (this.currentWord === null) {
-              return null;
-          }
-          return this.currentWord.split("").map((letter, index) => {
-              if (this.numRightLetters > index) {
-                  return letter;
-              }
-              return " _ ";
-          }).join("");
+    currentWords: function() {
+      return this.words[this.currentCategory];
+    },
+    renderWord: function() {
+      if (this.currentWord === null) {
+        return null;
       }
+      return this.currentWord
+        .split("")
+        .map((letter, index) => {
+          if (this.numRightLetters > index) {
+            return letter;
+          }
+          return " _ ";
+        })
+        .join("");
+    }
   },
   methods: {
     changeWord: function(word) {
@@ -88,7 +92,6 @@ export default {
   }
 };
 </script>
-
 
 <style scoped>
 * {

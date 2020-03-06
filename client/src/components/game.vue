@@ -229,6 +229,114 @@ export default {
           {
             word: "cat",
             img: cat2Img
+          },
+          {
+            word: "dog",
+            img: dogImg
+          },
+          {
+            word: "chicken",
+            img: chickenImg
+          },
+          {
+            word: "chicken2",
+            img: chicken2Img
+          },
+          {
+            word: "cow",
+            img: cowImg
+          },
+          {
+            word: "deer",
+            img: deerImg
+          },
+          {
+            word: "dolphin",
+            img: dolphinImg
+          },
+          {
+            word: "duck",
+            img: duckImg
+          },
+          {
+            word: "duck1",
+            img: duck1Img
+          },
+          {
+            word: "duckling",
+            img: ducklingImg
+          },
+          {
+            word: "elephant",
+            img: elephantImg
+          },
+          {
+            word: "dolphin",
+            img: dolphinImg
+          },
+          {
+            word: "girrafe",
+            img: girrafeImg
+          },
+          {
+            word: "goat",
+            img: goat1Img
+          },
+          {
+            word: "horse",
+            img: horseImg
+          },
+          {
+            word: "horse",
+            img: horse1Img
+          },
+          {
+            word: "horse",
+            img: horse3Img
+          },
+          {
+            word: "horse",
+            img: horse4Img
+          },
+          {
+            word: "kitten",
+            img: kittenImg
+          },
+          {
+            word: "monkey",
+            img: monkeyImg
+          },
+          {
+            word: "lion",
+            img: lionImg
+          },
+          {
+            word: "pig",
+            img: pigImg
+          },
+          {
+            word: "rabbit",
+            img: rabbitImg
+          },
+          {
+            word: "ram",
+            img: ramImg
+          },
+          {
+            word: "rhino",
+            img: rhinoImg
+          },
+          {
+            word: "squirrel",
+            img: squirrelImg
+          },
+          {
+            word: "tiger",
+            img: tigerImg
+          },
+          {
+            word: "zebra",
+            img: zebraImg
           }
         ],
         furniture: [

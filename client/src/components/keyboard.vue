@@ -14,45 +14,19 @@
     <div class="letter-card">k</div>
     <div class="letter-card">l</div>
     <div class="letter-card">m</div>
-    <div class="letter-card">
-      <b-card class="alpha-card">n</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">o</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">p</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">q</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">r</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">s</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">t</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">u</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">v</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">w</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">x</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">y</b-card>
-    </div>
-    <div class="letter-card">
-      <b-card class="alpha-card">z</b-card>
-    </div>
+    <div class="letter-card">n</div>
+    <div class="letter-card">o</div>
+    <div class="letter-card">p</div>
+    <div class="letter-card">q</div>
+    <div class="letter-card">r</div>
+    <div class="letter-card">s</div>
+    <div class="letter-card">t</div>
+    <div class="letter-card">u</div>
+    <div class="letter-card">v</div>
+    <div class="letter-card">w</div>
+    <div class="letter-card">x</div>
+    <div class="letter-card">y</div>
+    <div class="letter-card">z</div>
   </div>
 </template>
 

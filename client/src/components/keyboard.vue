@@ -1,32 +1,32 @@
 <template>
   <!--Row of Letters-->
   <div class="alpha-container">
-    <div class="letter-card">a</div>
-    <div class="letter-card">b</div>
-    <div class="letter-card">c</div>
-    <div class="letter-card">d</div>
-    <div class="letter-card">e</div>
-    <div class="letter-card">f</div>
-    <div class="letter-card">g</div>
-    <div class="letter-card">h</div>
-    <div class="letter-card">i</div>
-    <div class="letter-card">j</div>
-    <div class="letter-card">k</div>
-    <div class="letter-card">l</div>
-    <div class="letter-card">m</div>
-    <div class="letter-card">n</div>
-    <div class="letter-card">o</div>
-    <div class="letter-card">p</div>
-    <div class="letter-card">q</div>
-    <div class="letter-card">r</div>
-    <div class="letter-card">s</div>
-    <div class="letter-card">t</div>
-    <div class="letter-card">u</div>
-    <div class="letter-card">v</div>
-    <div class="letter-card">w</div>
-    <div class="letter-card">x</div>
-    <div class="letter-card">y</div>
-    <div class="letter-card">z</div>
+    <div @click="letterClick('a')" class="letter-card">a</div>
+    <div @click="letterClick('b')" class="letter-card">b</div>
+    <div @click="letterClick('c')" class="letter-card">c</div>
+    <div @click="letterClick('d')" class="letter-card">d</div>
+    <div @click="letterClick('e')" class="letter-card">e</div>
+    <div @click="letterClick('f')" class="letter-card">f</div>
+    <div @click="letterClick('g')" class="letter-card">g</div>
+    <div @click="letterClick('h')" class="letter-card">h</div>
+    <div @click="letterClick('i')" class="letter-card">i</div>
+    <div @click="letterClick('j')" class="letter-card">j</div>
+    <div @click="letterClick('k')" class="letter-card">k</div>
+    <div @click="letterClick('l')" class="letter-card">l</div>
+    <div @click="letterClick('m')" class="letter-card">m</div>
+    <div @click="letterClick('n')" class="letter-card">n</div>
+    <div @click="letterClick('o')" class="letter-card">o</div>
+    <div @click="letterClick('p')" class="letter-card">p</div>
+    <div @click="letterClick('q')" class="letter-card">q</div>
+    <div @click="letterClick('r')" class="letter-card">r</div>
+    <div @click="letterClick('s')" class="letter-card">s</div>
+    <div @click="letterClick('t')" class="letter-card">t</div>
+    <div @click="letterClick('u')" class="letter-card">u</div>
+    <div @click="letterClick('v')" class="letter-card">v</div>
+    <div @click="letterClick('w')" class="letter-card">w</div>
+    <div @click="letterClick('x')" class="letter-card">x</div>
+    <div @click="letterClick('y')" class="letter-card">y</div>
+    <div @click="letterClick('z')" class="letter-card">z</div>
   </div>
 </template>
 
@@ -35,8 +35,8 @@ export default {
   name: "keyboard",
 
   methods: {
-    letterClick: function(keyboard) {
-      this.$emit("click-letter", keyboard);
+    letterClick: function(letter) {
+      this.$emit("click-letter", letter);
     }
   }
 };
@@ -50,9 +50,7 @@ export default {
 .alpha-container {
   display: flex;
   width: 100%;
-  margin-top: 0px;
-  margin-left: 60px;
-  /* grid-template-columns: repeat(26, auto); */
+  margin-top: 150px;
   padding: 10px;
   grid-gap: 3px;
   justify-content: center;

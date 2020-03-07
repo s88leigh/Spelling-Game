@@ -1,26 +1,4 @@
 <template>
-  <!-- <div class="fruits">
-
-<div v-if="selected.type">
-    <span v-for="(item, i) in selected.list" :key="i">
-      <h3 @click="select(i)">{{item.img}}</h3>
-      <img :src="item.img"/>
-      
-    </span>
-</div>
-<div v-if="selected.type">
-    <span v-for="(item, i) in selected.list" :key="i">
-      <button @click="select(i)">{{item.img}}</button>
-<img :src="item.img"/>
-    </span>
-</div>
-    <span v-for="(item, i) in options" :key="i">
-      <h3 @click="select(i)">{{item.type}}</h3>
-    </span>
-
-    
-
-  </div> -->
   <div>
     <b-container class="image-container">
       <div
@@ -31,12 +9,13 @@
         <img :src="word.img" :alt="word.word" />
       </div>
     </b-container>
+    <keyboard @click-letter="checkLetter" />
   </div>
 </template>
 
 <script>
-// import letters from "./components/letters.vue";
-// import img from "./components/img.vue";
+import keyboard from "./keyboard.vue";
+
 import appleImg from "../assets/img/apple.png";
 import bananaImg from "../assets/img/banana.png";
 import beetImg from "../assets/img/beet.png";
@@ -129,6 +108,10 @@ import zebraImg from "../assets/img/zebra.png";
 
 export default {
   name: "game",
+  components: {
+    keyboard
+  },
+
   props: ["currentCategory"],
   data() {
     return {
@@ -508,33 +491,51 @@ export default {
       }
     };
   },
-  //   methods: {
-  //     handleClick: function(category) {
-  //       this.$emit("spell-word", game);
-  //     }
-  //   },
+
   computed: {
     currentWords: function() {
       return this.words[this.currentCategory];
+    },
+    currentWordArray: function() {
+      if (this.currentWord === null) {
+        return [];
+      }
+      return this.currentWord.split("");
     },
     renderWord: function() {
       if (this.currentWord === null) {
         return null;
       }
-      return this.currentWord
-        .split("")
-        .map((letter, index) => {
-          if (this.numRightLetters > index) {
-            return letter;
-          }
-          return " _ ";
-        })
-        .join("");
+      return (
+        this.currentWordArray
+          //turns string into array of letters
+
+          //loops over all the letters and returns a new array
+          .map((letter, index) => {
+            if (this.numRightLetters > index) {
+              return letter;
+            }
+            return " _ ";
+          })
+          .join("")
+      );
     }
   },
   methods: {
     changeWord: function(word) {
       this.currentWord = word;
+    },
+    setLetters: function(keyboard) {
+      this.currentLetter = keyboard;
+    },
+    checkLetter: function(letter) {
+      console.log(letter);
+      if (this.currentWordArray[this.numRightLetters] === letter) {
+        this.numRightLetters++;
+      } else {
+        //if guess is wrong
+      }
+      //   if guessed work is correct, then reset game state, setscore
     }
   }
 };

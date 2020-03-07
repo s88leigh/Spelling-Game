@@ -7,7 +7,7 @@
       @change-category="setCategory"
     />
 
-    <game :currentCategory="currentCategory" />
+    <game v-if="currentCategory !== null" :currentCategory="currentCategory" />
 
     <!-- <b-container class="icon-container"> -->
     <!-- <div> -->
@@ -31,7 +31,7 @@ export default {
     return {
       title: "Spelling Game",
       currentCategory: null
-
+    correctWords: []
       // words: []
     };
   },

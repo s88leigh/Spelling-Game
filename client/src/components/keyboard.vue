@@ -50,7 +50,7 @@ export default {
 .alpha-container {
   display: flex;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 350px;
   padding: 10px;
   grid-gap: 3px;
   justify-content: center;

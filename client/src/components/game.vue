@@ -1,15 +1,13 @@
 <template>
   <div>
     <b-container class="image-container">
-      <div
-        v-for="word in currentWords"
-        :key="word.word"
-        @click="changeWord(word.word)"
-      >
-        <img :src="word.img" :alt="word.word" />
+      <div>
+        <img :src="currentWord.img" :alt="currentWord.word" />
       </div>
     </b-container>
+    <h2>{{ congrats }}</h2>
     <underscore :word="renderWord" />
+    <br />
     <keyboard @click-letter="checkLetter" />
   </div>
 </template>
@@ -119,6 +117,7 @@ export default {
   data() {
     return {
       currentWord: null,
+      congrats: null,
       numRightLetters: 0,
       words: {
         fruits: [
@@ -494,21 +493,24 @@ export default {
       }
     };
   },
+  mounted: function() {
+    this.pickRandomWord();
+  },
 
   computed: {
-    currentWords: function() {
-      if (this.currentWord === null) {
-        return this.words[this.currentCategory];
-      }
-      return this.words[this.currentCategory].filter(word => {
-        return this.currentWord === word.word;
-      });
-    },
+    // currentWords: function() {
+    //   if (this.currentWord === null) {
+    //     return this.words[this.currentCategory];
+    //   }
+    //   return this.words[this.currentCategory].filter(word => {
+    //     return this.currentWord === word.word;
+    //   });
+    // },
     currentWordArray: function() {
       if (this.currentWord === null) {
         return [];
       }
-      return this.currentWord.split("");
+      return this.currentWord.word.split("");
     },
     renderWord: function() {
       if (this.currentWord === null) {
@@ -530,11 +532,26 @@ export default {
     }
   },
   methods: {
-    changeWord: function(word) {
-      this.currentWord = word;
-    },
+    // changeWord: function(word) {
+    //   this.currentWord = word;
+    // },
     setLetters: function(keyboard) {
       this.currentLetter = keyboard;
+    },
+    pickRandomWord: function() {
+      const categoryWords = this.words[this.currentCategory];
+      const randomIndex = Math.floor(Math.random() * categoryWords.length);
+      this.currentWord = categoryWords[randomIndex];
+    },
+    resetGame: function() {
+      this.congrats = "Great Job!";
+      setTimeout(() => {
+        this.pickRandomWord();
+        this.numRightLetters = 0;
+        this.congrats = null;
+        //increment score stored in the App.vue
+        // this.score();
+      }, 2000);
     },
     checkLetter: function(letter) {
       console.log(letter);
@@ -544,6 +561,9 @@ export default {
         //if guess is wrong
       }
       //   if guessed work is correct, then reset game state, setscore
+      if (this.numRightLetters >= this.currentWordArray.length) {
+        this.resetGame();
+      }
     }
   }
 };

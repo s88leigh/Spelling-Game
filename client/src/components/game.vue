@@ -508,6 +508,11 @@ export default {
       }
     };
   },
+  //   methods: {
+  //     handleClick: function(category) {
+  //       this.$emit("spell-word", game);
+  //     }
+  //   },
   computed: {
     currentWords: function() {
       return this.words[this.currentCategory];
@@ -540,7 +545,8 @@ export default {
   box-sizing: border-box;
 }
 .image-container {
-  max-width: 800px;
+  align-content: center;
+  max-width: 300px;
   max-height: 300px;
   border: 2px solid rgb(4, 4, 98);
 }

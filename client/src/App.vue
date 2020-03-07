@@ -9,6 +9,8 @@
 
     <game :currentCategory="currentCategory" />
 
+    <keyboard :currentLetter="currentLetter" />
+
     <!-- <b-container class="icon-container"> -->
     <!-- <div> -->
     <!-- <img src=".\assets\img\admin.png" class="admin-icon" alt="admin-icon" /> -->
@@ -20,17 +22,20 @@
 <script>
 import categories from "./components/categories.vue";
 import game from "./components/game.vue";
+import keyboard from "./components/keyboard.vue";
 
 export default {
   name: "App",
   components: {
     categories,
-    game
+    game,
+    keyboard
   },
   data() {
     return {
       title: "Spelling Game",
       currentCategory: null,
+      currentLetter: null,
 
       words: []
     };
@@ -38,6 +43,10 @@ export default {
   methods: {
     setCategory: function(category) {
       this.currentCategory = category;
+    },
+
+    setLetters: function(keyboard) {
+      this.currentLetter = keyboard;
     }
   }
 };

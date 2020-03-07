@@ -1,92 +1,100 @@
- <template>
+<template>
   <!--Row of Letters-->
-  <b-div class="alpha-container">
-    <b-button class="button-card">
+  <div class="alpha-container">
+    <div class="button-card">
       <b-card class="alpha-card" text-align="center">a</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">b</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">c</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">d</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">e</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">f</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">g</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">h</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">i</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">j</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">k</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">l</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">m</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">n</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">o</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">p</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">q</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">r</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">s</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">t</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">u</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">v</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">w</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">x</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">y</b-card>
-    </b-button>
-    <b-button class="button-card">
+    </div>
+    <div class="button-card">
       <b-card class="alpha-card">z</b-card>
-    </b-button>
+    </div>
   </div>
 </template>
-    
-    <script>
-export default {};
+
+<script>
+export default {
+  name: "keyboard",
+
+  methods: {
+    letterClick: function(keyboard) {
+      this.$emit("click-letter", keyboard);
+    }
+  }
+};
 </script>
-    
-    <style>
+
+<style>
 * {
   box-sizing: border-box;
 }

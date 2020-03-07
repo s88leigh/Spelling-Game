@@ -22,13 +22,15 @@
 
   </div> -->
   <div>
-    <div
-      v-for="word in currentWords"
-      :key="word.word"
-      @click="changeWord(word.word)"
-    >
-      <img :src="word.img" :alt="word.word" />
-    </div>
+    <b-container class="image-container">
+      <div
+        v-for="word in currentWords"
+        :key="word.word"
+        @click="changeWord(word.word)"
+      >
+        <img :src="word.img" :alt="word.word" />
+      </div>
+    </b-container>
   </div>
 </template>
 
@@ -537,15 +539,9 @@ export default {
 * {
   box-sizing: border-box;
 }
-.back-arrow {
-  margin-left: 30px;
-  width: 200px;
-  height: 40px;
-  border: 2px solid rgb(4, 4, 98);
-}
-
-.nav-container {
-  padding-top: 20px;
+.image-container {
+  max-width: 800px;
+  max-height: 300px;
   border: 2px solid rgb(4, 4, 98);
 }
 

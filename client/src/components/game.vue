@@ -9,12 +9,14 @@
         <img :src="word.img" :alt="word.word" />
       </div>
     </b-container>
+    <underscore />
     <keyboard @click-letter="checkLetter" />
   </div>
 </template>
 
 <script>
 import keyboard from "./keyboard.vue";
+import underscore from "./underscore.vue";
 
 import appleImg from "../assets/img/apple.png";
 import bananaImg from "../assets/img/banana.png";
@@ -109,6 +111,7 @@ import zebraImg from "../assets/img/zebra.png";
 export default {
   name: "game",
   components: {
+    underscore,
     keyboard
   },
 

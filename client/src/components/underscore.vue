@@ -1,6 +1,6 @@
 <template>
   <!--Space for letters-->
-  <div class="underscores-container">
+  <div class="underscore-container">
     <div class="row justify-content-md-center">
       <div class="col col-lg-2"></div>
       <div class="col-md-auto" id="empty-div">Cat</div>
@@ -10,11 +10,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "underscore"
+};
 </script>
 
 <style>
-.underscores-container {
+.underscore-container {
   height: 65px;
   margin-top: 100px;
   margin-bottom: 10px;

@@ -1,82 +1,56 @@
 <template>
   <!--Row of Letters-->
   <div class="alpha-container">
-    <div class="button-card">
-      <b-card class="alpha-card" text-align="center">a</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">b</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">c</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">d</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">e</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">f</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">g</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">h</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">i</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">j</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">k</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">l</b-card>
-    </div>
-    <div class="button-card">
-      <b-card class="alpha-card">m</b-card>
-    </div>
-    <div class="button-card">
+    <div class="letter-card">a</div>
+    <div class="letter-card">b</div>
+    <div class="letter-card">c</div>
+    <div class="letter-card">d</div>
+    <div class="letter-card">e</div>
+    <div class="letter-card">f</div>
+    <div class="letter-card">g</div>
+    <div class="letter-card">h</div>
+    <div class="letter-card">i</div>
+    <div class="letter-card">j</div>
+    <div class="letter-card">k</div>
+    <div class="letter-card">l</div>
+    <div class="letter-card">m</div>
+    <div class="letter-card">
       <b-card class="alpha-card">n</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">o</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">p</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">q</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">r</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">s</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">t</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">u</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">v</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">w</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">x</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">y</b-card>
     </div>
-    <div class="button-card">
+    <div class="letter-card">
       <b-card class="alpha-card">z</b-card>
     </div>
   </div>
@@ -104,14 +78,14 @@ export default {
   width: 100%;
   margin-top: 0px;
   margin-left: 60px;
-  grid-template-columns: repeat(26, auto);
+  /* grid-template-columns: repeat(26, auto); */
   padding: 10px;
   grid-gap: 3px;
   justify-content: center;
   border: 2px solid rgb(4, 4, 98);
 }
 /* letter cards */
-.alpha-card {
+.letter-card {
   margin: 1px;
   /* text-align: center; */
   float: left;

@@ -51,7 +51,6 @@
 </template>
 
 <script>
-// import img from "./components/img.vue";
 export default {
   name: "categories",
   data() {

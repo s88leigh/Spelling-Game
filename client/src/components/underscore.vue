@@ -3,7 +3,9 @@
   <div class="underscore-container">
     <div class="row justify-content-md-center">
       <div class="col col-lg-2"></div>
-      <div class="col-md-auto" id="empty-div">Cat</div>
+      <div class="col-md-auto" id="empty-div">
+        {{ word }}
+      </div>
       <div class="col col-lg-2"></div>
     </div>
   </div>
@@ -11,7 +13,8 @@
 
 <script>
 export default {
-  name: "underscore"
+  name: "underscore",
+  props: ["word"]
 };
 </script>
 

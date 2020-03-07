@@ -9,7 +9,7 @@
         <img :src="word.img" :alt="word.word" />
       </div>
     </b-container>
-    <underscore />
+    <underscore :word="renderWord" />
     <keyboard @click-letter="checkLetter" />
   </div>
 </template>
@@ -497,7 +497,12 @@ export default {
 
   computed: {
     currentWords: function() {
-      return this.words[this.currentCategory];
+      if (this.currentWord === null) {
+        return this.words[this.currentCategory];
+      }
+      return this.words[this.currentCategory].filter(word => {
+        return this.currentWord === word.word;
+      });
     },
     currentWordArray: function() {
       if (this.currentWord === null) {

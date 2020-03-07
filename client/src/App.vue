@@ -30,9 +30,9 @@ export default {
   data() {
     return {
       title: "Spelling Game",
-      currentCategory: null,
+      currentCategory: null
 
-      words: []
+      // words: []
     };
   },
   methods: {

@@ -21,7 +21,7 @@ export default {
 <style>
 .underscore-container {
   height: 65px;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 10px;
 }
 .col-md-auto {

@@ -49,8 +49,10 @@ export default {
 /* letter container */
 .alpha-container {
   display: flex;
+  height: 200px;
   width: 100%;
-  margin-top: 350px;
+  padding-top: 40px;
+  /* margin-top: 350px; */
   padding: 10px;
   grid-gap: 3px;
   justify-content: center;
@@ -61,7 +63,7 @@ export default {
   margin: 1px;
   /* text-align: center; */
   float: left;
-  margin-top: 0px;
+  margin-top: 60px;
   background: rgb(158, 215, 250);
   height: 65px;
   width: 45px;

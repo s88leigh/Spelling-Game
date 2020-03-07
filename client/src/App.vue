@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h1>Spelling Game</h1>
+    <div class="game-title">
+      <span>Spelling Game </span>
+    </div>
 
     <categories
       v-if="currentCategory === null"
@@ -30,8 +32,8 @@ export default {
   data() {
     return {
       title: "Spelling Game",
-      currentCategory: null
-    correctWords: []
+      currentCategory: null,
+      correctWords: []
       // words: []
     };
   },
@@ -52,12 +54,17 @@ export default {
 * {
   box-sizing: border-box;
 }
-
-h1 {
+.game-title {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  border: 2px solid rgb(4, 4, 98);
+}
+span {
   text-align: center;
   font-size: 60px;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   color: rgba(3, 162, 171, 0.898);
   text-shadow: 2px 2px 4px #01172d;
 }

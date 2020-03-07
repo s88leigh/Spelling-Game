@@ -7,7 +7,7 @@
     </b-container>
     <h2>{{ congrats }}</h2>
     <underscore :word="renderWord" />
-    <br />
+
     <keyboard @click-letter="checkLetter" />
   </div>
 </template>
@@ -546,9 +546,11 @@ export default {
     resetGame: function() {
       this.congrats = "Great Job!";
       setTimeout(() => {
+        //send this.currentWord.word();
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
+        //send emit score to app
         //increment score stored in the App.vue
         // this.score();
       }, 2000);
@@ -575,8 +577,8 @@ export default {
 }
 .image-container {
   align-content: center;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 400px;
+  max-height: 250px;
   border: 2px solid rgb(4, 4, 98);
 }
 

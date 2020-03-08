@@ -1,11 +1,19 @@
 <template>
   <div>
-    <b-row class="back-arrow">
-      <div @click="backToCategories('categories')">
-        <img src="../assets/img/arrow.png" img-alt="back arrow icon" class="arrow-icon" />
-        <span>Choose Another Category</span>
+    <div class="nav-container">
+      <div class="row justify-content-md-center">
+        <div @click="backToCategories('categories')" class="col col-lg-2">
+          <span>Start Game</span>
+        </div>
+        <div @click="backToCategories('categories')" id="col-md-auto">
+          <span>Choose Another Category</span>
+        </div>
+        <div @click="backToCategories('categories')" class="col col-lg-2">
+          <span>End Game</span>
+        </div>
       </div>
-    </b-row>
+    </div>
+
     <row class="image-row">
       <div>
         <img :src="currentWord.img" :alt="currentWord.word" class="image" />
@@ -518,9 +526,9 @@ export default {
     }
   },
   methods: {
-    backToCategories: function(game) {
+    backToCategories: function(categories) {
       // alert("hello");
-      this.$emit("change-page", game);
+      this.$emit("change-page", categories);
     },
 
     // changeWord: function(word) {
@@ -565,16 +573,6 @@ export default {
 <style scoped>
 * {
   box-sizing: border-box;
-}
-.arrow-icon {
-  width: 50px;
-  height: 50px;
-}
-.back-arrow {
-  margin-left: 30px;
-  width: 350px;
-  height: 50px;
-  /* border: 2px solid rgb(4, 4, 98); */
 }
 
 span {

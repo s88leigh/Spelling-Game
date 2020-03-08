@@ -9,7 +9,7 @@
     <game
       v-if="currentCategory !== null"
       :currentCategory="currentCategory"
-      @change-page="resetCategory"
+      @change-page="backToCategories"
     />
 
     <!-- <b-container class="icon-container"> -->
@@ -34,7 +34,7 @@ export default {
     return {
       title: "Spelling Game",
       currentCategory: null,
-      currentcategories: null,
+      currentCategories: null,
 
       correctWords: []
       // words: []

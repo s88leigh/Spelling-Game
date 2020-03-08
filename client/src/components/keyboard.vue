@@ -56,7 +56,7 @@ export default {
   padding: 10px;
   grid-gap: 3px;
   justify-content: center;
-  border: 2px solid rgb(4, 4, 98);
+  /* border: 2px solid rgb(4, 4, 98); */
 }
 /* letter cards */
 .letter-card {

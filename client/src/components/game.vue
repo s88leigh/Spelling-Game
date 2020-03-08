@@ -1,9 +1,9 @@
 <template>
   <div>
-    <b-row>
-      <div class="back-arrow">
+    <b-row class="back-arrow">
+      <div>
         <img src="../assets/img/arrow.png" img-alt="back arrow icon" class="arrow-icon" />
-        <span>Choose Another Category</span>
+        <span @click="handleClick('Choose Another Category')">Choose Another Category</span>
       </div>
     </b-row>
     <row class="image-row">
@@ -68,7 +68,6 @@ import greenImg from "../assets/img/green.png";
 import horseImg from "../assets/img/horse.png";
 import horse2Img from "../assets/img/horse2.png";
 import horse3Img from "../assets/img/horse3.png";
-import horse4Img from "../assets/img/horse4.png";
 import kittenImg from "../assets/img/kitten.png";
 import kiwiImg from "../assets/img/kiwi.png";
 import lampImg from "../assets/img/lamp.png";
@@ -272,7 +271,7 @@ export default {
             img: chickenImg
           },
           {
-            word: "chicken2",
+            word: "chicken",
             img: chicken2Img
           },
           {
@@ -322,10 +321,6 @@ export default {
           {
             word: "horse",
             img: horse3Img
-          },
-          {
-            word: "horse",
-            img: horse4Img
           },
           {
             word: "kitten",
@@ -483,6 +478,7 @@ export default {
       }
     };
   },
+
   mounted: function() {
     this.pickRandomWord();
   },
@@ -522,6 +518,10 @@ export default {
     }
   },
   methods: {
+    handleClick: function(game) {
+      this.$emit("change-page", game);
+    },
+
     // changeWord: function(word) {
     //   this.currentWord = word;
     // },
@@ -594,7 +594,7 @@ span {
 .image {
   /* overflow: auto; */
   width: 400px;
-  height: 250px;
+  height: 258px;
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

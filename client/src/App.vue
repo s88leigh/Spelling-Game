@@ -1,15 +1,12 @@
 <template>
   <div id="app">
     <div class="game-title">
-      <span>Spelling Game </span>
+      <span>Spelling Game</span>
     </div>
 
-    <categories
-      v-if="currentCategory === null"
-      @change-category="setCategory"
-    />
+    <categories v-if="currentCategory === null" @change-category="setCategory" />
 
-    <game v-if="currentCategory !== null" :currentCategory="currentCategory" />
+    <game v-if="currentCategory !== null" :currentCategory="currentCategory" @change-page="reset" />
 
     <!-- <b-container class="icon-container"> -->
     <!-- <div> -->
@@ -33,6 +30,8 @@ export default {
     return {
       title: "Spelling Game",
       currentCategory: null,
+      currentGame: null,
+
       correctWords: []
       // words: []
     };
@@ -40,6 +39,9 @@ export default {
   methods: {
     setCategory: function(category) {
       this.currentCategory = category;
+    },
+    reset: function(game) {
+      this.currentGame = game;
     }
   }
 };

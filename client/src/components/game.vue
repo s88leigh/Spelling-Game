@@ -1,9 +1,9 @@
 <template>
   <div>
     <b-row class="back-arrow">
-      <div>
+      <div @click="backToCategories('categories')">
         <img src="../assets/img/arrow.png" img-alt="back arrow icon" class="arrow-icon" />
-        <span @click="handleClick('Choose Another Category')">Choose Another Category</span>
+        <span>Choose Another Category</span>
       </div>
     </b-row>
     <row class="image-row">
@@ -518,7 +518,8 @@ export default {
     }
   },
   methods: {
-    handleClick: function(game) {
+    backToCategories: function(game) {
+      // alert("hello");
       this.$emit("change-page", game);
     },
 

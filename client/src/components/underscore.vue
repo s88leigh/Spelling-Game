@@ -3,9 +3,7 @@
   <div class="underscore-container">
     <div class="row justify-content-md-center">
       <div class="col col-lg-2"></div>
-      <div class="col-md-auto" id="empty-div">
-        {{ word }}
-      </div>
+      <div class="col-md-auto" id="empty-div">{{ word }}</div>
       <div class="col col-lg-2"></div>
     </div>
   </div>
@@ -21,7 +19,7 @@ export default {
 <style>
 .underscore-container {
   height: 65px;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 .col-md-auto {

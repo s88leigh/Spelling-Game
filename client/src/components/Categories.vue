@@ -6,11 +6,7 @@
       <label class="cat-label">
         Fruits
         <div @click="handleClick('fruits')">
-          <img
-            src="..\assets\img\fruits.png"
-            img-alt="bowl of fruits"
-            class="image"
-          />
+          <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
         </div>
       </label>
       <label class="cat-label">
@@ -22,21 +18,13 @@
       <label class="cat-label">
         Animals
         <div @click="handleClick('animals')">
-          <img
-            src="..\assets\img\animals.png"
-            img-alt="animals"
-            class="image"
-          />
+          <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
         </div>
       </label>
       <label class="cat-label">
         Furniture
         <div @click="handleClick('furniture')">
-          <img
-            src="..\assets\img\furniture.png"
-            img-alt="furniture"
-            class="image"
-          />
+          <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
         </div>
       </label>
 
@@ -72,7 +60,7 @@ export default {
 h3 {
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 0px;
+  margin-top: 30px;
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }

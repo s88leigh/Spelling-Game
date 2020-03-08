@@ -49,10 +49,10 @@ export default {
 /* letter container */
 .alpha-container {
   display: flex;
-  height: 200px;
+  height: 175px;
   width: 100%;
   padding-top: 40px;
-  /* margin-top: 350px; */
+  margin-bottom: 0px;
   padding: 10px;
   grid-gap: 3px;
   justify-content: center;

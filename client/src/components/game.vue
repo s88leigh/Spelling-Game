@@ -6,8 +6,8 @@
       </b-button>
     </b-row>
     <b-container class="image-container">
-      <div class="image-container">
-        <img :src="currentWord.img" :alt="currentWord.word" />
+      <div>
+        <img :src="currentWord.img" :alt="currentWord.word" class="image" />
       </div>
     </b-container>
     <h2>{{ congrats }}</h2>
@@ -83,7 +83,6 @@ import monkey1Img from "../assets/img/monkey1.png";
 import mirrorImg from "../assets/img/mirror.png";
 import onionImg from "../assets/img/onion.png";
 import orangeImg from "../assets/img/orange.png";
-import orange2Img from "../assets/img/orange2.png";
 import papayaImg from "../assets/img/papaya.png";
 import pearImg from "../assets/img/pear.png";
 import pigImg from "../assets/img/pig.png";
@@ -167,10 +166,6 @@ export default {
           {
             word: "mango",
             img: mangoImg
-          },
-          {
-            word: "orange",
-            img: orange2Img
           },
           {
             word: "papaya",
@@ -582,16 +577,18 @@ export default {
   border: 2px solid rgb(4, 4, 98);
 }
 .image-container {
-  /* margin-top: 30px; */
-  max-width: 425px;
+  justify-content: center;
+  width: 430px;
   max-height: 300px;
   padding-top: 0px;
   border: 2px solid rgb(4, 4, 98);
 }
-.img {
+.image {
+  /* overflow: auto; */
   width: 400px;
-  height: 300px;
+  height: 250px;
   border: 2px solid rgb(4, 4, 98);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* .cat-info-container {

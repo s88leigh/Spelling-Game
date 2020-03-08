@@ -85,7 +85,7 @@ h3 {
 
 .image {
   float: left;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 20px;
   width: 175px;
   height: 175px;

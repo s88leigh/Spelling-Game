@@ -1,9 +1,10 @@
 <template>
   <div>
     <b-row class="nav-container">
-      <b-button class="back-arrow">
-        <b-img href=".\src\assets\img\arrow.png" img-alt="back arrow icon" />Back to Categories
-      </b-button>
+      <div class="back-arrow">
+        <img src="../assets/img/arrow.png" img-alt="back arrow icon" class="arrow-icon" />
+        <span>Choose Another Category</span>
+      </div>
     </b-row>
     <b-container class="image-container">
       <div>
@@ -20,7 +21,6 @@
 <script>
 import keyboard from "./keyboard.vue";
 import underscore from "./underscore.vue";
-
 import appleImg from "../assets/img/apple.png";
 import bananaImg from "../assets/img/banana.png";
 import beetImg from "../assets/img/beet.png";
@@ -565,16 +565,27 @@ export default {
 * {
   box-sizing: border-box;
 }
+.arrow-icon {
+  width: 50px;
+  height: 50px;
+}
 .back-arrow {
   margin-left: 30px;
-  width: 200px;
-  height: 40px;
+  width: 350px;
+  height: 50px;
   border: 2px solid rgb(4, 4, 98);
 }
 
 .nav-container {
-  padding-top: 20px;
   border: 2px solid rgb(4, 4, 98);
+}
+span {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: black;
+  text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .image-container {
   justify-content: center;

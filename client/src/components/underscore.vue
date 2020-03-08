@@ -19,7 +19,7 @@ export default {
 <style>
 .underscore-container {
   height: 65px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .col-md-auto {

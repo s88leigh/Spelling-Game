@@ -1,16 +1,16 @@
 <template>
   <div>
-    <b-row class="nav-container">
+    <b-row>
       <div class="back-arrow">
         <img src="../assets/img/arrow.png" img-alt="back arrow icon" class="arrow-icon" />
         <span>Choose Another Category</span>
       </div>
     </b-row>
-    <b-container class="image-container">
+    <row class="image-row">
       <div>
         <img :src="currentWord.img" :alt="currentWord.word" class="image" />
       </div>
-    </b-container>
+    </row>
     <h2>{{ congrats }}</h2>
     <underscore :word="renderWord" />
 
@@ -573,7 +573,7 @@ export default {
   margin-left: 30px;
   width: 350px;
   height: 50px;
-  border: 2px solid rgb(4, 4, 98);
+  /* border: 2px solid rgb(4, 4, 98); */
 }
 
 span {
@@ -584,8 +584,8 @@ span {
   text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.image-container {
-  justify-content: center;
+.image-row {
+  text-align: center;
   width: 430px;
   max-height: 300px;
   padding-top: 0px;

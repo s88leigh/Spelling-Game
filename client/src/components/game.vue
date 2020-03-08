@@ -576,9 +576,6 @@ export default {
   border: 2px solid rgb(4, 4, 98);
 }
 
-.nav-container {
-  border: 2px solid rgb(4, 4, 98);
-}
 span {
   padding: 10px;
   margin-left: 10px;

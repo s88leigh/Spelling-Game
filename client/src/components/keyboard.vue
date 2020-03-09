@@ -73,6 +73,7 @@ export default {
   color: black;
   text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
   border: 2px solid rgb(4, 4, 98);
+  border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>

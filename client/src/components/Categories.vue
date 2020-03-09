@@ -80,6 +80,7 @@ h3 {
   padding-bottom: 10px;
   padding-left: 30px;
   border: 2px solid rgb(4, 4, 98);
+  border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -90,6 +91,7 @@ h3 {
   width: 175px;
   height: 175px;
   border: 2px solid rgb(4, 4, 98);
+  border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* html {

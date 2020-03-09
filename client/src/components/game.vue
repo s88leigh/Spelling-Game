@@ -603,6 +603,7 @@ export default {
 #choose {
   background: rgb(45, 136, 247);
   border: 2px solid rgb(4, 4, 98);
+  border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #start-red {
@@ -632,6 +633,7 @@ span {
   width: 400px;
   height: 258px;
   border: 2px solid rgb(4, 4, 98);
+  border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .congrats {

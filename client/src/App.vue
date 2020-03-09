@@ -4,10 +4,10 @@
       <span>Spelling Game</span>
     </div>
 
-    <categories v-if="currentCategory === null" @change-category="setCategory" />
+    <categories v-if="!currentCategory" @change-category="setCategory" />
 
     <game
-      v-if="currentCategory !== null"
+      v-if="currentCategory"
       :currentCategory="currentCategory"
       @change-page="backToCategories"
     />
@@ -44,8 +44,8 @@ export default {
     setCategory: function(category) {
       this.currentCategory = category;
     },
-    backToCategories: function(app) {
-      this.currentCategories = app;
+    backToCategories: function() {
+      this.currentCategories = null;
     }
   }
 };

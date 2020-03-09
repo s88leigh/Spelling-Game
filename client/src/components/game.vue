@@ -3,7 +3,7 @@
     <div class="nav-container">
       <div class="row justify-content-md-center">
         <div class="col col-lg-2"></div>
-        <div @click="backToCategories('categories')" id="col-md-auto">
+        <div @click="backToCategories()" id="col-md-auto">
           <span id="choose">Choose Another Category</span>
         </div>
         <div @click="Score('categories')" id="col col-lg-2">
@@ -118,6 +118,9 @@ import whiteImg from "../assets/img/white.png";
 import yellowImg from "../assets/img/yellow.png";
 import zebraImg from "../assets/img/zebra.png";
 
+import wordJSON from "./words.json";
+console.log(wordJSON);
+
 export default {
   name: "game",
   components: {
@@ -128,13 +131,13 @@ export default {
   props: ["currentCategory"],
   data() {
     return {
-      // messageList: [
-      //   { message: "You did it!" },
-      //   { message: "Awesome!" },
-      //   { message: "Great Work!" },
-      //   { message: "Awesome Job!" },
-      //   { message: "That's Right!" }
-      // ],
+      messageList: [
+        { message: "You did it!" },
+        { message: "Awesome!" },
+        { message: "Great Work!" },
+        { message: "Awesome Job!" },
+        { message: "That's Right!" }
+      ],
       currentWord: null,
       congrats: null,
       playerScore: 0,
@@ -500,23 +503,15 @@ export default {
 
   mounted: function() {
     this.pickRandomWord();
-    this.playerScore();
-    // this.ShowRandomMessage();
   },
 
   computed: {
-    // currentWords: function() {
-    //   if (this.currentWord === null) {
-    //     return this.words[this.currentCategory];
-    //   }
-    //   return this.words[this.currentCategory].filter(word => {
-    //     return this.currentWord === word.word;
-    //   });
-    // },
+    //create a function  to tell the app that if this current word does not exist, return/show an array of words.
     currentWordArray: function() {
       if (this.currentWord === null) {
         return [];
       }
+      //else, return/show
       return this.currentWord.word.split("");
     },
     renderWord: function() {
@@ -545,26 +540,28 @@ export default {
         this.playerScore += 1;
       }
     },
-    backToCategories: function(categories) {
+    backToCategories: function() {
       // alert("hello");
-      this.$emit("change-page", categories);
+      this.$emit("change-page");
     },
 
     setLetters: function(keyboard) {
       this.currentLetter = keyboard;
     },
-    // ShowRandomMessage: function() {
-    //   this.messageList = this.messages;
-    //   const randomMessage = Math.floor(Math.random() * messageList);
-    //   this.currentCongrats = messageList[randomMessage];
-    // },
+    ShowRandomMessage: function() {
+      this.congrats = this.messageList[
+        Math.floor(Math.random() * this.messageList.length)
+      ].message;
+    },
     pickRandomWord: function() {
-      const categoryWords = this.words[this.currentCategory];
-      const randomIndex = Math.floor(Math.random() * categoryWords.length);
-      this.currentWord = categoryWords[randomIndex];
+      this.currentWord = this.words[this.currentCategory][
+        Math.floor(Math.random() * this.words[this.currentCategory].length)
+      ];
     },
     resetGame: function() {
-      this.congrats = "Great Job!";
+      this.ShowRandomMessage();
+
+      console.log(this.congrats);
 
       setTimeout(() => {
         //send this.currentWord.word();
@@ -577,12 +574,20 @@ export default {
         this.increaseScore();
       }, 2000);
     },
+    letterChangeColor: function() {
+      let btnDanger = document.querySelector("#danger");
+      this.keyboard = btnDanger.style.backgroundColor = "btnDanger";
+    },
     checkLetter: function(letter) {
       console.log(letter);
+      //if the chosen letter in the array is equal to the correct letter, then add the letter.
       if (this.currentWordArray[this.numRightLetters] === letter) {
         this.numRightLetters++;
       } else {
         //if guess is wrong
+        setTimeout(() => {
+          this.letterChangeColor();
+        }, 1000);
       }
       //   if guessed work is correct, then reset game state, setscore
       if (this.numRightLetters >= this.currentWordArray.length) {

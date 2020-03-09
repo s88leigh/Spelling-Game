@@ -24,7 +24,7 @@ export default {
 }
 .col-md-auto {
   text-align: center;
-  letter-spacing: 14px;
+  letter-spacing: 8px;
   font-size: 50px;
   color: black;
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;

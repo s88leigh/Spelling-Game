@@ -2,24 +2,27 @@
   <div>
     <div class="nav-container">
       <div class="row justify-content-md-center">
-        <div @click="backToCategories('categories')" class="col col-lg-2">
-          <span>Start Game</span>
-        </div>
+        <div class="col col-lg-2"></div>
         <div @click="backToCategories('categories')" id="col-md-auto">
-          <span>Choose Another Category</span>
+          <span id="choose">Choose Another Category</span>
         </div>
-        <div @click="backToCategories('categories')" class="col col-lg-2">
-          <span>End Game</span>
+        <div @click="Score('categories')" id="col col-lg-2">
+          <span id="start-red">{{playerScore}}</span>
         </div>
       </div>
     </div>
 
-    <row class="image-row">
+    <div class="image-row">
       <div>
         <img :src="currentWord.img" :alt="currentWord.word" class="image" />
       </div>
-    </row>
-    <h2>{{ congrats }}</h2>
+    </div>
+    <div>
+      <!-- <div v-for="congrat in congrats" :key="congrats=.message" class="congrats"> -->
+      <div class="congrats">
+        <h1>{{ congrats}}</h1>
+      </div>
+    </div>
     <underscore :word="renderWord" />
 
     <keyboard @click-letter="checkLetter" />
@@ -125,8 +128,16 @@ export default {
   props: ["currentCategory"],
   data() {
     return {
+      // messageList: [
+      //   { message: "You did it!" },
+      //   { message: "Awesome!" },
+      //   { message: "Great Work!" },
+      //   { message: "Awesome Job!" },
+      //   { message: "That's Right!" }
+      // ],
       currentWord: null,
       congrats: null,
+      playerScore: 0,
       numRightLetters: 0,
       words: {
         fruits: [
@@ -489,6 +500,8 @@ export default {
 
   mounted: function() {
     this.pickRandomWord();
+    this.playerScore();
+    // this.ShowRandomMessage();
   },
 
   computed: {
@@ -526,17 +539,25 @@ export default {
     }
   },
   methods: {
+    increaseScore() {
+      //increase score if all the letters are guess correctly
+      if (this.currentWord !== null) {
+        this.playerScore += 1;
+      }
+    },
     backToCategories: function(categories) {
       // alert("hello");
       this.$emit("change-page", categories);
     },
 
-    // changeWord: function(word) {
-    //   this.currentWord = word;
-    // },
     setLetters: function(keyboard) {
       this.currentLetter = keyboard;
     },
+    // ShowRandomMessage: function() {
+    //   this.messageList = this.messages;
+    //   const randomMessage = Math.floor(Math.random() * messageList);
+    //   this.currentCongrats = messageList[randomMessage];
+    // },
     pickRandomWord: function() {
       const categoryWords = this.words[this.currentCategory];
       const randomIndex = Math.floor(Math.random() * categoryWords.length);
@@ -544,14 +565,16 @@ export default {
     },
     resetGame: function() {
       this.congrats = "Great Job!";
+
       setTimeout(() => {
         //send this.currentWord.word();
+        // this.ShowRandomMessage();
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
         //send emit score to app
         //increment score stored in the App.vue
-        // this.score();
+        this.increaseScore();
       }, 2000);
     },
     checkLetter: function(letter) {
@@ -574,8 +597,21 @@ export default {
 * {
   box-sizing: border-box;
 }
-
+.nav-container {
+  margin-top: 20px;
+}
+#choose {
+  background: rgb(45, 136, 247);
+  border: 2px solid rgb(4, 4, 98);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#start-red {
+  background: rgb(250, 48, 48);
+  margin-right: 20px;
+  margin-left: 175px;
+}
 span {
+  /* background: green; */
   padding: 10px;
   margin-left: 10px;
   font-size: 20px;
@@ -584,11 +620,12 @@ span {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .image-row {
+  margin-top: 30px;
   text-align: center;
-  width: 430px;
+  width: 100%;
   max-height: 300px;
   padding-top: 0px;
-  border: 2px solid rgb(4, 4, 98);
+  /* border: 2px solid rgb(4, 4, 98); */
 }
 .image {
   /* overflow: auto; */
@@ -597,7 +634,15 @@ span {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.congrats {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid rgb(4, 4, 98); */
+}
+h1 {
+  text-align: center;
+}
 /* .cat-info-container {
   grid-column: 1 / -1;
   display: flex;

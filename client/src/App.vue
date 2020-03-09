@@ -44,8 +44,8 @@ export default {
     setCategory: function(category) {
       this.currentCategory = category;
     },
-    backToCategories: function(categories) {
-      this.currentCategories = categories;
+    backToCategories: function(app) {
+      this.currentCategories = app;
     }
   }
 };

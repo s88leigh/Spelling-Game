@@ -36,8 +36,7 @@ export default {
       currentCategory: null,
       currentCategories: null,
 
-      correctWords: []
-      // words: []
+      playerScores: []
     };
   },
   methods: {
@@ -46,6 +45,9 @@ export default {
     },
     backToCategories: function() {
       this.currentCategories = null;
+    },
+    addPlayerScore: function(PlayerScore) {
+      this.playerScores.push(PlayerScore);
     }
   }
 };

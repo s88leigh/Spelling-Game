@@ -144,6 +144,7 @@ export default {
       congrats: null,
       playerScore: 0,
       numRightLetters: 0,
+      // newPlayerScore: "",
       words: {
         fruits: [
           {
@@ -536,6 +537,10 @@ export default {
     }
   },
   methods: {
+    // emit score to app
+    addPlayerScore: function() {
+      this.$emit("add-Player-Score", this.PlayerScore);
+    },
     increaseScore() {
       //increase score if all the letters are guess correctly
       if (this.currentWord !== null) {
@@ -568,12 +573,14 @@ export default {
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
-        //send emit score to app
+        //send new score to App
+        this.addPlayerScore();
         //increment score stored in the App.vue
         this.increaseScore();
       }, 2000);
     },
     letterChangeColor: function(letter) {
+      //can't get the letters to change color
       if (this.currentWordArray[this.numRightLetters] !== letter) {
         document.getElementsByClassName("letter-card")[
           this.setLetters
@@ -586,7 +593,7 @@ export default {
       if (this.currentWordArray[this.numRightLetters] === letter) {
         this.numRightLetters++;
       } else {
-        //if guess is wrong change background color to red
+        //if guess is wrong change background color to red ---not working!!!
         setTimeout(() => {
           this.letterChangeColor();
         }, 1000);

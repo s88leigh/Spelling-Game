@@ -13,12 +13,12 @@
     </div>
 
     <div class="image-row">
+      <div>{{correct-spelling}}</div>
       <div>
         <img :src="currentWord.img" :alt="currentWord.word" class="image" />
       </div>
     </div>
     <div>
-      <!-- <div v-for="congrat in congrats" :key="congrats=.message" class="congrats"> -->
       <div class="congrats">
         <h1>{{ congrats}}</h1>
       </div>
@@ -118,8 +118,8 @@ import whiteImg from "../assets/img/white.png";
 import yellowImg from "../assets/img/yellow.png";
 import zebraImg from "../assets/img/zebra.png";
 
-import wordJSON from "./words.json";
-console.log(wordJSON);
+// import wordJSON from "./words.json";
+// console.log(wordJSON);
 
 export default {
   name: "game",
@@ -541,7 +541,6 @@ export default {
       }
     },
     backToCategories: function() {
-      // alert("hello");
       this.$emit("change-page");
     },
 
@@ -564,8 +563,6 @@ export default {
       console.log(this.congrats);
 
       setTimeout(() => {
-        //send this.currentWord.word();
-        // this.ShowRandomMessage();
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
@@ -574,9 +571,12 @@ export default {
         this.increaseScore();
       }, 2000);
     },
-    letterChangeColor: function() {
-      let btnDanger = document.querySelector("#danger");
-      this.keyboard = btnDanger.style.backgroundColor = "btnDanger";
+    letterChangeColor: function(letter) {
+      if (this.currentWordArray[this.numRightLetters] !== letter) {
+        document.getElementsByClassName("letter-card")[
+          this.setLetters
+        ].style.backgroundColor = "red";
+      }
     },
     checkLetter: function(letter) {
       console.log(letter);
@@ -584,7 +584,7 @@ export default {
       if (this.currentWordArray[this.numRightLetters] === letter) {
         this.numRightLetters++;
       } else {
-        //if guess is wrong
+        //if guess is wrong change background color to red
         setTimeout(() => {
           this.letterChangeColor();
         }, 1000);

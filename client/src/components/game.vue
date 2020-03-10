@@ -136,7 +136,9 @@ export default {
         { message: "Awesome!" },
         { message: "Great Work!" },
         { message: "Awesome Job!" },
-        { message: "That's Right!" }
+        { message: "That's Right!" },
+        { message: "Amazing!" },
+        { message: "Good Job!" }
       ],
       currentWord: null,
       congrats: null,

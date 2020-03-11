@@ -2,7 +2,7 @@
   <div>
     <h3>Choose a Category</h3>
 
-    <div class="grid-5">
+    <div class="grid-5 container">
       <label class="cat-label">
         Fruits
         <div @click="handleClick('fruits')">
@@ -73,8 +73,8 @@ h3 {
 }
 
 .grid-5 {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 50px;
   height: 300px;
   width: 1200px;

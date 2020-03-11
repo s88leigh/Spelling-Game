@@ -80,6 +80,7 @@ h3 {
   height: 300px;
   width: 100%;
   padding-top: 20px;
+  grid-gap: 40px;
   justify-content: center;
   border: 2px solid rgb(4, 4, 98);
   border-radius: 5px;
@@ -89,8 +90,8 @@ h3 {
 .image {
   float: left;
   /* justify-content: center; */
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
   width: 175px;
   height: 175px;
   border: 2px solid rgb(4, 4, 98);

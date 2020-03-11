@@ -74,17 +74,13 @@ h3 {
 
 .category-container {
   display: flex;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-top: 50px;
   height: 300px;
   width: 100%;
   padding-top: 20px;
-  /* padding-bottom: 10px; */
-  /* padding-left: 30px;
-  padding-right: 30px; */
   justify-content: center;
-  /* grid-gap: 20px; */
   border: 2px solid rgb(4, 4, 98);
   border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -2,7 +2,7 @@
   <div>
     <h3>Choose a Category</h3>
 
-    <b-container class="grid-5">
+    <div class="grid-5">
       <label class="cat-label">
         Fruits
         <div @click="handleClick('fruits')">
@@ -34,7 +34,7 @@
           <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
         </div>
       </label>
-    </b-container>
+    </div>
   </div>
 </template>
 
@@ -73,12 +73,15 @@ h3 {
 }
 
 .grid-5 {
+  margin-left: 30px;
+  margin-right: 30px;
   margin-top: 50px;
   height: 300px;
-  width: 100%;
+  width: 1200px;
   padding-top: 0px;
   padding-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 60px;
+  /* padding-right: 30px; */
   border: 2px solid rgb(4, 4, 98);
   border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -87,6 +90,7 @@ h3 {
 .image {
   float: left;
   /* justify-content: center; */
+  margin-left: 30px;
   margin: 20px;
   width: 175px;
   height: 175px;
@@ -101,11 +105,7 @@ h3 {
 .game-info {
   font-size: 1.5em;
 }
-.cat-info-container {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
-}
+
 /* Empty boxes for spelled words */
 .grid-word {
   display: grid;

@@ -12,19 +12,39 @@
       </div>
     </div>
 
+    <!---image row --->
     <div class="image-row">
-      <div>{{correct-spelling}}</div>
-      <div>
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-4">
+          <li v-for="(word,index) in spellingList" :key="index" id="spelling-list">{{word}}</li>
+        </div>
+        <div @click="backToCategories()" id="col-md-auto">
+          <img :src="currentWord.img" :alt="currentWord.word" class="image" />
+        </div>
+        <div @click="Score('categories')" class="col col-lg-4">
+          <div id="empty-space">
+            <!-- <span id="start-red">{{playerScore}}</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="image-row">
+      <div class="col-3">
+        <span>{{correct-spelling}}</span>
+      </div>
+      <div class="col-6">
         <img :src="currentWord.img" :alt="currentWord.word" class="image" />
       </div>
+      <div class="col-3">non</div>
+    <div>-->
+    <!---congrats row --->
+    <div class="congrats">
+      <h1>{{ congrats}}</h1>
     </div>
-    <div>
-      <div class="congrats">
-        <h1>{{ congrats}}</h1>
-      </div>
-    </div>
-    <underscore :word="renderWord" />
 
+    <!---underscore row --->
+    <underscore :word="renderWord" />
+    <!---keyboard --->
     <keyboard @click-letter="checkLetter" />
   </div>
 </template>
@@ -144,7 +164,7 @@ export default {
       congrats: null,
       playerScore: 0,
       numRightLetters: 0,
-      // newPlayerScore: "",
+      spellingList: [],
       words: {
         fruits: [
           {
@@ -537,6 +557,18 @@ export default {
     }
   },
   methods: {
+    // displaySpellingList: function() {
+    //   myFilter: function (val, i, arr) {
+    //       array.forEach(element => {
+
+    //       }); {
+    //         if(arr[i].word === val.word) {
+    //           return false;
+    //         }
+    //       }
+    //       return true;
+    //     }
+    // },
     // emit score to app
     addPlayerScore: function() {
       this.$emit("add-Player-Score", this.PlayerScore);
@@ -570,6 +602,7 @@ export default {
       console.log(this.congrats);
 
       setTimeout(() => {
+        this.spellingList.push(this.currentWord.word);
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
@@ -615,6 +648,7 @@ export default {
   margin-top: 20px;
 }
 #choose {
+  margin-right: 125px;
   background: rgb(45, 136, 247);
   border: 2px solid rgb(4, 4, 98);
   border-radius: 5px;
@@ -623,7 +657,7 @@ export default {
 #start-red {
   background: rgb(250, 48, 48);
   margin-right: 20px;
-  margin-left: 175px;
+  margin-left: 75px;
 }
 span {
   /* background: green; */
@@ -640,10 +674,10 @@ span {
   width: 100%;
   max-height: 300px;
   padding-top: 0px;
-  /* border: 2px solid rgb(4, 4, 98); */
 }
 .image {
   /* overflow: auto; */
+  margin-right: 25px;
   width: 400px;
   height: 258px;
   border: 2px solid rgb(4, 4, 98);
@@ -651,6 +685,7 @@ span {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .congrats {
+  color: red;
   height: 60px;
   width: 100%;
   text-align: center;
@@ -659,6 +694,20 @@ span {
 h1 {
   text-align: center;
 }
+#spelling-list {
+  /* list-style-type: none; */
+  font-size: 30px;
+  text-align: center;
+  margin-left: 40px;
+  width: 200px;
+  height: 300px;
+  border: 2px solid rgb(4, 4, 98);
+}
+/* #empty-space {
+  margin-left: 100px;
+  margin-right: 0px;
+  border: 2px solid rgb(4, 4, 98);
+} */
 /* .cat-info-container {
   grid-column: 1 / -1;
   display: flex;

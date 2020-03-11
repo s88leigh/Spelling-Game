@@ -34,7 +34,6 @@ export default {
     return {
       title: "Spelling Game",
       currentCategory: null,
-      currentCategories: null,
 
       playerScores: []
     };
@@ -44,7 +43,7 @@ export default {
       this.currentCategory = category;
     },
     backToCategories: function() {
-      this.currentCategories = null;
+      this.currentCategory = null;
     },
     addPlayerScore: function(PlayerScore) {
       this.playerScores.push(PlayerScore);

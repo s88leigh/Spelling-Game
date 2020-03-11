@@ -73,15 +73,18 @@ h3 {
 }
 
 .grid-5 {
-  margin-left: 0px;
-  margin-right: 0px;
+  display: flex;
+  /* margin-left: 0px;
+  margin-right: 0px; */
   margin-top: 50px;
   height: 300px;
-  width: 1200px;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  padding-left: 60px;
-  /* padding-right: 30px; */
+  width: 100%;
+  padding-top: 20px;
+  /* padding-bottom: 10px; */
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  justify-content: center;
+  /* grid-gap: 20px; */
   border: 2px solid rgb(4, 4, 98);
   border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -90,8 +93,8 @@ h3 {
 .image {
   float: left;
   /* justify-content: center; */
-  margin-left: 30px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   width: 175px;
   height: 175px;
   border: 2px solid rgb(4, 4, 98);
@@ -107,14 +110,14 @@ h3 {
 }
 
 /* Empty boxes for spelled words */
-.grid-word {
+/* .grid-word {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   grid-gap: 40px;
 }
-.card-word {
-  font-size: 40px;
+.card-word { */
+/* font-size: 40px;
   text-align: center;
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
@@ -125,17 +128,17 @@ h3 {
 .cat-title {
   text-align: center;
   font-size: 30px;
-}
+} */
 
 /* alphabets */
-.alpha-container {
+/* .alpha-container {
   display: grid;
   grid-template-columns: repeat(26, auto);
   margin: 0;
   grid-gap: 3px;
   justify-content: center;
-}
-.alpha-card {
+} */
+/* .alpha-card {
   margin-top: 30px;
   background: rgb(158, 215, 250);
   height: 65px;
@@ -146,7 +149,7 @@ h3 {
   text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 .spelling-container {
   height: 65px;
   margin-top: 50px;

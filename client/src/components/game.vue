@@ -674,6 +674,7 @@ span {
   width: 100%;
   max-height: 300px;
   padding-top: 0px;
+  border: 2px solid rgb(4, 4, 98);
 }
 .image {
   /* overflow: auto; */

@@ -2,7 +2,7 @@
   <div>
     <h3>Choose a Category</h3>
 
-    <div class="grid-5 container">
+    <div class="category-container">
       <label class="cat-label">
         Fruits
         <div @click="handleClick('fruits')">
@@ -72,10 +72,10 @@ h3 {
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
 }
 
-.grid-5 {
+.category-container {
   display: flex;
-  /* margin-left: 0px;
-  margin-right: 0px; */
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 50px;
   height: 300px;
   width: 100%;

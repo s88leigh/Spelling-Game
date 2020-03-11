@@ -6,8 +6,8 @@
         <div @click="backToCategories()" id="col-md-auto">
           <span id="choose">Choose Another Category</span>
         </div>
-        <div @click="Score('categories')" id="col col-lg-2">
-          <span id="start-red">{{playerScore}}</span>
+        <div @click="Score('categories')" class="col col-lg-2">
+          <!-- <span id="start-red">{{playerScore}}</span> -->
         </div>
       </div>
     </div>
@@ -648,7 +648,7 @@ export default {
   margin-top: 20px;
 }
 #choose {
-  margin-right: 125px;
+  text-align: center;
   background: rgb(45, 136, 247);
   border: 2px solid rgb(4, 4, 98);
   border-radius: 5px;
@@ -677,7 +677,7 @@ span {
 }
 .image {
   /* overflow: auto; */
-  margin-right: 25px;
+  margin-right: 5px;
   width: 400px;
   height: 258px;
   border: 2px solid rgb(4, 4, 98);
@@ -695,13 +695,13 @@ h1 {
   text-align: center;
 }
 #spelling-list {
-  /* list-style-type: none; */
+  list-style-type: none;
   font-size: 30px;
   text-align: center;
   margin-left: 40px;
-  width: 200px;
-  height: 300px;
-  border: 2px solid rgb(4, 4, 98);
+  /* width: 200px;
+  height: 300px; */
+  /* border: 2px solid rgb(4, 4, 98); */
 }
 /* #empty-space {
   margin-left: 100px;

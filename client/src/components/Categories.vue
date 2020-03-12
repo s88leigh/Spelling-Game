@@ -43,16 +43,17 @@ export default {
   name: "categories",
   data() {
     return {
-      category: 0
+      // category: 0
     };
   },
   methods: {
     category: function(category) {
       this.$emit("change-category", category);
+      this.category;
     },
     categoryClick() {
       //increase number of category cliked
-      if (this.currentCategory.fruit !== null) {
+      if (this.currentCategory[0] !== null) {
         this.category += 1;
       }
     }

@@ -1,32 +1,32 @@
 <template>
   <!--Row of Letters-->
   <div class="alpha-container">
-    <div @click="letterClick('a')" class="letter-card">a</div>
-    <div @click="letterClick('b')" class="letter-card">b</div>
-    <div @click="letterClick('c')" class="letter-card">c</div>
-    <div @click="letterClick('d')" class="letter-card">d</div>
-    <div @click="letterClick('e')" class="letter-card">e</div>
-    <div @click="letterClick('f')" class="letter-card">f</div>
-    <div @click="letterClick('g')" class="letter-card">g</div>
-    <div @click="letterClick('h')" class="letter-card">h</div>
-    <div @click="letterClick('i')" class="letter-card">i</div>
-    <div @click="letterClick('j')" class="letter-card">j</div>
-    <div @click="letterClick('k')" class="letter-card">k</div>
-    <div @click="letterClick('l')" class="letter-card">l</div>
-    <div @click="letterClick('m')" class="letter-card">m</div>
-    <div @click="letterClick('n')" class="letter-card">n</div>
-    <div @click="letterClick('o')" class="letter-card">o</div>
-    <div @click="letterClick('p')" class="letter-card">p</div>
-    <div @click="letterClick('q')" class="letter-card">q</div>
-    <div @click="letterClick('r')" class="letter-card">r</div>
-    <div @click="letterClick('s')" class="letter-card">s</div>
-    <div @click="letterClick('t')" class="letter-card">t</div>
-    <div @click="letterClick('u')" class="letter-card">u</div>
-    <div @click="letterClick('v')" class="letter-card">v</div>
-    <div @click="letterClick('w')" class="letter-card">w</div>
-    <div @click="letterClick('x')" class="letter-card">x</div>
-    <div @click="letterClick('y')" class="letter-card">y</div>
-    <div @click="letterClick('z')" class="letter-card">z</div>
+    <div @click="letterClick('a')" :class="[letter-card, {error: props.wrongLetter==='a'}]">a</div>
+    <div @click="letterClick('b')" :class="[letter-card, {error: props.wrongLetter==='b'}]">b</div>
+    <div @click="letterClick('c')" :class="[letter-card, {error: props.wrongLetter==='c'}]">c</div>
+    <div @click="letterClick('d')" :class="[letter-card, {error: props.wrongLetter==='d'}]">d</div>
+    <div @click="letterClick('e')" :class="[letter-card, {error: props.wrongLetter==='e'}]">e</div>
+    <div @click="letterClick('f')" :class="[letter-card, {error: props.wrongLetter==='f'}]">f</div>
+    <div @click="letterClick('g')" :class="[letter-card, {error: props.wrongLetter==='g'}]">g</div>
+    <div @click="letterClick('h')" :class="[letter-card, {error: props.wrongLetter==='h'}]">h</div>
+    <div @click="letterClick('i')" :class="[letter-card, {error: props.wrongLetter==='i'}]">i</div>
+    <div @click="letterClick('j')" :class="[letter-card, {error: props.wrongLetter==='j'}]">j</div>
+    <div @click="letterClick('k')" :class="[letter-card, {error: props.wrongLetter==='k'}]">k</div>
+    <div @click="letterClick('l')" :class="[letter-card, {error: props.wrongLetter==='l'}]">l</div>
+    <div @click="letterClick('m')" :class="[letter-card, {error: props.wrongLetter==='m'}]">m</div>
+    <div @click="letterClick('n')" :class="[letter-card, {error: props.wrongLetter==='n'}]">n</div>
+    <div @click="letterClick('o')" :class="[letter-card, {error: props.wrongLetter==='o'}]">o</div>
+    <div @click="letterClick('p')" :class="[letter-card, {error: props.wrongLetter==='p'}]">p</div>
+    <div @click="letterClick('q')" :class="[letter-card, {error: props.wrongLetter==='q'}]">q</div>
+    <div @click="letterClick('r')" :class="[letter-card, {error: props.wrongLetter==='r'}]">r</div>
+    <div @click="letterClick('s')" :class="[letter-card, {error: props.wrongLetter==='s'}]">s</div>
+    <div @click="letterClick('t')" :class="[letter-card, {error: props.wrongLetter==='t'}]">t</div>
+    <div @click="letterClick('u')" :class="[letter-card, {error: props.wrongLetter==='u'}]">u</div>
+    <div @click="letterClick('v')" :class="[letter-card, {error: props.wrongLetter==='v'}]">v</div>
+    <div @click="letterClick('w')" :class="[letter-card, {error: props.wrongLetter==='w'}]">w</div>
+    <div @click="letterClick('x')" :class="[letter-card, {error: props.wrongLetter==='x'}]">x</div>
+    <div @click="letterClick('y')" :class="[letter-card, {error: props.wrongLetter==='y'}]">y</div>
+    <div @click="letterClick('z')" :class="[letter-card, {error: props.wrongLetter==='z'}]">z</div>
   </div>
 </template>
 

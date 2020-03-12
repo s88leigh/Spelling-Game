@@ -14,7 +14,11 @@
     <div class="image-row">
       <div class="row justify-content-md-center">
         <div class="col col-lg-4">
-          <li v-for="(word,index) in spellingList" :key="index" id="spelling-list">{{word}}</li>
+          <li
+            v-for="(word,index) in spellingList.slice(0,5)"
+            :key="index"
+            id="spelling-list"
+          >{{word}}</li>
         </div>
         <div id="col-md-auto">
           <img :src="currentWord.img" :alt="currentWord.word" class="image" />
@@ -161,6 +165,7 @@ export default {
       currentWord: null,
       congrats: null,
       playerScore: 0,
+      category: 0,
       backToCategoriesScore: 0,
       numRightLetters: 0,
       spellingList: [],
@@ -585,12 +590,7 @@ export default {
         this.categoriesClick += 1;
       }
     },
-    // categoryClick() {
-    //   //increase number of category cliked
-    //   if (this.currentCategory.fruit !== null) {
-    //     this.categoryClick += 1;
-    //   }
-    // },
+
     backToCategories: function() {
       this.$emit("change-page");
       //keep track of how many times this button is clicked on
@@ -619,18 +619,12 @@ export default {
       //   console.log(found);
     },
 
-    // reset if spellingList >=5
-    resetSpellingList: function() {
-      if (this.currentWordArray >= 5) {
-        this.spellingList = 0;
-      }
-    },
     resetGame: function() {
       this.ShowRandomMessage();
       // this.resetSpellingList();
 
       setTimeout(() => {
-        this.spellingList.push(this.currentWord.word)[this.resetSpellingList()];
+        this.spellingList.unshift(this.currentWord.word);
 
         this.pickRandomWord();
         this.numRightLetters = 0;

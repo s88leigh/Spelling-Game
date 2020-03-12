@@ -6,9 +6,7 @@
         <div @click="backToCategories()" id="col-md-auto">
           <span id="choose">Choose Another Category</span>
         </div>
-        <div @click="Score('categories')" class="col col-lg-2">
-          <!-- <span id="start-red">{{playerScore}}</span> -->
-        </div>
+        <div @click="Score('categories')" class="col col-lg-2"></div>
       </div>
     </div>
 
@@ -18,7 +16,7 @@
         <div class="col col-lg-4">
           <li v-for="(word,index) in spellingList" :key="index" id="spelling-list">{{word}}</li>
         </div>
-        <div @click="backToCategories()" id="col-md-auto">
+        <div id="col-md-auto">
           <img :src="currentWord.img" :alt="currentWord.word" class="image" />
         </div>
         <div @click="Score('categories')" class="col col-lg-4">
@@ -163,6 +161,7 @@ export default {
       currentWord: null,
       congrats: null,
       playerScore: 0,
+      backToCategoriesScore: 0,
       numRightLetters: 0,
       spellingList: [],
       words: {
@@ -570,6 +569,7 @@ export default {
     //     }
     // },
     // emit score to app
+
     addPlayerScore: function() {
       this.$emit("add-Player-Score", this.PlayerScore);
     },
@@ -581,6 +581,10 @@ export default {
     },
     backToCategories: function() {
       this.$emit("change-page");
+      //keep track of how many times this button is clicked on
+      // if (this.backToCategories !== null) {
+      //   this.backToCategories += 1;
+      // }
     },
 
     setLetters: function(keyboard) {

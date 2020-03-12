@@ -5,32 +5,32 @@
     <div class="category-container">
       <label class="cat-label">
         Fruits
-        <div @click="handleClick('fruits')">
+        <div @click="category('fruits')">
           <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
         </div>
       </label>
       <label class="cat-label">
         Vegetables
-        <div @click="handleClick('vegetables')">
+        <div @click="category('vegetables')">
           <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
         </div>
       </label>
       <label class="cat-label">
         Animals
-        <div @click="handleClick('animals')">
+        <div @click="category('animals')">
           <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
         </div>
       </label>
       <label class="cat-label">
         Furniture
-        <div @click="handleClick('furniture')">
+        <div @click="category('furniture')">
           <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
         </div>
       </label>
 
       <label class="cat-label">
         Colors
-        <div @click="handleClick('colors')">
+        <div @click="category('colors')">
           <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
         </div>
       </label>
@@ -42,11 +42,19 @@
 export default {
   name: "categories",
   data() {
-    return {};
+    return {
+      category: 0
+    };
   },
   methods: {
-    handleClick: function(category) {
+    category: function(category) {
       this.$emit("change-category", category);
+    },
+    categoryClick() {
+      //increase number of category cliked
+      if (this.currentCategory.fruit !== null) {
+        this.category += 1;
+      }
     }
   }
 };

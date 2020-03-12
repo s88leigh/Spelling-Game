@@ -579,6 +579,18 @@ export default {
         this.playerScore += 1;
       }
     },
+    categoriesClick() {
+      //increase number of categories clicked
+      if (this.backToCategories !== null) {
+        this.categoriesClick += 1;
+      }
+    },
+    // categoryClick() {
+    //   //increase number of category cliked
+    //   if (this.currentCategory.fruit !== null) {
+    //     this.categoryClick += 1;
+    //   }
+    // },
     backToCategories: function() {
       this.$emit("change-page");
       //keep track of how many times this button is clicked on

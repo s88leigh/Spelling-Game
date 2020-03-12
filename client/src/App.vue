@@ -34,7 +34,8 @@ export default {
     return {
       title: "Spelling Game",
       currentCategory: null,
-
+      categoriesClick: [],
+      categoryClick: [],
       playerScores: []
     };
   },
@@ -47,6 +48,12 @@ export default {
     },
     addPlayerScore: function(PlayerScore) {
       this.playerScores.push(PlayerScore);
+    },
+    addCategoriesClick: function(categoriesClick) {
+      this.categoriesClick.push(categoriesClick);
+    },
+    addCategoryClick: function(categoryClick) {
+      this.categoryClick.push(categoryClick);
     }
   }
 };

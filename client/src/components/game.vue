@@ -557,7 +557,7 @@ export default {
     }
   },
   methods: {
-    // displaySpellingList: function() {
+    // SpellingList: function() {
     //   myFilter: function (val, i, arr) {
     //       array.forEach(element => {
 
@@ -595,19 +595,32 @@ export default {
       this.currentWord = this.words[this.currentCategory][
         Math.floor(Math.random() * this.words[this.currentCategory].length)
       ];
+      //filter out repeat words on list
+      //   const currentWordArray = currentWordArray;
+      //   const found = currentWordArray.find(function(item) {
+      //     return item.word === this.currentWord;
+      //   });
+      //   console.log(found);
+    },
+
+    // reset if spellingList >=5
+    resetSpellingList: function() {
+      if (this.currentWordArray >= 5) {
+        this.spellingList = 0;
+      }
     },
     resetGame: function() {
       this.ShowRandomMessage();
-
-      console.log(this.congrats);
+      // this.resetSpellingList();
 
       setTimeout(() => {
-        this.spellingList.push(this.currentWord.word);
+        this.spellingList.push(this.currentWord.word)[this.resetSpellingList()];
+
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
         //send new score to App
-        this.addPlayerScore();
+        // this.addPlayerScore();
         //increment score stored in the App.vue
         this.increaseScore();
       }, 2000);
@@ -674,7 +687,6 @@ span {
   width: 100%;
   max-height: 300px;
   padding-top: 0px;
-  border: 2px solid rgb(4, 4, 98);
 }
 .image {
   /* overflow: auto; */

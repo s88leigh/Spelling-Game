@@ -55,14 +55,11 @@ export default {
   padding-bottom: 0px;
   margin-bottom: 0px;
   padding: 10px;
-  grid-gap: 3px;
   justify-content: center;
-  border: 2px solid rgb(4, 4, 98);
 }
 /* letter cards */
 .letter-card {
   margin: 1px;
-  /* text-align: center; */
   float: left;
   margin-top: 10px;
   background: rgb(158, 215, 250);

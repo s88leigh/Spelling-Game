@@ -55,6 +55,7 @@ import bedImg from "../assets/img/bed.png";
 import benchImg from "../assets/img/bench.png";
 import bench1Img from "../assets/img/bench1.png";
 import bench4Img from "../assets/img/bench4.png";
+import birdImg from "../assets/img/bird.png";
 import bird2Img from "../assets/img/bird.png";
 import bird3Img from "../assets/img/bird2.png";
 import blackImg from "../assets/img/black.png";
@@ -278,6 +279,10 @@ export default {
           }
         ],
         animals: [
+          {
+            word: "eagle",
+            img: birdImg
+          },
           {
             word: "bird",
             img: bird2Img

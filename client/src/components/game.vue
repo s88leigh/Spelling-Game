@@ -51,7 +51,10 @@ import appleImg from "../assets/img/apple.png";
 import bananaImg from "../assets/img/banana.png";
 import beetImg from "../assets/img/beet.png";
 import asparagusImg from "../assets/img/asparagus.png";
+import batImg from "../assets/img/bat.png";
+import bat1Img from "../assets/img/bat1.png";
 import bedImg from "../assets/img/bed.png";
+import bed1Img from "../assets/img/bed1.png";
 import benchImg from "../assets/img/bench.png";
 import bench1Img from "../assets/img/bench1.png";
 import bench4Img from "../assets/img/bench4.png";
@@ -63,11 +66,12 @@ import blueImg from "../assets/img/blue.png";
 import blueberryImg from "../assets/img/blueberry.png";
 import broc1Img from "../assets/img/broc1.png";
 import broc2Img from "../assets/img/broc2.png";
+import brownImg from "../assets/img/brown.png";
 import cabbageImg from "../assets/img/cabbage.png";
 import camelImg from "../assets/img/camel.png";
 import carrotImg from "../assets/img/carrot.png";
 import catImg from "../assets/img/cat.png";
-import cat2Img from "../assets/img/cat2.png";
+import cat3Img from "../assets/img/cat3.png";
 import chairImg from "../assets/img/chair.png";
 import cherryImg from "../assets/img/cherry.png";
 import chickenImg from "../assets/img/chicken.png";
@@ -88,7 +92,7 @@ import ducklingImg from "../assets/img/duckling.png";
 import elephantImg from "../assets/img/elephant.png";
 import girrafeImg from "../assets/img/girrafe.png";
 import goatImg from "../assets/img/goat.png";
-import grayImg from "../assets/img/gray.png";
+import goat1Img from "../assets/img/goat1.png";
 import gray1Img from "../assets/img/gray1.png";
 import grapeImg from "../assets/img/grape.png";
 import greenImg from "../assets/img/green.png";
@@ -284,6 +288,14 @@ export default {
             img: birdImg
           },
           {
+            word: "bat",
+            img: batImg
+          },
+          {
+            word: "bat",
+            img: bat1Img
+          },
+          {
             word: "bird",
             img: bird2Img
           },
@@ -301,7 +313,7 @@ export default {
           },
           {
             word: "cat",
-            img: cat2Img
+            img: cat3Img
           },
           {
             word: "dog",
@@ -354,6 +366,10 @@ export default {
           {
             word: "goat",
             img: goatImg
+          },
+          {
+            word: "goat",
+            img: goat1Img
           },
           {
             word: "horse",
@@ -416,6 +432,10 @@ export default {
           {
             word: "bed",
             img: bedImg
+          },
+          {
+            word: "bed",
+            img: bed1Img
           },
           {
             word: "chair",
@@ -505,10 +525,6 @@ export default {
           },
           {
             word: "gray",
-            img: grayImg
-          },
-          {
-            word: "gray",
             img: gray1Img
           },
           {
@@ -518,6 +534,10 @@ export default {
           {
             word: "pink",
             img: pink1Img
+          },
+          {
+            word: "brown",
+            img: brownImg
           }
         ]
       }

@@ -42,9 +42,7 @@
 export default {
   name: "categories",
   data() {
-    return {
-      // category: 0
-    };
+    return {};
   },
   methods: {
     category: function(category) {

@@ -30,15 +30,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="image-row">
-      <div class="col-3">
-        <span>{{correct-spelling}}</span>
-      </div>
-      <div class="col-6">
-        <img :src="currentWord.img" :alt="currentWord.word" class="image" />
-      </div>
-      <div class="col-3">non</div>
-    <div>-->
+
     <!---congrats row --->
     <div class="congrats">
       <h1>{{ congrats}}</h1>
@@ -46,6 +38,7 @@
 
     <!---underscore row --->
     <underscore :word="renderWord" />
+
     <!---keyboard --->
     <keyboard @click-letter="checkLetter" :wrongLetter="wrongLetter" />
   </div>
@@ -165,8 +158,6 @@ export default {
       currentWord: null,
       congrats: null,
       playerScore: 0,
-      // category: 0,
-      // backToCategoriesScore: 0,
       numRightLetters: 0,
       spellingList: [],
       words: {
@@ -598,26 +589,10 @@ export default {
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
-        //increment score stored in the App.vue
         this.increaseScore();
       }, 2000);
     },
-    // wrongLetter: function(letter) {
-    //   //can't get the letters to change color
 
-    //     document.getElementById(letter)
-    //       this.setLetters
-    //     .style.backgroundColor = "red";
-
-    // },
-    //  wrongLetter: function(letter) {
-    //   //can't get the letters to change color
-    //   if (this.currentWordArray[this.numRightLetters] !== letter) {
-    //     document.getElementsByClass("letter-card")[
-    //       this.setLetters
-    //     ].style.backgroundColor = "red";
-    //   }
-    // },
     checkLetter: function(letter) {
       console.log(letter);
       //if the chosen letter in the array is equal to the correct letter, then add the letter.
@@ -627,10 +602,6 @@ export default {
       } else {
         //if guess is wrong change background color to red ---not working!!!
         this.wrongLetter = letter;
-
-        // setTimeout(() => {
-        //   this.wrongLetter();
-        // }, 1000);      }
       }
       //   if guessed work is correct, then reset game state, setscore
       if (this.numRightLetters >= this.currentWordArray.length) {
@@ -661,7 +632,6 @@ export default {
   margin-left: 75px;
 }
 span {
-  /* background: green; */
   padding: 10px;
   margin-left: 10px;
   font-size: 20px;
@@ -677,7 +647,6 @@ span {
   padding-top: 0px;
 }
 .image {
-  /* overflow: auto; */
   margin-right: 5px;
   width: 400px;
   height: 258px;
@@ -690,7 +659,6 @@ span {
   height: 60px;
   width: 100%;
   text-align: center;
-  /* border: 2px solid rgb(4, 4, 98); */
 }
 h1 {
   text-align: center;
@@ -700,18 +668,5 @@ h1 {
   font-size: 30px;
   text-align: center;
   margin-left: 40px;
-  /* width: 200px;
-  height: 300px; */
-  /* border: 2px solid rgb(4, 4, 98); */
 }
-/* #empty-space {
-  margin-left: 100px;
-  margin-right: 0px;
-  border: 2px solid rgb(4, 4, 98);
-} */
-/* .cat-info-container {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
-} */
 </style>

@@ -311,7 +311,7 @@ export default {
             img: chickenImg
           },
           {
-            word: "chicken",
+            word: "hen",
             img: chicken2Img
           },
           {
@@ -331,7 +331,7 @@ export default {
             img: duckImg
           },
           {
-            word: "duck1",
+            word: "duck",
             img: duck1Img
           },
           {

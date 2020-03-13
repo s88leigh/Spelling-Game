@@ -47,7 +47,7 @@
     <!---underscore row --->
     <underscore :word="renderWord" />
     <!---keyboard --->
-    <keyboard @click-letter="checkLetter" />
+    <keyboard @click-letter="checkLetter" :wrongLetter="wrongLetter" />
   </div>
 </template>
 
@@ -149,7 +149,6 @@ export default {
     underscore,
     keyboard
   },
-
   props: ["currentCategory"],
   data() {
     return {
@@ -162,11 +161,12 @@ export default {
         { message: "Amazing!" },
         { message: "Good Job!" }
       ],
+      wrongLetter: null,
       currentWord: null,
       congrats: null,
       playerScore: 0,
-      category: 0,
-      backToCategoriesScore: 0,
+      // category: 0,
+      // backToCategoriesScore: 0,
       numRightLetters: 0,
       spellingList: [],
       words: {
@@ -561,20 +561,6 @@ export default {
     }
   },
   methods: {
-    // SpellingList: function() {
-    //   myFilter: function (val, i, arr) {
-    //       array.forEach(element => {
-
-    //       }); {
-    //         if(arr[i].word === val.word) {
-    //           return false;
-    //         }
-    //       }
-    //       return true;
-    //     }
-    // },
-    // emit score to app
-
     addPlayerScore: function() {
       this.$emit("add-Player-Score", this.PlayerScore);
     },
@@ -584,19 +570,9 @@ export default {
         this.playerScore += 1;
       }
     },
-    categoriesClick() {
-      //increase number of categories clicked
-      if (this.backToCategories !== null) {
-        this.categoriesClick += 1;
-      }
-    },
 
     backToCategories: function() {
       this.$emit("change-page");
-      //keep track of how many times this button is clicked on
-      // if (this.backToCategories !== null) {
-      //   this.backToCategories += 1;
-      // }
     },
 
     setLetters: function(keyboard) {
@@ -611,17 +587,10 @@ export default {
       this.currentWord = this.words[this.currentCategory][
         Math.floor(Math.random() * this.words[this.currentCategory].length)
       ];
-      //filter out repeat words on list
-      //   const currentWordArray = currentWordArray;
-      //   const found = currentWordArray.find(function(item) {
-      //     return item.word === this.currentWord;
-      //   });
-      //   console.log(found);
     },
 
     resetGame: function() {
       this.ShowRandomMessage();
-      // this.resetSpellingList();
 
       setTimeout(() => {
         this.spellingList.unshift(this.currentWord.word);
@@ -629,30 +598,39 @@ export default {
         this.pickRandomWord();
         this.numRightLetters = 0;
         this.congrats = null;
-        //send new score to App
-        // this.addPlayerScore();
         //increment score stored in the App.vue
         this.increaseScore();
       }, 2000);
     },
-    letterChangeColor: function(letter) {
-      //can't get the letters to change color
-      if (this.currentWordArray[this.numRightLetters] !== letter) {
-        document.getElementsByClassName("letter-card")[
-          this.setLetters
-        ].style.backgroundColor = "red";
-      }
-    },
+    // wrongLetter: function(letter) {
+    //   //can't get the letters to change color
+
+    //     document.getElementById(letter)
+    //       this.setLetters
+    //     .style.backgroundColor = "red";
+
+    // },
+    //  wrongLetter: function(letter) {
+    //   //can't get the letters to change color
+    //   if (this.currentWordArray[this.numRightLetters] !== letter) {
+    //     document.getElementsByClass("letter-card")[
+    //       this.setLetters
+    //     ].style.backgroundColor = "red";
+    //   }
+    // },
     checkLetter: function(letter) {
       console.log(letter);
       //if the chosen letter in the array is equal to the correct letter, then add the letter.
       if (this.currentWordArray[this.numRightLetters] === letter) {
         this.numRightLetters++;
+        this.wrongLetter = null;
       } else {
         //if guess is wrong change background color to red ---not working!!!
-        setTimeout(() => {
-          this.letterChangeColor();
-        }, 1000);
+        this.wrongLetter = letter;
+
+        // setTimeout(() => {
+        //   this.wrongLetter();
+        // }, 1000);      }
       }
       //   if guessed work is correct, then reset game state, setscore
       if (this.numRightLetters >= this.currentWordArray.length) {

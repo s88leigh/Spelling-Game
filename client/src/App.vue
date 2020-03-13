@@ -42,6 +42,7 @@ export default {
   methods: {
     setCategory: function(category) {
       this.currentCategory = category;
+      this.categoriesClick.push(category);
     },
     backToCategories: function() {
       this.currentCategory = null;

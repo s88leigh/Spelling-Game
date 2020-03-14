@@ -502,6 +502,10 @@ export default {
           },
           {
             word: "black",
+            img: blackImg
+          },
+          {
+            word: "black",
             img: black1Img
           },
           {

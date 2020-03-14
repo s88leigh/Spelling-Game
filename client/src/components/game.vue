@@ -57,11 +57,11 @@ import bedImg from "../assets/img/bed.png";
 import bed1Img from "../assets/img/bed1.png";
 import benchImg from "../assets/img/bench.png";
 import bench1Img from "../assets/img/bench1.png";
-import bench4Img from "../assets/img/bench4.png";
 import birdImg from "../assets/img/bird.png";
 import bird2Img from "../assets/img/bird.png";
 import bird3Img from "../assets/img/bird2.png";
 import blackImg from "../assets/img/black.png";
+import black1Img from "../assets/img/black1.png";
 import blueImg from "../assets/img/blue.png";
 import blueberryImg from "../assets/img/blueberry.png";
 import broc1Img from "../assets/img/broc1.png";
@@ -129,6 +129,7 @@ import redImg from "../assets/img/red.png";
 import rhinoImg from "../assets/img/rhino.png";
 import sofaImg from "../assets/img/sofa.png";
 import squirrelImg from "../assets/img/squirrel.png";
+import squirrel1Img from "../assets/img/squirrel1.png";
 import stoolImg from "../assets/img/stool.png";
 import strawberryImg from "../assets/img/strawberry.png";
 import tableImg from "../assets/img/table.png";
@@ -420,6 +421,10 @@ export default {
             img: squirrelImg
           },
           {
+            word: "squirrel",
+            img: squirrel1Img
+          },
+          {
             word: "tiger",
             img: tigerImg
           },
@@ -470,10 +475,6 @@ export default {
             img: bench1Img
           },
           {
-            word: "bench",
-            img: bench4Img
-          },
-          {
             word: "desk",
             img: deskImg
           },
@@ -501,7 +502,7 @@ export default {
           },
           {
             word: "black",
-            img: blackImg
+            img: black1Img
           },
           {
             word: "green",

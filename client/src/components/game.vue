@@ -119,7 +119,7 @@ import pigImg from "../assets/img/pig.png";
 import pineappleImg from "../assets/img/pineapple.png";
 import pinkImg from "../assets/img/pink.png";
 import pink1Img from "../assets/img/pink1.png";
-import potatoeImg from "../assets/img/potatoe.png";
+import potatoImg from "../assets/img/potato.png";
 import pumpkinImg from "../assets/img/pumpkin.png";
 import purpleImg from "../assets/img/purple.png";
 import rabbitImg from "../assets/img/rabbit.png";
@@ -158,7 +158,8 @@ export default {
         { message: "Awesome Job!" },
         { message: "That's Right!" },
         { message: "Amazing!" },
-        { message: "Good Job!" }
+        { message: "Good Job!" },
+        { message: "Brilliant" }
       ],
       wrongLetter: null,
       currentWord: null,
@@ -271,8 +272,8 @@ export default {
             img: lettuceImg
           },
           {
-            word: "potatoe",
-            img: potatoeImg
+            word: "potato",
+            img: potatoImg
           },
           {
             word: "onion",

@@ -1,12 +1,12 @@
-# Spelling-Game
-
-### Goal: Teaching children K-Grade 3 learn how to spell words. Allow parent to see progress.
+### Spelling-Game
 
 ### Type of users:
 
-- Individuals of all ages
+    Individuals of all ages
 
-### Intended goals:
+### Intended Goal:
+
+    To provide a user-friendly, simple, fun, interactive app to help children under 10 years of age learn how to spell words through repetition. However, in the process of developing this app, I have realized that such apps are helpful to a broader population: Children, Individuals with cognitive disorder, Parents, Foreigners.
 
 # For Children:
 
@@ -14,12 +14,15 @@
 
 # For Parent(s):
 
-- To provide a child(ren) with a fun and interactive way for children to learn how to spell
-- To have access to the child's learning curve with statistic info
+    * To provide a child(ren) with a fun and interactive way for children to learn how to spell
 
 # Non-English speakers:
 
-- To provide a fun and simple way to learn how to spell english words
+    * To provide a fun and simple way to learn how to spell english words through repetitiion
+
+# For Individuals with cognitive disorder:
+
+    * To provde an app that is simple and user-friendly
 
 ### Directions on how to play this game
 

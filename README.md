@@ -50,4 +50,6 @@
     Vue.js
     BootstrapVue
 
-### Click the following link to deploy on Heroku:
+### Try this app on Heroku:
+
+    https://guarded-oasis-36870.herokuapp.com

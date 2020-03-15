@@ -121,16 +121,31 @@ img {
   object-fit: cover;
   align-self: auto;
 }
+.underscore-container {
+  height: 65px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.col-md-auto {
+  text-align: center;
+  letter-spacing: 8px;
+  font-size: 50px;
+  color: black;
+  background: #f2f4f7;
+  text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
+  border: 2px solid rgb(4, 4, 98);
+}
 
 /* alphabets */
 .alpha-container {
   display: grid;
   grid-template-columns: repeat(26, auto);
   margin: 0;
-  grid-gap: 3px;
+  margin-top: 100px;
+  grid-gap: 1px;
   justify-content: center;
 }
-.alpha-card {
+/* .alpha-card {
   margin-top: 30px;
   background: rgb(158, 215, 250);
   height: 65px;
@@ -141,7 +156,7 @@ img {
   text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 .spelling-container {
   height: 65px;
   margin-top: 50px;
@@ -168,4 +183,34 @@ img {
 
 .col-5 {
   text-align: center;
+}
+
+/* .alpha-container {
+  display: flex;
+  height: 135px;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  justify-content: center;
+} */
+/* letter cards */
+.button-card {
+  margin: 1px;
+  float: left;
+  margin-top: 10px;
+  background: rgb(158, 215, 250);
+  height: 65px;
+  width: 45px;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
+  border: 2px solid rgb(4, 4, 98);
+  border-radius: 5px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.error {
+  background: red;
 }

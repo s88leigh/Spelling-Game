@@ -23,131 +23,125 @@
     <title>Index</title>
   </head>
   <body>
-    <div class="fruits">
-      <!--Back Arrow icon-->
-      <container class="nav-container">
-        <row>
-          <button
-            img-href=".\components\img\arrow.png"
-            img-alt="back arrow icon"
-            img-start
-          >
-            Back to Categories
-          </button>
-        </row>
-      </container>
+    <!--Back Arrow icon-->
+    <container class="nav-container">
+      <row>
+        <button
+          img-href=".\components\img\arrow.png"
+          img-alt="back arrow icon"
+          img-start
+        >
+          Back to Categories
+        </button>
+      </row>
+    </container>
 
-      <div class="row-title"></div>
+    <h1 class="game-title">Spelling Game</h1>
+    <h3 class="category">Choose a Category</h3>
 
-      <h1 class="game-title">Spelling Game</h1>
-      <h3 class="category">Choose a Category</h3>
+    <!-- category cards -->
 
-      <!-- category cards -->
-
-      <div class="image-container">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-2"></div>
-          <div class="col-md-auto" id="image">
-            <img src="img\fruits.png" alt="fruits" />
-          </div>
-          <div class="col col-lg-2"></div>
+    <div class="image-container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto" id="image">
+          <img src="img\fruits.png" alt="fruits" />
         </div>
+        <div class="col col-lg-2"></div>
       </div>
-
-
-      <!--Underscore container-->
-
-      <div class="underscore-container">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-2"></div>
-          <div class="col-md-auto" id="empty-div">{{ word }}</div>
-          <div class="col col-lg-2"></div>
-        </div>
-      </div>
-
-      <!--Row of Letters-->
-      <container class="alpha-container">
-        <button class="button-card">
-          <card class="alpha-card" text-align="center">a</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">b</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">c</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">d</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">e</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">f</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">g</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">h</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">i</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">j</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">k</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">l</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">m</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">n</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">o</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">p</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">q</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">r</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">s</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">t</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">u</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">v</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">w</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">x</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">y</card>
-        </button>
-        <button class="button-card">
-          <card class="alpha-card">z</card>
-        </button>
-      </container>
-      <Letters />
     </div>
+
+    <!--Underscore container-->
+
+    <div class="underscore-container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto" id="empty-div">{{ word }}</div>
+        <div class="col col-lg-2"></div>
+      </div>
+    </div>
+
+    <!--Row of Letters-->
+    <container class="alpha-container">
+      <button class="button-card">
+        <card class="alpha-card" text-align="center">a</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">b</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">c</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">d</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">e</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">f</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">g</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">h</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">i</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">j</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">k</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">l</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">m</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">n</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">o</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">p</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">q</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">r</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">s</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">t</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">u</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">v</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">w</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">x</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">y</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">z</card>
+      </button>
+    </container>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -5,9 +5,9 @@ body {
 * {
   box-sizing: border-box;
 }
-html {
+/* html {
   min-height: 100vh;
-}
+} */
 .nav-image {
   width: 30px;
   height: 30px;
@@ -41,7 +41,7 @@ h3 {
 .game-title {
   text-align: center;
   font-size: 3em;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   margin-top: 0px;
 }
 .choose {
@@ -76,15 +76,6 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* 3 Image Boxes */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin: 60px 60px 0px, 60px;
-  justify-content: center;
-  grid-gap: 40px;
-  padding-top: 10px;
-}
 
 /* Empty boxes for spelled words */
 .grid-word {
@@ -114,18 +105,19 @@ h3 {
   border: 2px solid rgb(4, 4, 98);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.image-container {
+  height: 275px;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 img {
-  height: 172px;
-  width: 172px;
+  height: 275px;
+  width: 375px;
   object-fit: cover;
   align-self: auto;
 }
-.underscore-container {
-  height: 65px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 .col-md-auto {
   text-align: center;
   letter-spacing: 8px;
@@ -136,31 +128,11 @@ img {
   border: 2px solid rgb(4, 4, 98);
 }
 
-/* alphabets */
-.alpha-container {
-  display: grid;
-  grid-template-columns: repeat(26, auto);
-  margin: 0;
-  margin-top: 100px;
-  grid-gap: 1px;
-  justify-content: center;
-}
-/* .alpha-card {
-  margin-top: 30px;
-  background: rgb(158, 215, 250);
+.underscore-container {
   height: 65px;
-  width: 45px;
-  text-align: center;
-  font-size: 40px;
-  color: black;
-  text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 2px solid rgb(4, 4, 98);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
-.spelling-container {
-  height: 65px;
-  margin-top: 50px;
-  margin-bottom: 40px;
 }
 
 .col-md-auto {
@@ -185,16 +157,15 @@ img {
   text-align: center;
 }
 
-/* .alpha-container {
-  display: flex;
-  height: 135px;
-  width: 100%;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  padding: 10px;
+/* alphabets */
+.alpha-container {
+  display: grid;
+  grid-template-columns: repeat(26, auto);
+  margin: 0;
+  margin-top: 30px;
+  grid-gap: 1px;
   justify-content: center;
-} */
+}
 /* letter cards */
 .button-card {
   margin: 1px;

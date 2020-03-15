@@ -8,7 +8,7 @@ body {
 /* html {
   min-height: 100vh;
 } */
-.nav-image {
+#arrow-image {
   width: 30px;
   height: 30px;
 }
@@ -21,7 +21,10 @@ body {
   height: 40px;
 }
 .nav-container {
+  padding: 10px;
   margin-top: 10px;
+  margin-left: 20px;
+  background: radial-gradient(azure, lightskyblue);
 }
 
 h1 {

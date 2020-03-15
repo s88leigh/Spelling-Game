@@ -612,13 +612,17 @@ export default {
     },
 
     resetGame: function() {
+      //In this resetGame function, the app will show a random congrats message after each spelling is completed.
       this.ShowRandomMessage();
 
       setTimeout(() => {
+        //unshift adds a new word to the beginning of the array of spelling list.
         this.spellingList.unshift(this.currentWord.word);
-
+        //the app will display an random word to be spelled next.
         this.pickRandomWord();
+        //when a new word is chosen, the numbe of right guesses is set to 0.
         this.numRightLetters = 0;
+        //a message of congrats appear for 2 seconds after each word has been spelled.
         this.congrats = null;
         this.increaseScore();
       }, 2000);

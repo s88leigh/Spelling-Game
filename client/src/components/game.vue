@@ -144,10 +144,12 @@ import zebraImg from "../assets/img/zebra.png";
 
 export default {
   name: "game",
+  //export underscore and keyboard to the app
   components: {
     underscore,
     keyboard
   },
+  //props (or properties), are the way that we pass data from a parent component down to it's child components.
   props: ["currentCategory"],
   data() {
     return {
@@ -161,11 +163,16 @@ export default {
         { message: "Good Job!" },
         { message: "Brilliant" }
       ],
+      //set wrong letter to null
       wrongLetter: null,
+      //set current word to null
       currentWord: null,
+      //set congrat messages to null
       congrats: null,
       playerScore: 0,
+      //set num of right letter to 0
       numRightLetters: 0,
+      //set spelling list to an empty array
       spellingList: [],
       words: {
         fruits: [
@@ -551,33 +558,39 @@ export default {
   },
 
   mounted: function() {
+    //mount creates a random word virtual DOM into real DOM
     this.pickRandomWord();
   },
 
   computed: {
     //create a function  to tell the app that if this current word does not exist, return/show an array of words.
     currentWordArray: function() {
+      //if the current word does not exist, return an array of word.
       if (this.currentWord === null) {
         return [];
       }
-      //else, return/show
+      //else, return the word and split between each character.
       return this.currentWord.word.split("");
     },
     renderWord: function() {
+      //if the word does not exist, don't return anything.
       if (this.currentWord === null) {
         return null;
       }
       return (
+        //turns string into array of letters
         this.currentWordArray
-          //turns string into array of letters
-
           //loops over all the letters and returns a new array
           .map((letter, index) => {
+            //if the right letter is greater than the index return the letter
             if (this.numRightLetters > index) {
               return letter;
             }
+            //otherwise return the underscores
             return " _ ";
           })
+          //The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object),
+          //separated by commas or a specified separator string.
           .join("")
       );
     }
@@ -594,19 +607,27 @@ export default {
     },
 
     backToCategories: function() {
+      //$emit in Vue is primarily used for sending custom change-page event to parent components.
       this.$emit("change-page");
     },
 
     setLetters: function(keyboard) {
+      //setting letters equal to keyboard.
       this.currentLetter = keyboard;
     },
     ShowRandomMessage: function() {
+      //this function tells the app to pick a random message.
       this.congrats = this.messageList[
+        //math.floor function returns the largest integer less than or equal to a given.
+        //math.random function randomizes a message.
         Math.floor(Math.random() * this.messageList.length)
       ].message;
     },
     pickRandomWord: function() {
+      //this function tells the app to pick a random word
       this.currentWord = this.words[this.currentCategory][
+        //math.floor function returns the largest integer less than or equal to a given.
+        //math.random function randomizes a word.
         Math.floor(Math.random() * this.words[this.currentCategory].length)
       ];
     },
@@ -630,15 +651,17 @@ export default {
 
     checkLetter: function(letter) {
       console.log(letter);
-      //if the chosen letter in the array is equal to the correct letter, then add the letter.
+      //if the chosen letter in the array is equal to the correct letter,
       if (this.currentWordArray[this.numRightLetters] === letter) {
+        //then add the letter.
         this.numRightLetters++;
+        //the wrong letter set to "not exist"
         this.wrongLetter = null;
       } else {
-        //if guess is wrong change background color to red ---not working!!!
+        //if guess is wrong change background color to red.
         this.wrongLetter = letter;
       }
-      //   if guessed work is correct, then reset game state, setscore
+      //   if guessed work is correct, then reset game state.
       if (this.numRightLetters >= this.currentWordArray.length) {
         this.resetGame();
       }

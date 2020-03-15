@@ -1,126 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Fruits Category</title>
-</head>
+    <title>Index</title>
+  </head>
+  <body>
+    <!--Back Arrow icon-->
 
-<body>
-    <div class="nav-container">
-        <div class="row">
-            <div class="col">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img\arrow.png" class="nav-image" alt="home" width="30" height="30"
-                        class="d-inline-block align-top" alt="" />
-                    Back to Categories
-                </a>
-            </div>
-            <div class="col-5"></div>
-            <div class="col"></div>
-        </div>
-    </div>
     <h1 class="game-title">Spelling Game</h1>
-    <h3 class="category">Click on a Fruit to Spell</h3>
+    <row class="category-button">
+      <button class="nav-container">
+        <a href="index.html">
+          <span class="choose-text">Choose another Category</span>
+        </a>
+      </button>
+    </row>
 
     <!-- category cards -->
-    <div class="grid-3">
-        <div class="card">
-            <img src="img\apple.png" alt="apple">
-        </div>
 
-        <div class="card">
-            <img src="img\banana.png" alt="banana">
+    <div class="image-container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2" id="left-of-image">veggie</div>
+        <div class="col-md-auto" id="image">
+          <img src="img\fruits.png" alt="fruits" />
         </div>
-
-        <div class="card">
-            <img src="img\blueberry.png" alt="cherry"> </label>
-        </div>
+        <div class="col col-lg-2" id="right-of-image"></div>
+      </div>
     </div>
 
-    <div class="grid-word">
-        <div class="card-word">
-            apple
-        </div>
+    <!--Congrats container-->
 
-        <div class="card-word">
+    <div class="congrats-container">
+      <span class="congrats">Amazing Job!</span>
+    </div>
+    <!--Underscore container-->
 
-        </div>
-
-        <div class="card-word">
-
-        </div>
+    <div class="underscore-container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto" id="empty-div">{{ word }}</div>
+        <div class="col col-lg-2"></div>
+      </div>
     </div>
 
-    <!--Space for letters-->
-    <div class="spelling-container">
-        <div class="row justify-content-md-center">
-            <div class="col col-lg-2">
-            </div>
-            <div class="col-md-auto" id=empty-div>
-                Apple
-            </div>
-            <div class="col col-lg-2">
-            </div>
-        </div>
-    </div>
+    <!--Row of Letters-->
+    <container class="alpha-container">
+      <button class="button-card">
+        <card class="alpha-card" text-align="center">a</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">b</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">c</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">d</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">e</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">f</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">g</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">h</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">i</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">j</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">k</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">l</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">m</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">n</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">o</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">p</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">q</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">r</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">s</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">t</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">u</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">v</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">w</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">x</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">y</card>
+      </button>
+      <button class="button-card">
+        <card class="alpha-card">z</card>
+      </button>
+    </container>
 
-    <!--Alphabets-->
-    <div class="alpha-container">
-        <button class="alpha-card">a</button>
-        <button class="alpha-card">b</button>
-        <button class="alpha-card">c</button>
-        <button class="alpha-card">d</button>
-        <button class="alpha-card">e</button>
-        <button class="alpha-card">f</button>
-        <button class="alpha-card">g</button>
-        <button class="alpha-card">h</button>
-        <button class="alpha-card">i</button>
-        <button class="alpha-card">j</button>
-        <button class="alpha-card">k</button>
-        <button class="alpha-card">l</button>
-        <button class="alpha-card">m</button>
-        <button class="alpha-card">n</button>
-        <button class="alpha-card">o</button>
-        <button class="alpha-card">p</button>
-        <button class="alpha-card">q</button>
-        <button class="alpha-card">r</button>
-        <button class="alpha-card">s</button>
-        <button class="alpha-card">y</button>
-        <button class="alpha-card">u</button>
-        <button class="alpha-card">v</button>
-        <button class="alpha-card">w</button>
-        <button class="alpha-card">x</button>
-        <button class="alpha-card">y</button>
-        <button class="alpha-card">z</button>
-    </div>
-
-    <!-- Timer -->
-    <!-- <div class="game-info-container">
-            <div class="game-info">
-                Time <span id="time-remaining">400</span>
-            </div>
-        </div> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

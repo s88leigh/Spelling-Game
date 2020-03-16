@@ -84,8 +84,8 @@ h3 {
 
 .category-container {
   display: flex;
-  margin-left: 80px;
-  margin-top: 50px;
+  /* margin-left: 80px; */
+  /* margin-top: 50px; */
   height: 300px;
   width: 100px;
   padding-top: 20px;

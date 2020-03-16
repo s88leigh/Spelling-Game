@@ -89,10 +89,10 @@ h2 {
 .category-container {
   display: flex;
   margin-right: 0px;
-  margin-left: 80px;
-  margin-top: 50px;
+  /* margin-left: 80px; */
+  /* margin-top: 50px; */
   height: 300px;
-  width: 100px;
+  width: 100%;
   padding-top: 20px;
   justify-content: center;
   border: 2px solid rgb(4, 4, 98);

@@ -84,6 +84,7 @@ h3 {
 
 .category-container {
   display: flex;
+  margin-right: 0px;
   /* margin-left: 80px; */
   /* margin-top: 50px; */
   height: 300px;

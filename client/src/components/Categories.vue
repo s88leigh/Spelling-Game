@@ -88,7 +88,7 @@ h2 {
 
 .category-container {
   display: flex;
-  margin-right: 0px;
+  margin-right: 30px;
   /* margin-left: 30px; */
   /* margin-top: 30px; */
   height: 300px;

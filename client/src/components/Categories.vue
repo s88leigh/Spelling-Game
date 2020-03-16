@@ -97,6 +97,7 @@ h3 {
 }
 
 .image {
+  display: flex;
   float: left;
   margin-left: 12px;
   margin-right: 12px;

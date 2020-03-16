@@ -47,6 +47,7 @@
 <script>
 import keyboard from "./keyboard.vue";
 import underscore from "./underscore.vue";
+
 import appleImg from "../assets/img/apple.png";
 import bananaImg from "../assets/img/banana.png";
 import beetImg from "../assets/img/beet.png";
@@ -57,8 +58,8 @@ import bedImg from "../assets/img/bed.png";
 import bed1Img from "../assets/img/bed1.png";
 import benchImg from "../assets/img/bench.png";
 import bench1Img from "../assets/img/bench1.png";
-import bird2Img from "../assets/img/bird.png";
-import bird3Img from "../assets/img/bird2.png";
+import bird2Img from "../assets/img/bird2.png";
+import bird3Img from "../assets/img/bird3.png";
 import blackImg from "../assets/img/black.png";
 import black1Img from "../assets/img/black1.png";
 import blueImg from "../assets/img/blue.png";

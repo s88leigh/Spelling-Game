@@ -36,6 +36,7 @@ export default {
   props: ["wrongLetter"],
   methods: {
     letterClick: function(letter) {
+      // sending click event to parent component which is the game component.
       this.$emit("click-letter", letter);
     }
   }

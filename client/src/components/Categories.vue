@@ -40,18 +40,22 @@
 
 <script>
 export default {
+  //export category component to app.vue
   name: "categories",
   data() {
     return {};
   },
   methods: {
     category: function(category) {
+      //sending change-page event to parent component which is the app component.
       this.$emit("change-category", category);
+      //targeting category
       this.category;
     },
     categoryClick() {
-      //increase number of category cliked
+      //if the current category with index of 1 is not null,
       if (this.currentCategory[0] !== null) {
+        //increase number of category by 1
         this.category += 1;
       }
     }

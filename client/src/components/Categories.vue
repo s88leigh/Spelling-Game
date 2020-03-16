@@ -27,7 +27,6 @@
           <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
         </div>
       </label>
-
       <label class="cat-label">
         Colors
         <div @click="category('colors')">
@@ -88,7 +87,7 @@ h3 {
   margin-left: 80px;
   margin-top: 50px;
   height: 300px;
-  width: 1100px;
+  width: 100px;
   padding-top: 20px;
   justify-content: center;
   border: 2px solid rgb(4, 4, 98);

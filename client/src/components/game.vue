@@ -722,5 +722,6 @@ h1 {
   font-size: 30px;
   text-align: center;
   margin-left: 40px;
+  /* text-shadow: 0 0 25px #f2f4f7, 0 0 5px #313539; */
 }
 </style>

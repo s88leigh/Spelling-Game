@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  //export underscore component to game component.
   name: "underscore",
   props: ["word"]
 };

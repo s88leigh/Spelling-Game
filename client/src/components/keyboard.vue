@@ -32,6 +32,7 @@
 
 <script>
 export default {
+  //export keyboard component to game.vue.
   name: "keyboard",
   props: ["wrongLetter"],
   methods: {

@@ -144,7 +144,7 @@ import zebraImg from "../assets/img/zebra.png";
 
 export default {
   name: "game",
-  //export underscore and keyboard to the app
+  //export underscore and keyboard components to app.vue.
   components: {
     underscore,
     keyboard
@@ -607,7 +607,7 @@ export default {
     },
 
     backToCategories: function() {
-      //$emit in Vue is primarily used for sending custom change-page event to parent components.
+      // sending change-page event to parent component which is the app component.
       this.$emit("change-page");
     },
 

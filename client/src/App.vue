@@ -11,12 +11,6 @@
       :currentCategory="currentCategory"
       @change-page="backToCategories"
     />
-
-    <!-- <b-container class="icon-container"> -->
-    <!-- <div> -->
-    <!-- <img src=".\assets\img\admin.png" class="admin-icon" alt="admin-icon" /> -->
-    <!-- </div> -->
-    <!-- </b-container> -->
   </div>
 </template>
 
@@ -26,13 +20,13 @@ import game from "./components/game.vue";
 
 export default {
   name: "App",
+  //export categories and game components to app.vue.
   components: {
     categories,
     game
   },
   data() {
     return {
-      title: "Spelling Game",
       currentCategory: null,
       categoriesClick: [],
       categoryClick: [],
@@ -40,19 +34,22 @@ export default {
     };
   },
   methods: {
+    //create a function that allows each of the categories to display.
     setCategory: function(category) {
       this.currentCategory = category;
+      //when a category is clicked on, display that category.
       this.categoriesClick.push(category);
     },
+    //creating a function that displays the Categories component when the 'choose another category' is clicked on.
     backToCategories: function() {
+      //sets the current category to null.
       this.currentCategory = null;
     },
+    //this function creates the instance of keeping score (for future iteration)
     addPlayerScore: function(PlayerScore) {
       this.playerScores.push(PlayerScore);
     },
-    addCategoriesClick: function(categoriesClick) {
-      this.categoriesClick.push(categoriesClick);
-    },
+    //this function creates the instance of keeping track of how many times a certain category is accessed (for future iteration)
     addCategoryClick: function(categoryClick) {
       this.categoryClick.push(categoryClick);
     }

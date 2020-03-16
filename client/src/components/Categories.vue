@@ -3,36 +3,46 @@
     <h3>Choose a Category</h3>
 
     <div class="category-container">
-      <label class="cat-label">
-        Fruits
-        <div @click="category('fruits')">
-          <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
-        </div>
-      </label>
-      <label class="cat-label">
-        Vegetables
-        <div @click="category('vegetables')">
-          <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
-        </div>
-      </label>
-      <label class="cat-label">
-        Animals
-        <div @click="category('animals')">
-          <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
-        </div>
-      </label>
-      <label class="cat-label">
-        Furniture
-        <div @click="category('furniture')">
-          <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
-        </div>
-      </label>
-      <label class="cat-label">
-        Colors
-        <div @click="category('colors')">
-          <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
-        </div>
-      </label>
+      <div class="image-container">
+        <label class="cat-label">
+          Fruits
+          <div @click="category('fruits')">
+            <img src="..\assets\img\fruits.png" img-alt="bowl of fruits" class="image" />
+          </div>
+        </label>
+      </div>
+      <div class="image-container">
+        <label class="cat-label">
+          Vegetables
+          <div @click="category('vegetables')">
+            <img src="..\assets\img\veg.png" img-alt="vegetables" class="image" />
+          </div>
+        </label>
+      </div>
+      <div class="image-container">
+        <label class="cat-label">
+          Animals
+          <div @click="category('animals')">
+            <img src="..\assets\img\animals.png" img-alt="animals" class="image" />
+          </div>
+        </label>
+      </div>
+      <div class="image-container">
+        <label class="cat-label">
+          Furniture
+          <div @click="category('furniture')">
+            <img src="..\assets\img\furniture.png" img-alt="furniture" class="image" />
+          </div>
+        </label>
+      </div>
+      <div class="image-container">
+        <label class="cat-label">
+          Colors
+          <div @click="category('colors')">
+            <img src="..\assets\img\colors.png" img-alt="colors" class="image" />
+          </div>
+        </label>
+      </div>
     </div>
   </div>
 </template>
@@ -76,7 +86,7 @@ h3 {
 }
 
 .cat-label {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   color: rgb(34, 6, 96);
   text-shadow: 1px 1px 2px white, 0 0 25px #f2f4f7, 0 0 5px #313539;
@@ -95,12 +105,12 @@ h3 {
   border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.image {
-  display: flex;
+.image-container {
   float: left;
   margin-left: 12px;
   margin-right: 12px;
+}
+.image {
   width: 175px;
   height: 175px;
   border: 2px solid rgb(4, 4, 98);

@@ -57,7 +57,6 @@ import bedImg from "../assets/img/bed.png";
 import bed1Img from "../assets/img/bed1.png";
 import benchImg from "../assets/img/bench.png";
 import bench1Img from "../assets/img/bench1.png";
-import birdImg from "../assets/img/bird.png";
 import bird2Img from "../assets/img/bird.png";
 import bird3Img from "../assets/img/bird2.png";
 import blackImg from "../assets/img/black.png";
@@ -161,7 +160,7 @@ export default {
         { message: "That's Right!" },
         { message: "Amazing!" },
         { message: "Good Job!" },
-        { message: "Brilliant" }
+        { message: "Brilliant!" }
       ],
       //set wrong letter to null
       wrongLetter: null,
@@ -292,10 +291,6 @@ export default {
           }
         ],
         animals: [
-          {
-            word: "eagle",
-            img: birdImg
-          },
           {
             word: "bat",
             img: batImg

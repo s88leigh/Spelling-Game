@@ -89,7 +89,7 @@ h2 {
 .category-container {
   display: flex;
   margin-top: 40px;
-  margin-left: 95px;
+  margin-left: 90px;
   height: 300px;
   width: 1100px;
   padding-top: 20px;

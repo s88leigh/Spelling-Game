@@ -89,8 +89,8 @@ h2 {
 .category-container {
   display: flex;
   margin-right: 0px;
-  /* margin-left: 80px; */
-  /* margin-top: 50px; */
+  margin-left: 30px;
+  margin-top: 30px;
   height: 300px;
   width: 100%;
   padding-top: 20px;
@@ -102,6 +102,8 @@ h2 {
 .image {
   width: 175px;
   height: 175px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 2px solid rgb(4, 4, 98);
   border-radius: 5px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

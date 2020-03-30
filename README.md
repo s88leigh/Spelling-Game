@@ -1,5 +1,7 @@
 ### Name of App: Spelling-Game
 
+### Solo Project: By Sophie Leigh
+
 ### Type of Users:
 
     Individuals of all ages
